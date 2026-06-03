@@ -1,0 +1,96 @@
+@use 'index' as *;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&display=swap');
+
+// ══════════════════════════════════
+//  RESET + BASE
+// ══════════════════════════════════
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.theme-transitioning * {
+  transition: background-color .25s ease, color .2s ease, border-color .2s ease !important;
+}
+
+// Correctifs light mode — couleurs générées par les mixins (valeurs statiques)
+[data-theme="light"] {
+  .bdg-g, .rs-c, .qs-en-cours,
+  .qp-filter.active:not([data-filter="bloque"]):not([data-filter="termine"]) {
+    color: var(--gold-text);
+  }
+  .c-gold { color: var(--gold-text); }
+}
+
+body {
+  background: $bg;
+}
+
+.w {
+  background: $bg;
+  color: $text;
+  font-family: $font-sans;
+  padding: 1.5rem 1.5rem 4rem;
+  font-size: $fs-base;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Section titles
+.sec {
+  font-size: $fs-xs;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-text);
+  margin: 2.5rem 0 1.2rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid var(--border-warm);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border-warm);
+  }
+}
+
+// Divider
+.hr {
+  border: none;
+  border-top: 1px solid $border-subtle;
+  margin: .9rem 0;
+}
+
+// Quote
+.qt {
+  font-family: $font-serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--gold-text);
+  border-left: 2px solid #{$gold}33;
+  padding-left: .8rem;
+  margin: .7rem 0;
+  line-height: 1.7;
+}
+
+// Misc
+.note {
+  font-size: $fs-sm;
+  color: $text-muted;
+  font-style: italic;
+  line-height: 1.6;
+  margin-top: .6rem;
+}
+
+.money {
+  font-family: $font-serif;
+  font-size: 1.6rem;
+  color: #6aaa7a;
+  font-weight: 700;
+}

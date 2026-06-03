@@ -1,0 +1,168 @@
+@use 'index' as *;
+
+// ══════════════════════════════════
+//  TABLETTE  ≤ 900px
+// ══════════════════════════════════
+@include tablet {
+  .g3       { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .bigname  { font-size: 1.9rem; }
+}
+
+// ══════════════════════════════════
+//  MOBILE  ≤ 768px
+// ══════════════════════════════════
+@include mobile {
+  .lbl-mb      { margin-bottom: 0; }
+  .hdr-statut  { width: unset; }
+  .hdr-handicap { margin-top: 0; }
+  .quetes-picto{ margin-top: 0; }
+
+  .w { padding: 1rem 1rem 3rem; font-size: 15px; }
+
+  // ── Header — réorganisation complète
+  .hdr {
+    flex-direction: column !important;
+    gap: 0 !important;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .hdr-img { display: none; }
+  .hdr-content {
+    width: 100%;
+    padding-bottom: .75rem;
+    border-bottom: 1px solid $border;
+    order: 1;
+  }
+  .hdr-img-mobile {
+    order: 2;
+    display: block;
+    width: 100%;
+    margin: 6px 0;
+    border-radius: $radius;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center 10%;
+      display: block;
+      filter: brightness(0.9);
+    }
+  }
+  .hdr-right {
+    order: 3;
+    text-align: left !important;
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $border;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-top: 6px;
+  }
+
+  // Textes header
+  .bigname  { font-size: 1.8rem; }
+  .sub      { font-size: 13px; }
+  .lbl      { font-size: $fs-xxs; }
+  .bdg      { font-size: $fs-sm; padding: 5px 12px; }
+
+  // Grilles → 1 colonne
+  .g2, .g3 {
+    display: block !important;
+    > *              { margin-bottom: $gap; }
+    > *:last-child   { margin-bottom: 0; }
+  }
+
+  // Cards
+  .card { padding: $gap; }
+  .ct   { font-size: $fs-xs; }
+
+  // Stat rows empilées
+  .sr {
+    flex-direction: column !important;
+    gap: 2px;
+    padding: .6rem 0;
+    align-items: flex-start !important;
+  }
+  .sl { font-size: $fs-sm; color: var(--text-muted); white-space: normal; }
+  .sv { font-size: 15px; text-align: left !important; }
+
+  // Traits
+  .tr { font-size: 13px; padding: 6px 12px; }
+
+  // Quote
+  .qt { font-size: 13px; }
+
+  // Meters
+  .mlbl { font-size: 14px; }
+  .mbar { height: 5px; }
+  .mtr  { margin-bottom: .8rem; }
+
+  // Relation cards
+  .rc {
+    grid-template-columns: 48px 1fr !important;
+    grid-template-rows: auto auto !important;
+    gap: 8px 14px !important;
+    padding: $gap !important;
+
+    .rav               { grid-column: 1; grid-row: 1 / 3; }
+    > div:nth-child(2) { grid-column: 2; grid-row: 1; }
+
+    .rs {
+      grid-column: 2 !important;
+      grid-row: 2 !important;
+      justify-self: start;
+      margin-top: 6px;
+      font-size: $fs-sm !important;
+      padding: 5px 11px !important;
+      white-space: normal;
+    }
+  }
+
+  .rav { width: 48px !important; height: 48px !important; font-size: 14px !important; }
+  .rn  { font-size: 15px; }
+  .rr  { font-size: 13px; }
+  .rd  { font-size: 13px; color: $text-muted; }
+
+  // Timeline
+  .tlt { font-size: 15px; }
+  .tld { font-size: 14px; }
+
+  // Boxes
+  .warn, .info-box, .ambre { font-size: 14px; padding: $gap; }
+
+  // Voir plus/moins actif
+  .toggle-btn { display: inline-block; }
+
+  // Collapsed uniquement sur mobile
+  .expandable.collapsed {
+    max-height: 3.8em;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2em;
+      background: linear-gradient(transparent, $bg-card);
+      pointer-events: none;
+    }
+  }
+  .warn .expandable.collapsed::after     { background: linear-gradient(transparent, #{$red}10); }
+  .info-box .expandable.collapsed::after { background: linear-gradient(transparent, #{$blue}10); }
+}
+
+// ══════════════════════════════════
+//  MOBILE SM  ≤ 600px
+// ══════════════════════════════════
+@include mobile-sm {
+  // Déjà géré dans le bloc mobile ci-dessus
+  // Ce breakpoint sert pour des ajustements très fins si besoin
+  //.hdr-img-mobile img { height: 180px; }
+}

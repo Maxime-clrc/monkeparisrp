@@ -1,0 +1,23 @@
+# Dépendances
+node_modules/
+
+# Source maps (artefacts de compilation, inutiles en prod)
+css/*.map
+
+# Logs npm
+npm-debug.log*
+package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Fichiers temporaires
+*.tmp
+*.bak

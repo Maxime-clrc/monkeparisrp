@@ -1,0 +1,194 @@
+@use 'index' as *;
+
+// ══════════════════════════════════
+//  RÉCENTS ÉVÈNEMENTS
+// ══════════════════════════════════
+
+.event-session {
+  margin-bottom: 1.5rem;
+}
+
+.event-session-date {
+  font-size: $fs-xxs;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $text-dim;
+  margin-bottom: .75rem;
+  padding-left: .25rem;
+}
+
+.event-card {
+  background: $bg-card;
+  border: 1px solid $border;
+  border-left: 3px solid #{$gold}44;
+  border-radius: $radius;
+  padding: 1rem 1.2rem;
+  margin-bottom: .6rem;
+  position: relative;
+  box-shadow: var(--card-shadow);
+
+  // Badge MÀJ sur les event-card
+  &[data-updated="true"]::after {
+    content: 'MÀJ';
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: $gold;
+    color: $bg;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 2px 6px;
+    border-radius: $radius-sm;
+    line-height: 1.4;
+    pointer-events: none;
+    animation: pulse-badge 2s ease-in-out infinite;
+  }
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .75rem;
+}
+
+// Thèmes
+.event-theme {
+  font-size: $fs-label;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: $radius-sm;
+  font-weight: 700;
+}
+
+.et-police    { @include status-badge($blue); }
+.et-relation  { @include status-badge($purple); }
+.et-famille   { @include status-badge($gold); }
+.et-politique { @include status-badge($red); }
+.et-autre     { @include status-badge($green); }
+
+.event-body {
+  font-size: 13px;
+  color: $text-muted;
+  line-height: 1.75;
+  margin-bottom: .6rem;
+
+  &:last-child { margin-bottom: 0; }
+}
+
+// ══════════════════════════════════
+//  PNJ — statuts
+// ══════════════════════════════════
+.pnj-important  { @include status-badge($red);   font-size: $fs-label; padding: 3px 8px; border-radius: $radius-sm; letter-spacing: .5px; text-transform: uppercase; }
+.pnj-surveiller { @include status-badge($gold);  font-size: $fs-label; padding: 3px 8px; border-radius: $radius-sm; letter-spacing: .5px; text-transform: uppercase; }
+.pnj-anodin     { @include status-badge($green); font-size: $fs-label; padding: 3px 8px; border-radius: $radius-sm; letter-spacing: .5px; text-transform: uppercase; }
+
+// ══════════════════════════════════
+//  BADGE MÀJ sur .rc (relation cards)
+//  Via ::before sur le .rs pour s'empiler proprement au-dessus du statut
+//  Usage : ajouter data-updated="true" sur le .rc
+// ══════════════════════════════════
+.rc[data-updated="true"] {
+  > span.rs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    padding-top: 2px;
+
+    &::before {
+      content: 'MÀJ';
+      background: $gold;
+      color: $bg;
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 2px 6px;
+      border-radius: $radius-sm;
+      line-height: 1.4;
+      white-space: nowrap;
+      flex-shrink: 0;
+      animation: pulse-badge 2s ease-in-out infinite;
+    }
+  }
+}
+
+// ══════════════════════════════════
+//  BADGE MÀJ sur .tli (timeline)
+//  Usage : ajouter data-updated="true" sur le .tli
+// ══════════════════════════════════
+.tli[data-updated="true"] {
+  position: relative;
+
+  .tlt::after {
+    content: 'MÀJ';
+    display: inline-block;
+    margin-left: 8px;
+    background: $gold;
+    color: $bg;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 2px 6px;
+    border-radius: $radius-sm;
+    line-height: 1.4;
+    vertical-align: middle;
+    animation: pulse-badge 2s ease-in-out infinite;
+  }
+}
+
+// ══════════════════════════════════
+//  ANIMATION
+// ══════════════════════════════════
+@keyframes pulse-badge {
+  0%, 100% { opacity: 1;   transform: scale(1); }
+  50%       { opacity: .7; transform: scale(.95); }
+}
+
+// ══════════════════════════════════
+//  RESPONSIVE
+// ══════════════════════════════════
+@include mobile {
+  .event-body  { font-size: 14px; }
+  .event-theme { font-size: 11px; }
+}
+
+
+// ══════════════════════════════════
+//  SESSIONS REPLIABLES
+// ══════════════════════════════════
+.event-session-collapsed {
+  display: none;
+}
+
+.events-toggle-btn {
+  background: none;
+  border: 1px solid $border;
+  color: $text-muted;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: $radius-sm;
+  margin-bottom: 1rem;
+  font-family: $font-sans;
+  transition: color .15s, border-color .15s, background .15s;
+  display: block;
+
+  &:hover {
+    color: var(--gold-text);
+    border-color: #{$gold}44;
+    background: #{$gold}08;
+  }
+}
+
+@include mobile {
+  .events-toggle-btn {
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,90 @@
+@use 'index' as *;
+// ══════════════════════════════════
+//  ALERT / INFO BOXES
+// ══════════════════════════════════
+.warn     { @include alert-box($red); }
+.info-box { @include alert-box($blue); }
+.ambre    { @include alert-box($gold); }
+
+// ══════════════════════════════════
+//  VOIR PLUS / VOIR MOINS
+//  (activé uniquement en mobile via _responsive.scss)
+// ══════════════════════════════════
+.expandable {
+  position: relative;
+}
+
+.toggle-btn {
+  display: none;
+  background: none;
+  border: 1px solid #{$gold}55;
+  color: var(--gold-text);
+  font-size: $fs-xs;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: $radius-sm;
+  margin-top: 8px;
+  font-family: inherit;
+  transition: background .15s;
+
+  &:hover { background: #{$gold}18; }
+}
+
+
+// ══════════════════════════════════
+//  CLASSES UTILITAIRES EXTRAITES DU HTML
+// ══════════════════════════════════
+
+// SR-only (accessibilité)
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+
+// Badge wrapper
+.bdg-wrap { margin-top: .8rem; }
+
+// Badge Opportuniste (purple)
+.bdg-p { @include status-color($purple); }
+
+// Header right éléments
+.lbl-mb      { margin-bottom: .6rem; }
+.hdr-statut  { font-size: 13px; color: $gold; font-family: $font-serif; width: 100px; float: right;}
+.hdr-handicap { margin-top: .6rem; font-size: 12px; color: $text-muted; }
+
+// Description texte muted dans les cards
+.desc { font-size: 13px; color: $text-muted; line-height: 1.6; }
+
+// Couleurs utilitaires pour texte inline
+.c-red      { color: #e05555; }
+.c-gold     { color: $gold; }
+.c-purple   { color: #aa7acc; }
+.c-blue     { color: #6aace0; }
+.c-green    { color: #6aaa7a; }
+.c-muted    { color: $text-muted; }
+.c-lightblue { color: #85b7eb; }
+
+// Icônes Tabler inline
+.icon {
+  font-size: 14px;
+  vertical-align: -2px;
+  margin-right: 6px;
+}
+
+// Jauges — couleurs de remplissage via CSS var --w
+.mfil        { width: var(--w, 0%); }
+.mfil-red    { background: #cc5555; }
+.mfil-gold   { background: $gold; }
+.mfil-purple { background: $purple; }
+.mfil-blue   { background: $blue; }
+.mfil-muted  { background: $text-muted; }
+
+@keyframes pulse-badge {
+  0%, 100% { opacity: 1;   transform: scale(1); }
+  50%       { opacity: .7; transform: scale(.95); }
+}

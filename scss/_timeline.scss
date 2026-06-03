@@ -1,0 +1,149 @@
+@use 'index' as *;
+// ══════════════════════════════════
+//  TIMELINE
+// ══════════════════════════════════
+.tl {
+  position: relative;
+  padding-left: 1.5rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    bottom: 6px;
+    width: 1px;
+    background: $border;
+  }
+}
+
+.tli {
+  position: relative;
+  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--border-subtle);
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.tldot {
+  position: absolute;
+  left: -1.5rem;
+  top: 5px;
+  width: 11px;
+  height: 11px;
+  border-radius: $radius-full;
+  border: 1px solid;
+
+  &.td-g { background: #{$gold}18;   border-color: $gold; }
+  &.td-r { background: #{$red}18;    border-color: $red; }
+  &.td-b { background: #{$blue}18;   border-color: $blue; }
+  &.td-p { background: #{$purple}18; border-color: $purple; }
+  &.td-n { background: #{$green}18;  border-color: $green; }
+}
+
+.tlt {
+  font-size: 14px;
+  color: $text-light;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.tld {
+  font-size: $fs-sm;
+  color: $text-muted;
+  line-height: 1.7;
+}
+
+
+// ══════════════════════════════════
+//  POINT 2 — Relations : état actuel + historique
+// ══════════════════════════════════
+.rel-current {
+  font-size: 13px;
+  color: $text;
+  line-height: 1.6;
+  margin-top: 6px;
+  padding: .5rem .75rem;
+  background: #{$gold}08;
+  border-left: 2px solid #{$gold}44;
+  border-radius: 0 $radius-sm $radius-sm 0;
+}
+
+.rel-history {
+  margin-top: .5rem;
+
+  summary {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: $text-dim;
+    cursor: pointer;
+    padding: 4px 0;
+    user-select: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &::before {
+      content: '▶';
+      font-size: 8px;
+      transition: transform .2s;
+    }
+
+    &:hover { color: var(--gold-text); }
+  }
+
+  &[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  .rd {
+    margin-top: .5rem;
+    padding-top: .5rem;
+    border-top: 1px solid $border-subtle;
+  }
+}
+
+// ══════════════════════════════════
+//  POINT 3 — Timeline : anciens jalons repliables
+// ══════════════════════════════════
+.tli-collapsed {
+  display: none;
+}
+
+.tl-toggle-btn {
+  background: none;
+  border: 1px solid $border;
+  color: $text-muted;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: $radius-sm;
+  margin-bottom: 1.2rem;
+  font-family: $font-sans;
+  transition: color .15s, border-color .15s, background .15s;
+  display: block;
+
+  &:hover {
+    color: $gold;
+    border-color: #{$gold}44;
+    background: #{$gold}08;
+  }
+}
+
+@include mobile {
+  .rel-current { font-size: 14px; }
+  .tl-toggle-btn { font-size: 12px; width: 100%; text-align: center; }
+}

@@ -1,0 +1,99 @@
+// ══════════════════════════════════
+//  COULEURS D'ACCENT (invariantes)
+// ══════════════════════════════════
+$gold:        #c9a84c;
+$red:         #cc3333;
+$blue:        #4a7fa5;
+$purple:      #7a4a9e;
+$green:       #3a7a4a;
+
+// ══════════════════════════════════
+//  THÈME — custom properties
+//  Dark = défaut, Light = data-theme="light"
+// ══════════════════════════════════
+:root {
+  --card-shadow:   none;
+  --gold-text:     #c9a84c;
+  --bg:            #0c0c0c;
+  --bg-card:       #161616;
+  --bg-hover:      #111111;
+  --bg-raised:     #111111;
+  --border:        #222222;
+  --border-subtle: #1c1c1c;
+  --border-warm:   #1e1a12;
+  --text:          #ccc5b0;
+  --text-light:    #e0d8c8;
+  --text-muted:    #878883;
+  --surface-track: #2a2a2a;
+  --meter-bg:      #1e1e1e;
+  --bg-94:         #0c0c0cf0;
+  --bg-73:         #0c0c0cbb;
+  --bigname-color: #ffffff;
+}
+
+[data-theme="light"] {
+  --bg:            #eae5db;
+  --bg-card:       #f7f4ee;
+  --bg-hover:      #e0dbd0;
+  --bg-raised:     #e8e3d8;
+  --border:        #b8ad96;
+  --border-subtle: #d0c9b8;
+  --border-warm:   #c0b89e;
+  --text:          #211e18;
+  --text-light:    #0d0b08;
+  --text-muted:    #584f44;
+  --surface-track: #b0a890;
+  --meter-bg:      #cec8ba;
+  --bg-94:         #eae5dbf0;
+  --bg-73:         #eae5dbcc;
+  --bigname-color: #0d0b08;
+  --card-shadow:   0 1px 4px rgba(0,0,0,.07), 0 2px 12px rgba(0,0,0,.04);
+  --gold-text:     #7a5c10;
+}
+
+// Aliases SCSS → CSS vars (pour utilisation dans les partials)
+$bg:            var(--bg);
+$bg-card:       var(--bg-card);
+$bg-hover:      var(--bg-hover);
+$border:        var(--border);
+$border-subtle: var(--border-subtle);
+$text:          var(--text);
+$text-light:    var(--text-light);
+$text-muted:    var(--text-muted);
+$text-dim:      var(--text-light);
+
+// Couleurs de statut (valeur / texte / bordure)
+$colors: (
+  'g': $gold,
+  'r': $red,
+  'b': $blue,
+  'p': $purple,
+  'n': $green,
+);
+
+// ══════════════════════════════════
+//  TYPOGRAPHIE
+// ══════════════════════════════════
+$font-serif:  'Playfair Display', serif;
+$font-sans:   system-ui, -apple-system, sans-serif;
+
+$fs-base:     14px;
+$fs-sm:       12px;
+$fs-xs:       11px;
+$fs-xxs:      10px;
+$fs-label:    9px;
+
+// ══════════════════════════════════
+//  ESPACEMENTS
+// ══════════════════════════════════
+$gap:         1rem;
+$radius:      6px;
+$radius-sm:   3px;
+$radius-full: 50%;
+
+// ══════════════════════════════════
+//  BREAKPOINTS
+// ══════════════════════════════════
+$tablet:      900px;
+$mobile:      768px;
+$mobile-sm:   600px;

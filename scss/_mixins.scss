@@ -1,0 +1,52 @@
+@use 'variables' as *;
+
+// ══════════════════════════════════
+//  MIXINS
+// ══════════════════════════════════
+
+// Couleur de statut (bg / text / border) à partir d'une couleur hex
+@mixin status-color($color) {
+  background: #{$color}18;
+  color: $color;
+  border: 1px solid #{$color}44;
+}
+
+// Variante plus légère pour les badges de relation (.rs-*)
+@mixin status-badge($color) {
+  background: #{$color}15;
+  color: $color;
+  border: 1px solid #{$color}30;
+}
+
+// Barre colorée en haut d'une card
+@mixin card-top-bar($color) {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: $color;
+  }
+}
+
+// Alert / info box avec bordure gauche colorée
+@mixin alert-box($color) {
+  background: #{$color}10;
+  border-left: 3px solid $color;
+  padding: .9rem 1.1rem;
+  font-size: 13px;
+  color: $color;
+  line-height: 1.7;
+  margin-bottom: .7rem;
+}
+
+// Media queries
+@mixin tablet {
+  @media screen and (max-width: #{$tablet}) { @content; }
+}
+@mixin mobile {
+  @media screen and (max-width: #{$mobile}) { @content; }
+}
+@mixin mobile-sm {
+  @media screen and (max-width: #{$mobile-sm}) { @content; }
+}
