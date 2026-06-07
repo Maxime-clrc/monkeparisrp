@@ -6,5 +6,4 @@
     <a href="#pnj">Autres Personnages</a>
     <a href="#arc">Arc narratif</a>
     <a href="#tensions">Tensions</a>
-    <button class="theme-btn" id="theme-toggle" title="Changer le thème">☀</button>
   </nav>

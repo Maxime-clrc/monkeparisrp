@@ -43,13 +43,35 @@
       Valmont a glissé à Jeremy qu'une taupe pourrait se trouver au sein de la police parisienne. Information sensible pour quelqu'un qui mène une double vie entre milieu criminel et commissariat — et qui pourrait lui-même être observé.
     </div>
     <div class="warn">
-      <strong>Mystère Larouge — 31/05</strong><br>
-      Des documents suggèrent que les enfants Larouge auraient plus de cent ans malgré leur apparence de jeunes adultes. Ce mystère rejoint directement l'affaire du majordome Denolo et la disparition de Philomène Larouge — une piste surnaturelle ou une manipulation à grande échelle ?
+      <strong>Mystère Larouge — confirmé & mission active — 31/05→04/06</strong><br>
+      Jean Lefèvre confirme lui-même que les Larouge ne vieillissent pas. Jeremy et Alix sont désormais mandatés pour les approcher discrètement via un "tea time" à venir. La policière Pichon, proche du fils Larouge, ajoute une dimension policière au mystère.
     </div>
     <div class="warn">
-      <strong>Ambrose — surprise secrète — 31/05</strong><br>
-      Ambrose de Saint-Claire prépare quelque chose dont il attend la livraison, en demandant expressément à Alix de ne rien dire. Pour un personnage jusqu'alors effacé, ce comportement attire tous les soupçons.
+      <strong>Ambrose — surprise secrète — toujours en suspens — 31/05→04/06</strong><br>
+      La livraison mystérieuse d'Ambrose n'a toujours pas eu lieu. Alix continue de s'interroger. Pour un personnage jusqu'alors effacé, ce silence prolongé renforce les soupçons.
     </div>
-  </div>
-  
+    <div class="warn">
+      <strong>Corruption policière généralisée — 04/06</strong><br>
+      Plus une taupe isolée mais plusieurs policiers impliqués selon Vautrin — et Jean Lefèvre confirme sa méfiance envers le commissaire. Jeremy, stagiaire de police avec une double vie criminelle, navigue dans une institution minée de l'intérieur.
+    </div>
+    <div class="warn">
+      <strong>Pichon — nœud de connexions dangereuses — 04/06</strong><br>
+      Pichon est à la fois proche du fils Larouge (mystère de la famille) et sœur de César (complice de la fraude associative d'Alix et Jeremy). Si elle enquête ou parle, elle peut faire tomber plusieurs dossiers simultanément.
+    </div>
+    <div class="warn">
+      <strong>Mort du maire & chaos politique — 04/06</strong><br>
+      La mort du maire de Paris rebat toutes les cartes : élections municipales, équilibres de pouvoir, enquêtes en cours. Valmont, Mouflard, Vautrin — tous les personnages politiques que Jeremy fréquente sont directement affectés.
+    </div>
+    <div class="warn">
+      <strong>Un certain Claude — commanditaire ? — 04/06</strong><br>
+      Vautrin mentionne un individu nommé Claude, potentiellement impliqué dans le meurtre de son garde du corps. Identité et motivations inconnues — mais le nom circule dans des sphères dangereuses.
+    </div>
+    <div class="warn">
+      <strong>Groupe militant & menace sur la police — 06/06</strong><br>
+      Un groupe armé se réclamant de la gauche militante a enlevé Blanche Pichon et menacé de "faire tomber un policier chaque jour", ciblant directement le commissaire. L'un des membres répond au nom de <strong>Claude</strong> — première apparition directe. Jeremy est désormais témoin et cible potentielle en tant que policier.
+    </div>
+    <div class="warn">
+      <strong>Leblanc — escalade physique incontrôlable — 06/06</strong><br>
+      La rivalité avec Ulysse Leblanc atteint un seuil critique : il percute volontairement Jeremy en voiture, se renverse lui-même. Deux hospitalisations. Cette guerre n'a plus de garde-fou — la prochaine confrontation pourrait être fatale pour l'un ou l'autre.
+    </div>
   </div>

@@ -17,10 +17,10 @@
       <div class="rav ra-b">Ol</div>
       <div>
         <div class="rn">Olivier Vautrin — Député RN</div>
-        <div class="rr">Alliance politique · film de propagande · soldé</div>
-        <div class="rd">Le député a utilisé Jeremy dans un film de campagne où il jouait une victime agressée par des immigrés. Le tournage a mal tourné : vrais coups reçus, Vautrin a tenté de nier le tournage. Le 31/05, Jeremy récupère via Valmont les <strong class="c-green">10 000 €</strong> convenus. L'affaire semble close financièrement, mais l'exposition politique reste un risque.</div>
+        <div class="rr">Alliance politique · soldé financièrement · nouvelle menace</div>
+        <div class="rd">Les 10 000 € du tournage ont été récupérés via Valmont (31/05). Le 04/06, Vautrin recontacte Jeremy : son garde du corps a été assassiné. Il désigne un certain <strong class="c-red">Claude</strong> comme suspect. Affirme que la corruption policière est bien plus étendue qu'une simple taupe — plusieurs policiers impliqués, dont le commissaire.</div>
       </div>
-      <span class="rs rs-c">Soldé</span>
+      <span class="rs rs-h">Situation instable</span>
     </div>
 
     <div class="rc">
@@ -66,9 +66,9 @@
     <div class="rc">
       <div class="rav ra-b">Mc</div>
       <div>
-        <div class="rn">Maurice Cointreau — Agent de Police</div>
+        <div class="rn">Maurice Cointro — Agent de Police</div>
         <div class="rr">Supérieur hiérarchique · témoin des impairs de Jeremy</div>
-        <div class="rd">Responsable de l'intégration de Jeremy. Le 28/05, Jeremy le convainc d'infiltrer en civil le meeting d'Huguette Les Yeux Verts sous prétexte de terrorisme — Cointreau constate évidemment qu'il n'y a rien de suspect. Jeremy tente de se justifier en confondant "shooting photo" et "tirs d'armes à feu". Son image d'agent imprévisible et peu fiable se consolide.</div>
+        <div class="rd">Responsable de l'intégration de Jeremy. Le 28/05, Jeremy le convainc d'infiltrer en civil le meeting d'Huguette Les Yeux Verts sous prétexte de terrorisme — Cointro constate évidemment qu'il n'y a rien de suspect. Jeremy tente de se justifier en confondant "shooting photo" et "tirs d'armes à feu". Son image d'agent imprévisible et peu fiable se consolide.</div>
       </div>
       <span class="rs rs-c">Supérieur hiérarchique</span>
     </div>
@@ -77,20 +77,20 @@
       <div class="rav ra-r">UL</div>
       <div>
         <div class="rn">Ulysse Leblanc</div>
-        <div class="rr">Antagoniste · vengeance accomplie</div>
-        <div class="rd">Après l'affaire du plat piégé au Céleste (25/05), Leblanc attire Jeremy dans un faux rendez-vous le 31/05. Jeremy est emmené de force dans un lieu isolé, humilié et <strong class="c-red">photographié dans une mise en scène dégradante.</strong> La vengeance est accomplie — mais Jeremy est du genre à ne pas oublier.</div>
+        <div class="rr">Antagoniste · escalade physique permanente</div>
+        <div class="rd">Après l'affaire du plat piégé (25/05) et le piège humiliant tendu à Jeremy (31/05), la rivalité atteint un nouveau seuil le 06/06 : Leblanc percute Jeremy en voiture près du commissariat. Dans la confusion, il se fait lui-même renverser. <strong class="c-red">Les deux hommes terminent à l'hôpital inconscients.</strong> Une guerre sans fin qui s'emballe.</div>
       </div>
-      <span class="rs rs-h">Guerre ouverte</span>
+      <span class="rs rs-h">Guerre totale</span>
     </div>
     
     <div class="rc">
       <div class="rav ra-r">JL</div>
       <div>
         <div class="rn">Jean Lefèvre — père d'Alix</div>
-        <div class="rr">Ancien haut gradé de la police · danger latent</div>
-        <div class="rd">Facteur de risque majeur silencieux. Sa position d'ancien haut gradé lui donne des leviers importants si la fraude associative ou la nature fictive de la relation avec Alix venait à être exposée — d'autant que Jeremy est lui-même stagiaire de police.</div>
+        <div class="rr">Ancien haut gradé de la police · acteur dans l'ombre</div>
+        <div class="rd">D'abord simple facteur de risque silencieux, Jean Lefèvre devient un acteur clé. Le 04/06, il révèle à Alix (et indirectement Jeremy) des informations troublantes sur la famille Larouge et exprime sa méfiance envers plusieurs membres de la police, notamment le commissaire. C'est lui qui mandate Jeremy et Alix pour se rapprocher discrètement des enfants Larouge.</div>
       </div>
-      <span class="rs rs-h">Risque latent</span>
+      <span class="rs rs-c">Allié ambigu</span>
     </div>
 
     <div class="rc">
@@ -107,9 +107,29 @@
       <div class="rav ra-p">An</div>
       <div>
         <div class="rn">Anthéa</div>
-        <div class="rr">Amie d'Alix</div>
+        <div class="rr">Amie d'Alix · victime de manipulation</div>
         <div class="rd">Le 31/05, Jeremy et Alix passent leur soirée chez elle et s'amusent à lui faire croire qu'Alix traverse une période difficile. Nouvelle cible de leurs manipulations communes à des fins de divertissement.</div>
       </div>
-      <span class="rs rs-c">Connaissance</span>
+      <span class="rs rs-c">Cible secondaire</span>
+    </div>
+
+    <div class="rc">
+      <div class="rav ra-b">Pi</div>
+      <div>
+        <div class="rn">Policière Pichon</div>
+        <div class="rr">Policière · proche du fils Larouge · sœur de César · victime</div>
+        <div class="rd">Proche du fils Larouge et sœur de César (impliqué dans la fraude associative). Le 06/06, elle est enlevée en pleine rue par le groupe militant de Claude, puis relâchée avec un coup de tesson de bouteille. Une cible qui concentre plusieurs fils d'enquête dangereux.</div>
+      </div>
+      <span class="rs rs-h">Suspecte & victime</span>
+    </div>
+
+    <div class="rc">
+      <div class="rav ra-g">MR</div>
+      <div>
+        <div class="rn">Maxime Rousseau</div>
+        <div class="rr">Futur agent de sécurité · recruté le 06/06</div>
+        <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 06/06, il lui propose de rejoindre son futur service de sécurité — Maxime accepte. Leur discussion est interrompue par l'arrivée du groupe militant armé se réclamant de Claude.</div>
+      </div>
+      <span class="rs rs-c">Allié recruté</span>
     </div>
   </div>

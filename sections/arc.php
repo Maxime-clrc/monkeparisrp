@@ -35,12 +35,12 @@
       <div class="tli" data-tl-old="true">
         <div class="tldot td-n"></div>
         <div class="tlt">Entrée inattendue dans la police</div>
-        <div class="tld">Adrien, voulant occuper Jeremy, propose sa candidature à Maurice Cointreau. Ce qui devait rester une plaisanterie prend une tournure sérieuse : Jeremy passe réellement un entretien et est intégré comme stagiaire dans la police. Paradoxe ultime pour quelqu'un qui fraude, se drogue et manipule son entourage.</div>
+        <div class="tld">Adrien, voulant occuper Jeremy, propose sa candidature à Maurice Cointro. Ce qui devait rester une plaisanterie prend une tournure sérieuse : Jeremy passe réellement un entretien et est intégré comme stagiaire dans la police. Paradoxe ultime pour quelqu'un qui fraude, se drogue et manipule son entourage.</div>
       </div>
       <div class="tli" data-tl-old="true">
         <div class="tldot td-b"></div>
         <div class="tlt">Première journée en tant que stagiaire — 22/05</div>
-        <div class="tld">Jeremy effectue sa première journée officielle au sein de la police en tant que stagiaire non payé. Patrouille avec Cointreau et Ragnar, interrogatoire de Sabri Kelma, découverte du cadavre du majordome "Denolo" à la Chapelle expiatoire, lié à la disparition de Mme Philomène Larouge.</div>
+        <div class="tld">Jeremy effectue sa première journée officielle au sein de la police en tant que stagiaire non payé. Patrouille avec Cointro et Ragnar, interrogatoire de Sabri Kelma, découverte du cadavre du majordome "Denolo" à la Chapelle expiatoire, lié à la disparition de Mme Philomène Larouge.</div>
       </div>
       <div class="tli" data-tl-old="true">
         <div class="tldot td-r"></div>
@@ -50,17 +50,27 @@
       <div class="tli" data-tl-old="true">
         <div class="tldot td-r"></div>
         <div class="tlt">Tournage raté, infiltration absurde & Palais de Jade — 28/05</div>
-        <div class="tld">Triple séquence chaotique : Jeremy convainc Cointreau d'infiltrer le meeting d'Huguette Les Yeux Verts sur la base d'une suspicion terroriste imaginaire (confusion "shooting"). Le tournage Vautrin tourne au désastre — vrais coups, 2 000 € sur 10 000 € touchés, Vautrin cherche à nier le tournage pour ne pas payer. Louis de Villiers, ex-ennemi, propose une action en justice commune. Le soir, Jeremy et Clothilde réalisent l'entraînement de kung-fu. Jeremy fuit sans payer les 500 € au Palais de Jade : <strong class="c-red">plainte pour escroquerie en cours.</strong></div>
+        <div class="tld">Triple séquence chaotique : Jeremy convainc Cointro d'infiltrer le meeting d'Huguette Les Yeux Verts sur la base d'une suspicion terroriste imaginaire (confusion "shooting"). Le tournage Vautrin tourne au désastre — vrais coups, 2 000 € sur 10 000 € touchés, Vautrin cherche à nier le tournage pour ne pas payer. Louis de Villiers, ex-ennemi, propose une action en justice commune. Le soir, Jeremy et Clothilde réalisent l'entraînement de kung-fu. Jeremy fuit sans payer les 500 € au Palais de Jade : <strong class="c-red">plainte pour escroquerie en cours.</strong></div>
       </div>
       <div class="tli" data-tl-old="true">
         <div class="tldot td-r"></div>
         <div class="tlt">Botola, Mortecouille, Sabri & Fifi — 29/05</div>
         <div class="tld">Journée dense : interpellation de Botola Aboulhassane (candidat à la mairie, cocaïne découverte à son domicile), Ragnar frappe le suspect. Jeremy appelle Rita hors procédure — elle est suspendue et lui en tient rigueur. Interrogatoire du prof Mortecouille (mort de Léo Montclair dans une benne) sans avancée décisive. Course-poursuite à Évry, Sabri Kelma interpellé — suspect dans les deux dossiers, évoque la <strong class="c-red">famille Nakache</strong>. Appel mystérieux de Fifi, liée à l'affaire Leblanc.</div>
       </div>
-      <div class="tli" data-updated="true">
+      <div class="tli" data-tl-old="true">
         <div class="tldot td-r"></div>
         <div class="tlt">Municipales, piège Leblanc, 10 000 €, Larouge & Ambrose — 31/05</div>
         <div class="tld">Premiers résultats des municipales : Mouflard en tête à 50 %, Valmont à 49 %. Skatepark avec Victoire de Montfaucon — fauteuil roulant dans la Seine. Leblanc tend un piège à Jeremy : humiliation et photos dégradantes dans un lieu isolé. Jeremy récupère les 10 000 € via Valmont, qui glisse l'info d'une <strong class="c-red">taupe dans la police</strong>. Alix révèle le mystère Larouge : des enfants qui semblent avoir 20 ans mais auraient plus de 100 ans selon des documents. Ambrose prépare une surprise secrète dont la nature reste inconnue.</div>
+      </div>
+      <div class="tli" data-tl-old="true">
+        <div class="tldot td-r"></div>
+        <div class="tlt">Enlèvements, Larouge, corruption & mort du maire — 04/06</div>
+        <div class="tld">Alix paniquée par une série d'enlèvements se réfugie chez Jean Lefèvre, qui confirme le mystère Larouge (vieillissement inexistant) et mandate Jeremy & Alix pour les approcher discrètement. Soirée Projet X : Lefèvre ne fait plus confiance au commissaire. Vautrin annonce le meurtre de son garde du corps, désigne un certain <strong class="c-red">Claude</strong>, et révèle que la corruption policière implique plusieurs personnes. Jeremy demande 35 000 € à Armand pour une start-up — renvoyé à son père. Pichon identifiée comme proche du fils Larouge et <strong class="c-red">sœur de César</strong>. La soirée se clôt sur la <strong class="c-red">mort du maire de Paris</strong>.</div>
+      </div>
+      <div class="tli" data-updated="true">
+        <div class="tldot td-r"></div>
+        <div class="tlt">Pichon enlevée, Claude confirmé, Maxime recruté & accident Leblanc — 06/06</div>
+        <div class="tld">Rencontre des familles avortée (De Saint-Claire absents). En service, Blanche Pichon est enlevée en pleine rue par un groupe militant armé. Jeremy recrute Maxime Rousseau pour son futur service de sécurité. Le groupe se présente — l'un d'eux est appelé <strong class="c-red">"Claude"</strong> — et menace de "faire tomber un policier chaque jour", ciblant directement le commissaire. En fin de soirée, Ulysse Leblanc percute Jeremy en voiture près du commissariat, se renverse lui-même dans la confusion. <strong class="c-red">Les deux terminent inconscients à l'hôpital.</strong></div>
       </div>
     </div>
   </div>

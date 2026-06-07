@@ -2,7 +2,7 @@
 
   <div class="g2">
     <div>
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-g">Rt</div>
         <div>
           <div class="rn">Rita Rosales — médecin</div>
@@ -12,17 +12,17 @@
         <span class="rs rs-h">Relation fragilisée</span>
       </div>
 
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-g">HV</div>
         <div>
           <div class="rn">Huguette Les Yeux Verts</div>
           <div class="rr">Candidate politique · meeting infiltré par Jeremy</div>
-          <div class="rd">Jeremy et Maurice Cointreau ont infiltré en civil son meeting politique, sur la base d'une suspicion de terrorisme totalement infondée de la part de Jeremy. Personnage politique à surveiller selon les connexions de Mme de Montfaucon.</div>
+          <div class="rd">Jeremy et Maurice Cointro ont infiltré en civil son meeting politique, sur la base d'une suspicion de terrorisme totalement infondée de la part de Jeremy. Personnage politique à surveiller selon les connexions de Mme de Montfaucon.</div>
         </div>
         <span class="rs pnj-surveiller">À surveiller</span>
       </div>
 
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-r">WY</div>
         <div>
           <div class="rn">Maître Wu Yang</div>
@@ -54,15 +54,6 @@
         <span class="rs pnj-important">Mystère central</span>
       </div>
 
-      <div class="rc">
-        <div class="rav ra-n">BB</div>
-        <div>
-          <div class="rn">Commissaire Broussard</div>
-          <div class="rr">Commissaire · mène les enquêtes incendiaires</div>
-          <div class="rd">Dirigeait l'interrogatoire de Sabri Kelma lors de la première journée de Jeremy en patrouille. A identifié la victime de la Chapelle expiatoire comme le majordome de Philomène Larouge.</div>
-        </div>
-        <span class="rs pnj-surveiller">À surveiller</span>
-      </div>
 
       <div class="rc">
         <div class="rav ra-g">LD</div>
@@ -74,7 +65,7 @@
         <span class="rs pnj-surveiller">À surveiller</span>
       </div>
 
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-r">MD</div>
         <div>
           <div class="rn">Monsieur Denolo</div>
@@ -88,7 +79,7 @@
 
   <div class="g2">
     <div>
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-p">BA</div>
         <div>
           <div class="rn">Botola Aboulhassane</div>
@@ -98,7 +89,7 @@
         <span class="rs pnj-surveiller">À surveiller</span>
       </div>
 
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-n">JM</div>
         <div>
           <div class="rn">Juste Mortecouille</div>
@@ -110,7 +101,7 @@
     </div>
 
     <div>
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-r">Fi</div>
         <div>
           <div class="rn">Fifi</div>
@@ -120,7 +111,7 @@
         <span class="rs pnj-surveiller">Intentions floues</span>
       </div>
 
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-r">Na</div>
         <div>
           <div class="rn">Famille Nakache</div>
@@ -135,6 +126,50 @@
   <div class="g2">
     <div>
       <div class="rc" data-updated="true">
+        <div class="rav ra-r">Pc</div>
+        <div>
+          <div class="rn">Policière Pichon</div>
+          <div class="rr">Policière · proche du fils Larouge · sœur de César · enlevée</div>
+          <div class="rd">Proche du fils Larouge et sœur de César (fraude associative). Le 06/06, elle est <strong class="c-red">enlevée en pleine rue</strong> par le groupe militant de Claude, puis relâchée avec un coup de tesson de bouteille. Cible à la fois du groupe armé et des soupçons de Jeremy.</div>
+        </div>
+        <span class="rs pnj-important">Suspecte & victime</span>
+      </div>
+
+      <div class="rc" data-updated="true">
+        <div class="rav ra-r">Cx</div>
+        <div>
+          <div class="rn">Claude — chef du groupe militant</div>
+          <div class="rr">Première apparition directe · groupe armé de gauche</div>
+          <div class="rd">D'abord évoqué par Vautrin comme suspect dans un assassinat (04/06), Claude est <strong class="c-red">confirmé présent en personne le 06/06</strong> : Jeremy entend son nom dans le groupe militant qui a enlevé Pichon. Le groupe menace de "faire tomber un policier chaque jour" et cible directement le commissaire Broussard.</div>
+        </div>
+        <span class="rs pnj-important">Ennemi confirmé</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="rc">
+        <div class="rav ra-r">Mr</div>
+        <div>
+          <div class="rn">Le maire de Paris — décédé</div>
+          <div class="rr">Mort annoncée le 04/06 · bouleversement politique majeur</div>
+          <div class="rd">Jeremy apprend sa mort en fin de soirée le 04/06. Cet événement rebat toutes les cartes politiques : élections municipales relancées, équilibres de pouvoir bousculés, enquêtes en cours potentiellement affectées. Tous les personnages politiques que Jeremy fréquente — Valmont, Mouflard, Vautrin — sont directement impactés.</div>
+        </div>
+        <span class="rs pnj-important">Événement pivot</span>
+      </div>
+
+      <div class="rc">
+        <div class="rav ra-n">BB</div>
+        <div>
+          <div class="rn">Commissaire Broussard</div>
+          <div class="rr">Commissaire · comportement suspect · visé par plusieurs sources</div>
+          <div class="rd">D'abord simple supérieur hiérarchique. Le 04/06, à la fois Jean Lefèvre et Vautrin évoquent indépendamment des soupçons à son égard. Son comportement est jugé de plus en plus suspect. Figure centrale dans la question de la corruption policière généralisée.</div>
+        </div>
+        <span class="rs pnj-important">Suspect actif</span>
+      </div>
+    </div>
+  </div>  <div class="g2">
+    <div>
+      <div class="rc">
         <div class="rav ra-g">VM</div>
         <div>
           <div class="rn">Monsieur Valmont</div>
@@ -144,7 +179,7 @@
         <span class="rs pnj-surveiller">Contact politique</span>
       </div>
 
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-p">An</div>
         <div>
           <div class="rn">Anthéa</div>
@@ -156,7 +191,7 @@
     </div>
 
     <div>
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-g">RM</div>
         <div>
           <div class="rn">Régis Mouflard</div>
@@ -164,6 +199,16 @@
           <div class="rd">En tête des premières estimations des municipales le 31/05 avec 50 % des voix contre 49 % pour Valmont. La campagne de propagande dans laquelle Jeremy a joué n'a pas encore produit ses effets visibles.</div>
         </div>
         <span class="rs pnj-surveiller">À surveiller</span>
+      </div>
+
+      <div class="rc" data-updated="true">
+        <div class="rav ra-g">MxR</div>
+        <div>
+          <div class="rn">Maxime Rousseau</div>
+          <div class="rr">Futur agent de sécurité · recruté le 06/06</div>
+          <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 06/06, il lui propose de rejoindre son futur service de sécurité — Maxime accepte à la surprise de Jeremy. Leur discussion est interrompue par l'arrivée du groupe militant de Claude.</div>
+        </div>
+        <span class="rs pnj-surveiller">Allié recruté</span>
       </div>
     </div>
   </div>

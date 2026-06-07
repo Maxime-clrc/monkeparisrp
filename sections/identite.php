@@ -46,7 +46,7 @@
     <div class="card cb">
       <div class="ct">Entrée dans la police</div>
       <div class="sr"><span class="sl">Initiateur</span><span class="sv">Adrien (cousin)</span></div>
-      <div class="sr"><span class="sl">Contact police</span><span class="sv sv-b">Maurice Cointreau</span></div>
+      <div class="sr"><span class="sl">Contact police</span><span class="sv sv-b">Maurice Cointro</span></div>
       <div class="sr"><span class="sl">Intention de départ</span><span class="sv">Simple passe-temps / occupation</span></div>
       <div class="sr"><span class="sl">Résultat</span><span class="sv sv-g">Entretien réel → stagiaire officiel</span></div>
       <div class="hr"></div>
@@ -59,7 +59,7 @@
       <div class="sr"><span class="sl">But réel</span><span class="sv sv-r">Fraude aux donateurs</span></div>
       <div class="sr"><span class="sl">Drogue</span><span class="sv sv-r">Via Geremy (Évry)</span></div>
       <div class="sr"><span class="sl">Contacté par</span><span class="sv">Samuel le Grand</span></div>
-      <div class="sr"><span class="sl">Politique</span><span class="sv sv-r">Film propagande RN (10 000 €) </span></div>
+      <div class="sr"><span class="sl">Politique</span><span class="sv sv-r">Film propagande RN · acompte 2 000 € / 10 000 € promis</span></div>
       <div class="hr"></div>
       <div class="note">Ironie centrale : se fournit discrètement en drogue dans les milieux qu'il dit mépriser. Le tournage Vautrin a mal tourné : Jeremy et Louis de Villiers ont reçu de vrais coups. Vautrin semble vouloir nier l'existence du tournage pour ne pas payer.</div>
     </div>

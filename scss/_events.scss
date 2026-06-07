@@ -159,11 +159,13 @@
 // ══════════════════════════════════
 //  SESSIONS REPLIABLES
 // ══════════════════════════════════
-.event-session-collapsed {
+.event-session-collapsed,
+.tension-collapsed {
   display: none;
 }
 
-.events-toggle-btn {
+.events-toggle-btn,
+.tensions-toggle-btn {
   background: none;
   border: 1px solid $border;
   color: $text-muted;
@@ -185,8 +187,15 @@
   }
 }
 
+// Le bouton des tensions est placé sous la grille
+.tensions-toggle-btn {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
 @include mobile {
-  .events-toggle-btn {
+  .events-toggle-btn,
+  .tensions-toggle-btn {
     font-size: 12px;
     width: 100%;
     text-align: center;

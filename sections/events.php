@@ -1,13 +1,159 @@
 <div class="sec" id="events">Récents évènements</div>
 
   <!-- ══════════════════════════════════
-    SESSION 31/05
+    SESSION 06/06
   ══════════════════════════════════ -->
 
   <div class="event-session">
-    <div class="event-session-date">Session — 31/05</div>
+    <div class="event-session-date">Session — 06/06</div>
 
     <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-relation">Rencontre des familles · projet avorté</span>
+      </div>
+      <div class="event-body">
+        Alix souhaite organiser une rencontre officielle entre sa famille et celle de Jeremy. Mais le projet tombe rapidement à l'eau : les De Saint-Claire sont absents de Paris ce soir-là.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-police">Service police · enlèvement de Blanche Pichon</span>
+      </div>
+      <div class="event-body">
+        Jeremy prend son service avec Maurice Cointro. En début de soirée, il discute avec <strong class="c-gold">Blanche Pichon</strong>, récemment contactée par un média pour un reportage sur la police parisienne.
+      </div>
+      <div class="event-body">
+        La soirée bascule : Blanche est <strong class="c-red">enlevée en pleine rue</strong> par plusieurs individus avant que Jeremy et Cointro ne puissent intervenir. Jeremy la recroise plus tard — elle a reçu un coup de tesson de bouteille durant l'enlèvement mais affirme aller relativement bien.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-relation">Maxime Rousseau · futur agent de sécurité</span>
+      </div>
+      <div class="event-body">
+        Jeremy rencontre enfin <strong class="c-gold">Maxime Rousseau</strong>, qu'il cherchait à croiser depuis plusieurs jours. Il lui propose de rejoindre son futur service de sécurité. À sa surprise, <strong class="c-green">Maxime accepte.</strong>
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-danger">Groupe militant · Claude identifié · menaces sur la police</span>
+      </div>
+      <div class="event-body">
+        La discussion avec Maxime est interrompue par l'arrivée d'un groupe se réclamant de la gauche militante — les mêmes individus responsables de l'enlèvement de Blanche. Lorsque Maxime tente de sortir son téléphone, <strong class="c-red">l'un des militants brandit une arme à feu.</strong>
+      </div>
+      <div class="event-body">
+        Durant l'échange, Jeremy entend l'un des membres appeler un autre <strong class="c-red">"Claude"</strong> — le nom déjà évoqué dans plusieurs affaires récentes. Le groupe délivre un message clair : ils veulent s'en prendre au commissaire, qu'ils accusent d'avoir nui à la gauche et aux syndicats. Ils déclarent vouloir <strong class="c-red">"faire tomber un policier chaque jour"</strong>. Blanche n'est que le début.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-danger">Accident · Jeremy & Ulysse Leblanc à l'hôpital</span>
+      </div>
+      <div class="event-body">
+        En fin de soirée, Jeremy retrouve Alix, César et Anthéa. Après une sortie en moto, le groupe s'arrête près du commissariat. En traversant la route, Jeremy est <strong class="c-red">violemment percuté par une voiture conduite par Ulysse Leblanc.</strong> Dans la confusion, Ulysse sort de son véhicule et se fait lui-même renverser. Les deux hommes terminent inconscients sur la chaussée.
+      </div>
+      <div class="event-body">
+        La soirée se clôt une nouvelle fois à l'hôpital — Jeremy blessé, Leblanc également. Leur rivalité atteint un nouveau niveau de violence.
+      </div>
+    </div>
+
+  </div>
+  <!-- FIN SESSION 06/06 -->
+
+  <!-- ══════════════════════════════════
+    SESSION 04/06
+  ══════════════════════════════════ -->
+
+  <div class="event-session" style="opacity:0.7">
+    <div class="event-session-date">Session — 04/06</div>
+
+    <div class="event-card">
+      <div class="event-header">
+        <span class="event-theme et-danger">Enlèvements · Alix paniquée & Jean Lefèvre</span>
+      </div>
+      <div class="event-body">
+        La soirée débute par un appel paniqué d'Alix : une série d'enlèvements visant des femmes la convainc qu'elle pourrait être la prochaine cible. Elle se réfugie auprès de son père, <strong class="c-gold">Jean Lefèvre</strong>.
+      </div>
+      <div class="event-body">
+        Jean Lefèvre révèle plusieurs informations troublantes sur la <strong class="c-red">famille Larouge</strong> : ses membres sembleraient beaucoup plus âgés qu'ils n'en ont l'apparence et ne vieilliraient pratiquement pas. À sa demande, Jeremy et Alix ont commencé à se rapprocher des enfants Larouge. Un étrange <strong class="c-gold">"tea time"</strong> doit prochainement avoir lieu pour poursuivre cette enquête discrète.
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-header">
+        <span class="event-theme et-mystere">Ambrose · la livraison mystérieuse persiste</span>
+      </div>
+      <div class="event-body">
+        Alix continue de s'interroger sur la mystérieuse livraison impliquant <strong class="c-gold">Ambrose de Saint-Claire</strong>. Les détails restent flous, mais l'affaire paraît suffisamment importante pour qu'il exige la plus grande discrétion.
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-header">
+        <span class="event-theme et-police">Soirée Projet X · corruption policière & dîner des familles</span>
+      </div>
+      <div class="event-body">
+        Lors de la soirée "Projet X" chez les De Saint-Claire, Alix rapporte les inquiétudes de son père : <strong class="c-red">Jean Lefèvre ne ferait plus confiance à plusieurs membres des forces de l'ordre</strong>, et particulièrement au commissaire, dont le comportement lui semble de plus en plus suspect.
+      </div>
+      <div class="event-body">
+        Alix évoque également son souhait d'organiser un dîner réunissant les différentes familles et proches, pour renforcer certains liens et obtenir des informations sur les affaires en cours.
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-header">
+        <span class="event-theme et-politique">Vautrin · garde du corps assassiné & corruption généralisée</span>
+      </div>
+      <div class="event-body">
+        Olivier Vautrin contacte Jeremy pour lui annoncer qu'un de ses gardes du corps a été assassiné. Selon lui, ce meurtre ne serait que le début d'une série d'attaques visant son entourage. Un certain <strong class="c-red">Claude</strong> serait directement impliqué, soit comme auteur soit comme commanditaire.
+      </div>
+      <div class="event-body">
+        Vautrin affirme également que la corruption au sein de la police serait bien plus étendue qu'imaginé : <strong class="c-red">pas une seule taupe, mais plusieurs policiers impliqués</strong>. Le nom du commissaire est une nouvelle fois évoqué parmi les suspects.
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-header">
+        <span class="event-theme et-famille">Armand · demande de financement 35 000 €</span>
+      </div>
+      <div class="event-body">
+        Jeremy sollicite son oncle <strong class="c-gold">Armand</strong> pour un financement de <strong class="c-gold">35 000 €</strong> afin de lancer une start-up. Armand lui répond, comme souvent, qu'il devra d'abord en discuter avec son père avant de débloquer quoi que ce soit.
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-header">
+        <span class="event-theme et-police">Policière Pichon · nouvelle connexion troublante</span>
+      </div>
+      <div class="event-body">
+        Jeremy développe des soupçons concernant la policière <strong class="c-gold">Pichon</strong> : elle semble particulièrement proche du fils Larouge, ce qui attire son attention compte tenu des zones d'ombre entourant cette famille. Jeremy apprend également qu'elle est <strong class="c-red">la sœur de César</strong> — l'ami d'Alix impliqué dans la fausse association. Une connexion inattendue dans un réseau déjà complexe.
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-header">
+        <span class="event-theme et-danger">Mort du maire de Paris</span>
+      </div>
+      <div class="event-body">
+        La soirée se conclut par une nouvelle majeure : <strong class="c-red">Jeremy apprend la mort du maire de Paris.</strong> Cet événement bouleverse l'équilibre politique de la ville et risque d'avoir des conséquences importantes sur les enquêtes en cours, les élections municipales et les ambitions de plusieurs personnages influents que Jeremy fréquente désormais.
+      </div>
+    </div>
+
+  </div>
+  <!-- FIN SESSION 04/06 -->
+
+  <!-- ══════════════════════════════════
+    SESSION 31/05
+  ══════════════════════════════════ -->
+
+  <div class="event-session" style="opacity:0.7">
+    <div class="event-session-date">Session — 31/05</div>
+
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-politique">Municipales · premiers résultats</span>
       </div>
@@ -16,16 +162,16 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-relation">Skatepark avec Victoire de Montfaucon</span>
       </div>
       <div class="event-body">
-        Jeremy passe un moment avec <strong class="c-gold">Victoire de Montfaucon</strong> au skatepark. Le rendez-vous se déroule bien jusqu'à ce qu'il la porte sur ses épaules pour essayer son fauteuil roulant. L'expérience se termine dans la Seine, par chance, sans conséquences graves mais avec une certaine gêne.
+        Jeremy passe un moment avec <strong class="c-gold">Victoire de Montfaucon</strong> au skatepark. Le rendez-vous se déroule bien jusqu'à ce qu'il lui fasse essayer son fauteuil roulant. L'expérience se termine dans la Seine — sans conséquences graves mais avec une certaine gêne.
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-danger">Piège d'Ulysse Leblanc · vengeance accomplie</span>
       </div>
@@ -34,7 +180,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-politique">Valmont · les 10 000 € récupérés & la taupe</span>
       </div>
@@ -43,30 +189,30 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-mystere">Mystère Larouge · des enfants qui ne vieillissent pas</span>
       </div>
       <div class="event-body">
-        Alix informe Jeremy d'une découverte troublante concernant la famille Larouge : son père lui a montré une photo des enfants Larouge et qu'il semblerait qu'ils auraient <strong class="c-red">plus de cent ans</strong>. Cependant, ils paraissent à peine avoir la vingtaine sur les photographies. Un nouveau mystère qui attire immédiatement l'attention de Jeremy.
+        Alix informe Jeremy d'une découverte troublante concernant la famille Larouge : certains documents laisseraient entendre que les enfants Larouge auraient <strong class="c-red">plus de cent ans</strong> alors qu'ils paraissent à peine vingt ans sur les photographies. Un nouveau mystère qui attire immédiatement l'attention de Jeremy.
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-famille">Ambrose · une surprise mystérieuse</span>
       </div>
       <div class="event-body">
-        Alix confie à Jeremy qu'<strong class="c-gold">Ambrose de Saint-Claire</strong> lui a donné rendez-vous et prépare une mystérieuse surprise dont il attend encore la livraison. Il a demandé à Alix de n'en parler à personne, ce éveille les soupçons de Jeremy.
+        Alix confie à Jeremy qu'<strong class="c-gold">Ambrose de Saint-Claire</strong> lui a donné rendez-vous et prépare une mystérieuse surprise dont il attend encore la livraison. Il a demandé à Alix de n'en parler à personne — ce qui renforce les soupçons de Jeremy.
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
-        <span class="event-theme et-relation">Fin de soirée chez Anthéa</span>
+        <span class="event-theme et-relation">Soirée chez Anthéa · manipulation par habitude</span>
       </div>
       <div class="event-body">
-        La soirée se termine chez <strong class="c-gold">Anthéa</strong>, une amie d'Alix. Jeremy et Alix s'amusent à lui faire croire qu'Alix traverse une période particulièrement difficile, poursuivant leur habitude de manipuler leur entourage pour leur propre divertissement.
+        La soirée se termine chez <strong class="c-gold">Anthéa</strong>, une amie d'Alix. Jeremy et Alix s'amusent à lui faire croire qu'Alix traverse une période particulièrement difficile — poursuivant leur habitude de manipuler leur entourage pour leur propre divertissement.
       </div>
     </div>
 
@@ -80,12 +226,12 @@
   <div class="event-session" style="opacity:0.7">
     <div class="event-session-date">Session — 29/05</div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-police">Affaire Botola · drogue & débordement</span>
       </div>
       <div class="event-body">
-        En service avec Ragnar et Cointreau, la patrouille est mobilisée sur une affaire sensible : <strong class="c-gold">Botola Aboulhassane</strong>, candidat à la mairie de Paris, est recherché après la découverte d'une importante quantité de cocaïne à son domicile. Il est trouvé sur place et conduit au commissariat.
+        En service avec Ragnar et Cointro, la patrouille est mobilisée sur une affaire sensible : <strong class="c-gold">Botola Aboulhassane</strong>, candidat à la mairie de Paris, est recherché après la découverte d'une importante quantité de cocaïne à son domicile. Il est trouvé sur place et conduit au commissariat.
       </div>
       <div class="event-body">
         Botola nie toute implication et affirme que la drogue a été placée chez lui pour le compromettre politiquement. L'interrogatoire n'aboutit à rien. <strong class="c-red">Ragnar perd son sang-froid et frappe le suspect.</strong> Botola doit être pris en charge médicalement.
@@ -95,7 +241,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-police">Affaire Montclair · interrogatoire Mortecouille</span>
       </div>
@@ -107,7 +253,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-danger">Appel de Fifi · affaire Leblanc</span>
       </div>
@@ -116,19 +262,19 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-police">Opération à Évry · Sabri Kelma interpellé</span>
       </div>
       <div class="event-body">
-        Après son service, Jeremy rejoint Alix puis répond à un appel de Cointreau signalant une opération à Évry. Sur place, les policiers croisent <strong class="c-gold">Sabri Kelma</strong> qui prend immédiatement la fuite en voiture. Course-poursuite, puis interpellation.
+        Après son service, Jeremy rejoint Alix puis répond à un appel de Cointro signalant une opération à Évry. Sur place, les policiers croisent <strong class="c-gold">Sabri Kelma</strong> qui prend immédiatement la fuite en voiture. Course-poursuite, puis interpellation.
       </div>
       <div class="event-body">
         Au commissariat, Sabri est interrogé sur les deux dossiers : Botola l'a désigné comme pouvant avoir caché la cocaïne, et les enquêteurs l'interrogent aussi sur Léo Montclair. Sabri affirme que Léo fréquentait des individus dangereux et évoque <strong class="c-red">la famille Nakache</strong>. Aucune preuve concrète — les deux enquêtes restent dans l'impasse.
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-relation">Soirée au Paradise · parenthèse familiale</span>
       </div>
@@ -144,22 +290,22 @@
     SESSION 28/05
   ══════════════════════════════════ -->
 
-  <div class="event-session" data-session-old="true" style="opacity:0.7">
+  <div class="event-session" style="opacity:0.7">
     <div class="event-session-date">Session — 28/05</div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-police">Police · infiltration ratée</span>
       </div>
       <div class="event-body">
-        En service avec Maurice Cointreau, Jeremy reçoit un appel de <strong class="c-gold">Mme de Montfaucon</strong> l'invitant au meeting politique d'<strong class="c-gold">Huguette Les Yeux Verts</strong>. Par paranoïa ou opportunisme, Jeremy affirme à Cointreau que le rassemblement pourrait être une couverture terroriste. Les deux policiers s'y rendent en civil.
+        En service avec Maurice Cointro, Jeremy reçoit un appel de <strong class="c-gold">Mme de Montfaucon</strong> l'invitant au meeting politique d'<strong class="c-gold">Huguette Les Yeux Verts</strong>. Par paranoïa ou opportunisme, Jeremy affirme à Cointro que le rassemblement pourrait être une couverture terroriste. Les deux policiers s'y rendent en civil.
       </div>
       <div class="event-body">
-        Cointreau constate évidemment qu'il n'y a rien de suspect. Jeremy tente de se justifier en expliquant qu'on lui avait parlé d'un <em>"shooting"</em> et qu'il avait compris qu'il s'agissait de tirs à l'arme à feu plutôt que d'une séance photo. <strong class="c-red">Son image d'agent imprévisible et peu fiable se renforce.</strong>
+        Cointro constate évidemment qu'il n'y a rien de suspect. Jeremy tente de se justifier en expliquant qu'on lui avait parlé d'un <em>"shooting"</em> et qu'il avait compris qu'il s'agissait de tirs à l'arme à feu plutôt que d'une séance photo. <strong class="c-red">Son image d'agent imprévisible et peu fiable se renforce.</strong>
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-danger">Tournage Vautrin — désastre & litige</span>
       </div>
@@ -171,7 +317,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-famille">Kung-fu & escroquerie · Palais de Jade</span>
       </div>
@@ -190,7 +336,7 @@
     SESSION 25/05
   ══════════════════════════════════ -->
 
-  <div class="event-session" data-session-old="true" style="opacity:0.7">
+  <div class="event-session" style="opacity:0.7">
     <div class="event-session-date">Session — 25/05</div>
 
     <div class="event-card">
@@ -227,7 +373,7 @@
     SESSION 22/05
   ══════════════════════════════════ -->
 
-  <div class="event-session" data-session-old="true" style="opacity:0.5">
+  <div class="event-session" style="opacity:0.5">
     <div class="event-session-date">Session — 22/05</div>
 
     <div class="event-card">
@@ -235,7 +381,7 @@
         <span class="event-theme et-police">Police</span>
       </div>
       <div class="event-body">
-        Première journée officielle de Jeremy comme stagiaire <strong class="c-red">non payé</strong>. Patrouille avec Cointreau et Ragnar. Interrogatoire de Sabri Kelma (attaques incendiaires / Tour Eiffel). Découverte d'un cadavre à la Chapelle expiatoire — guidés par une chatte. Victime : le majordome de Mme Philomène Larouge (styliste disparue), se faisait appeler "M. Denolo". Audition de Ludovic Deschamps qui devait retrouver la victime sur place.
+        Première journée officielle de Jeremy comme stagiaire <strong class="c-red">non payé</strong>. Patrouille avec Cointro et Ragnar. Interrogatoire de Sabri Kelma (attaques incendiaires / Tour Eiffel). Découverte d'un cadavre à la Chapelle expiatoire — guidés par une chatte. Victime : le majordome de Mme Philomène Larouge (styliste disparue), se faisait appeler "M. Denolo". Audition de Ludovic Deschamps qui devait retrouver la victime sur place.
       </div>
     </div>
 

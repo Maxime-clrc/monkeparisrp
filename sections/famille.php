@@ -30,7 +30,7 @@
         <div>
           <div class="rn">Adrien De Saint-Claire</div>
           <div class="rr">Cousin · à l'origine de la candidature police</div>
-          <div class="rd">C'est lui qui a proposé le nom de Jeremy à Maurice Cointreau pour lui donner une occupation. A participé au plan contre Ulysse Leblanc le 25/05.</div>
+          <div class="rd">C'est lui qui a proposé le nom de Jeremy à Maurice Cointro pour lui donner une occupation. A participé au plan contre Ulysse Leblanc le 25/05.</div>
         </div>
         <span class="rs rs-c">Neutre</span>
       </div>

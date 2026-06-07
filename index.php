@@ -29,7 +29,9 @@
 <script src="js/quetes.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/timeline_collapse.js"></script>
+<script src="js/collapse.js"></script>
 <script src="js/events_collapse.js"></script>
+<script src="js/tensions_collapse.js"></script>
 <script src="js/sevenwands_easter.js"></script>
 </body>
 </html>
