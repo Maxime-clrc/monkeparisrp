@@ -1,11 +1,90 @@
 <div class="sec" id="events">Récents évènements</div>
 
   <!-- ══════════════════════════════════
-    SESSION 06/06
+    SESSION 07/06
   ══════════════════════════════════ -->
 
   <div class="event-session">
-    <div class="event-session-date">Session — 06/06</div>
+    <div class="event-session-date">Session — 07/06</div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-police">FTG-FTC · commissaire indifférent & fusillade</span>
+      </div>
+      <div class="event-body">
+        Jeremy informe le commissaire des menaces proférées par les militants du <strong class="c-red">FTG-FTC</strong>. Celui-ci balaie ses inquiétudes d'un revers de main, assurant qu'il ne s'agit de rien de sérieux. En intervention plus tard, Jeremy reçoit un appel de <strong class="c-gold">Blanche Pichon</strong> depuis l'hôpital : une <strong class="c-red">fusillade a éclaté sous le pont de la Concorde</strong> entre la police et les membres du FTG-FTC. Blanche a été blessée, mais les deux assaillants ont été neutralisés.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-mystere">Tea time Larouge · Cointreau conseille d'enquêter</span>
+      </div>
+      <div class="event-body">
+        Jeremy évoque son prochain rendez-vous autour d'un thé avec <strong class="c-gold">Nancy Larouge</strong>. Maurice Cointreau lui conseille d'en profiter pour enquêter discrètement sur la famille, dont les zones d'ombre se multiplient.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-famille">Clothilde · faux profil pour tester Ragnar</span>
+      </div>
+      <div class="event-body">
+        Jeremy retrouve Clothilde, qu'il n'avait pas vue depuis quelque temps. Elle met en place un <strong class="c-gold">faux profil sur une application de rencontre</strong> afin de tester la fidélité de Ragnar.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-danger">Alix vole 500 000 € à Valmont</span>
+      </div>
+      <div class="event-body">
+        Alix appelle Jeremy en urgence et lui demande de la rejoindre discrètement à l'appartement de Blanche. Sur place, Alix et César lui montrent plusieurs sacs remplis de <strong class="c-red">500 000 € en liquide</strong> appartenant à Monsieur Valmont — des subventions qu'il distribuait à plusieurs entreprises lors d'une tournée. Profitant d'un moment d'inattention au Paradise, Alix s'est emparée des fonds.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-danger">Jean-Claude Blanchard · Leblanc commanditaire de meurtre</span>
+      </div>
+      <div class="event-body">
+        Jeremy rencontre discrètement <strong class="c-gold">Jean-Claude Blanchard</strong>, qu'il a chargé d'infiltrer le cercle proche d'Ulysse Leblanc. Blanchard lui révèle une information capitale : <strong class="c-red">Claude Garnier</strong> — membre du FTG-FTC recherché pour meurtre — n'aurait pas agi seul. Le véritable commanditaire serait <strong class="c-red">Ulysse Leblanc lui-même.</strong>
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-danger">Incendie du Paradise · preuves effacées</span>
+      </div>
+      <div class="event-body">
+        Le Paradise est victime d'un <strong class="c-red">incendie</strong> peu après le vol des 500 000 €. Si l'établissement contenait des éléments pouvant relier le vol à ses auteurs, ils ont probablement disparu dans les flammes. Coïncidence ou opération de nettoyage ?
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-mystere">Révélations sur les Larouge · Capétiens, poupées de cire & salle secrète</span>
+      </div>
+      <div class="event-body">
+        Jeremy, Alix et César rencontrent <strong class="c-gold">Danie</strong>, employée de la famille Larouge. Elle leur décrit une pièce secrète dans l'une des propriétés : une <strong class="c-red">immense salle avec des poupées de cire géantes</strong>, une grande table centrale et des rangées de sièges comme pour accueillir un public.
+      </div>
+      <div class="event-body">
+        Un ancien article de journal du <strong class="c-red">XIXe siècle</strong> aurait été retrouvé avec une photographie de Philomène Larouge — son apparence serait identique à aujourd'hui. Plus troublant encore : son véritable nom de famille serait <strong class="c-red">Capet</strong>, la reliant potentiellement à l'ancienne dynastie des Capétiens. Nancy Larouge parlerait régulièrement de ses <em>"poupées"</em> pour désigner certaines personnes qu'elle chercherait à transformer en véritables poupées.
+      </div>
+      <div class="event-body">
+        Le groupe élabore un <strong class="c-gold">plan d'infiltration</strong> de la demeure des Larouge pour photographier la salle secrète et découvrir la vérité.
+      </div>
+    </div>
+
+  </div>
+  <!-- FIN SESSION 07/06 -->
+
+  <!-- ══════════════════════════════════
+    SESSION 05/06
+  ══════════════════════════════════ -->
+
+  <div class="event-session" style="opacity:0.7">
+    <div class="event-session-date">Session — 05/06</div>
 
     <div class="event-card" data-updated="true">
       <div class="event-header">
@@ -62,7 +141,7 @@
     </div>
 
   </div>
-  <!-- FIN SESSION 06/06 -->
+  <!-- FIN SESSION 05/06 -->
 
   <!-- ══════════════════════════════════
     SESSION 04/06

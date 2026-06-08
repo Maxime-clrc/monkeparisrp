@@ -48,8 +48,8 @@
         <div class="rav ra-g">PL</div>
         <div>
           <div class="rn">Philomène Larouge — famille Larouge</div>
-          <div class="rr">Figure influente du stylisme · portée disparue · mystère surnaturel</div>
-          <div class="rd">Personnalité du stylisme parisien disparue. Le majordome (Monsieur Denolo) retrouvé mort à la Chapelle expiatoire lui était lié. Le 31/05, Alix révèle une découverte troublante : <strong class="c-red">des documents suggèrent que les enfants Larouge auraient plus de cent ans</strong>, alors qu'ils paraissent à peine vingt sur les photographies. Piste surnaturelle ou manipulation à grande échelle ?</div>
+          <div class="rr">Immortelle · vrai nom Capet · salle secrète · disparue</div>
+          <div class="rd">Un article du <strong class="c-red">XIXe siècle</strong> retrouvé le 07/06 confirme une apparence identique à aujourd'hui. Son véritable nom serait <strong class="c-red">Capet</strong> — lien potentiel avec la dynastie des Capétiens. La propriété Larouge contiendrait une salle secrète avec des <strong class="c-red">poupées de cire géantes</strong>, une grande table et des sièges disposés comme pour un public. Nancy Larouge parlerait de "transformer" certaines personnes en poupées. Le majordome Denolo retrouvé mort à la Chapelle expiatoire lui était lié. <strong class="c-red">Plan d'infiltration en préparation.</strong></div>
         </div>
         <span class="rs pnj-important">Mystère central</span>
       </div>
@@ -128,21 +128,21 @@
       <div class="rc" data-updated="true">
         <div class="rav ra-r">Pc</div>
         <div>
-          <div class="rn">Policière Pichon</div>
-          <div class="rr">Policière · proche du fils Larouge · sœur de César · enlevée</div>
-          <div class="rd">Proche du fils Larouge et sœur de César (fraude associative). Le 06/06, elle est <strong class="c-red">enlevée en pleine rue</strong> par le groupe militant de Claude, puis relâchée avec un coup de tesson de bouteille. Cible à la fois du groupe armé et des soupçons de Jeremy.</div>
+          <div class="rn">Blanche Pichon</div>
+          <div class="rr">Policière · sœur de César · blessée en service</div>
+          <div class="rd">Proche du fils Larouge et sœur de César (fraude associative). Enlevée par le FTG-FTC le 05/06, relâchée avec un coup de tesson. Le 07/06, <strong class="c-red">blessée lors de la fusillade sous le pont de la Concorde</strong> entre la police et les membres du FTG-FTC. Les deux assaillants ont été neutralisés.</div>
         </div>
-        <span class="rs pnj-important">Suspecte & victime</span>
+        <span class="rs pnj-important">Suspecte & blessée</span>
       </div>
 
       <div class="rc" data-updated="true">
         <div class="rav ra-r">Cx</div>
         <div>
-          <div class="rn">Claude — chef du groupe militant</div>
-          <div class="rr">Première apparition directe · groupe armé de gauche</div>
-          <div class="rd">D'abord évoqué par Vautrin comme suspect dans un assassinat (04/06), Claude est <strong class="c-red">confirmé présent en personne le 06/06</strong> : Jeremy entend son nom dans le groupe militant qui a enlevé Pichon. Le groupe menace de "faire tomber un policier chaque jour" et cible directement le commissaire Broussard.</div>
+          <div class="rn">Claude Garnier — chef du FTG-FTC</div>
+          <div class="rr">Militant armé · recherché pour meurtre · commandité par Leblanc</div>
+          <div class="rd">D'abord évoqué anonymement par Vautrin (04/06), puis entendu en personne (05/06) lors de l'enlèvement de Pichon. Le 07/06, Blanchard révèle son identité complète : <strong class="c-red">Claude Garnier</strong>, membre du FTG-FTC recherché pour meurtre — mais le véritable commanditaire serait Ulysse Leblanc. Neutralisé lors de la fusillade du pont de la Concorde (07/06).</div>
         </div>
-        <span class="rs pnj-important">Ennemi confirmé</span>
+        <span class="rs pnj-important">Neutralisé</span>
       </div>
     </div>
 
@@ -205,10 +205,45 @@
         <div class="rav ra-g">MxR</div>
         <div>
           <div class="rn">Maxime Rousseau</div>
-          <div class="rr">Futur agent de sécurité · recruté le 06/06</div>
-          <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 06/06, il lui propose de rejoindre son futur service de sécurité — Maxime accepte à la surprise de Jeremy. Leur discussion est interrompue par l'arrivée du groupe militant de Claude.</div>
+          <div class="rr">Futur agent de sécurité · recruté le 05/06</div>
+          <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 05/06, il lui propose de rejoindre son futur service de sécurité — Maxime accepte à la surprise de Jeremy. Leur discussion est interrompue par l'arrivée du groupe militant de Claude.</div>
         </div>
         <span class="rs pnj-surveiller">Allié recruté</span>
+      </div>
+
+      <div class="rc" data-updated="true">
+        <div class="rav ra-n">JCB</div>
+        <div>
+          <div class="rn">Jean-Claude Blanchard</div>
+          <div class="rr">Informateur · infiltré dans le cercle Leblanc</div>
+          <div class="rd">Chargé par Jeremy d'infiltrer le cercle proche d'Ulysse Leblanc. Le 07/06, il révèle que <strong class="c-red">Leblanc serait le véritable commanditaire du meurtre attribué à Claude Garnier</strong>. Fiabilité à confirmer — information non vérifiable officiellement sans exposer Jeremy.</div>
+        </div>
+        <span class="rs pnj-surveiller">Informateur</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="g2">
+    <div>
+      <div class="rc" data-updated="true">
+        <div class="rav ra-g">Da</div>
+        <div>
+          <div class="rn">Danie</div>
+          <div class="rr">Employée de la famille Larouge · source d'informations</div>
+          <div class="rd">Rencontrée le 07/06 par Jeremy, Alix et César. Elle décrit une <strong class="c-red">pièce secrète</strong> dans la propriété Larouge : salle immense avec poupées de cire géantes, grande table centrale et rangées de sièges. Confirme les rumeurs sur l'immortalité de Philomène et révèle le comportement étrange de Nancy qui parlerait de "transformer" certaines personnes. Source précieuse pour le plan d'infiltration.</div>
+        </div>
+        <span class="rs pnj-important">Source clé</span>
+      </div>
+    </div>
+    <div>
+      <div class="rc" data-updated="true">
+        <div class="rav ra-g">Na</div>
+        <div>
+          <div class="rn">Nancy Larouge</div>
+          <div class="rr">Membre de la famille Larouge · comportement menaçant</div>
+          <div class="rd">Un "tea time" avec elle est prévu à court terme à l'initiative de Jeremy. Selon Danie (07/06), elle parlerait régulièrement de ses <em>"poupées"</em> pour désigner des personnes qui attirent son attention et chercherait à les <strong class="c-red">transformer en véritables poupées</strong>. Jeremy est invité chez elle — ce qui l'expose directement.</div>
+        </div>
+        <span class="rs pnj-important">Danger potentiel</span>
       </div>
     </div>
   </div>

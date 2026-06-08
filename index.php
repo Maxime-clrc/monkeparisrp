@@ -27,6 +27,7 @@
 <script src="js/mobile_expand.js"></script>
 <script src="js/audio_player.js"></script>
 <script src="js/quetes.js"></script>
+<script src="js/lore.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/timeline_collapse.js"></script>
 <script src="js/collapse.js"></script>

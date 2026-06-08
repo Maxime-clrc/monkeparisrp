@@ -67,11 +67,19 @@
       Vautrin mentionne un individu nommé Claude, potentiellement impliqué dans le meurtre de son garde du corps. Identité et motivations inconnues — mais le nom circule dans des sphères dangereuses.
     </div>
     <div class="warn">
-      <strong>Groupe militant & menace sur la police — 06/06</strong><br>
+      <strong>Groupe militant & menace sur la police — 05/06</strong><br>
       Un groupe armé se réclamant de la gauche militante a enlevé Blanche Pichon et menacé de "faire tomber un policier chaque jour", ciblant directement le commissaire. L'un des membres répond au nom de <strong>Claude</strong> — première apparition directe. Jeremy est désormais témoin et cible potentielle en tant que policier.
     </div>
     <div class="warn">
-      <strong>Leblanc — escalade physique incontrôlable — 06/06</strong><br>
-      La rivalité avec Ulysse Leblanc atteint un seuil critique : il percute volontairement Jeremy en voiture, se renverse lui-même. Deux hospitalisations. Cette guerre n'a plus de garde-fou — la prochaine confrontation pourrait être fatale pour l'un ou l'autre.
+      <strong>Leblanc — commanditaire de meurtre — 05/06→07/06</strong><br>
+      La rivalité avec Leblanc dépasse désormais le cadre personnel : selon l'informateur Blanchard, Leblanc serait le commanditaire du meurtre attribué à Claude Garnier (FTG-FTC). Jeremy détient une information explosive — mais sans preuve formelle et sans pouvoir la transmettre officiellement sans exposer ses propres activités illicites.
+    </div>
+    <div class="warn">
+      <strong>500 000 € volés à Valmont · incendie du Paradise — 07/06</strong><br>
+      Alix a volé 500 000 € de subventions à Valmont. Jeremy est complice par omission. L'incendie du Paradise a probablement effacé les traces — mais Valmont va chercher son argent. Quand il découvrira le vol, les conséquences seront imprévisibles pour Alix et Jeremy.
+    </div>
+    <div class="warn">
+      <strong>Mystère Larouge — poupées & Capétiens — 07/06</strong><br>
+      Les révélations de Danie font basculer l'affaire Larouge dans le surnaturel : salle secrète, poupées de cire géantes, immortalité photographiée, vrai nom Capet. Nancy Larouge "transformerait" des personnes qui attirent son attention. Jeremy et Alix ont prévu d'infiltrer la propriété — une opération à très haut risque.
     </div>
   </div>

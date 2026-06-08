@@ -77,8 +77,8 @@
       <div class="rav ra-r">UL</div>
       <div>
         <div class="rn">Ulysse Leblanc</div>
-        <div class="rr">Antagoniste · escalade physique permanente</div>
-        <div class="rd">Après l'affaire du plat piégé (25/05) et le piège humiliant tendu à Jeremy (31/05), la rivalité atteint un nouveau seuil le 06/06 : Leblanc percute Jeremy en voiture près du commissariat. Dans la confusion, il se fait lui-même renverser. <strong class="c-red">Les deux hommes terminent à l'hôpital inconscients.</strong> Une guerre sans fin qui s'emballe.</div>
+        <div class="rr">Antagoniste · commanditaire de meurtre · guerre totale</div>
+        <div class="rd">Rivalité escaladée jusqu'à la violence physique (accident de voiture, 05/06). Le 07/06, l'informateur Jean-Claude Blanchard révèle que Leblanc serait le <strong class="c-red">véritable commanditaire du meurtre attribué à Claude Garnier</strong> (FTG-FTC). Leblanc cumule désormais : guerre personnelle avec Jeremy ET implication dans des affaires criminelles majeures.</div>
       </div>
       <span class="rs rs-h">Guerre totale</span>
     </div>
@@ -97,8 +97,8 @@
       <div class="rav ra-b">Va</div>
       <div>
         <div class="rn">Monsieur Valmont</div>
-        <div class="rr">Candidat municipal · intermédiaire du paiement</div>
-        <div class="rd">C'est par lui que Jeremy récupère les 10 000 € du tournage Vautrin le 31/05. Au cours de la discussion, Valmont glisse qu'une <strong class="c-red">taupe pourrait se trouver au sein de la police parisienne</strong>. Information à double tranchant pour Jeremy qui est lui-même stagiaire.</div>
+        <div class="rr">Candidat municipal · victime indirecte du vol · relation tendue</div>
+        <div class="rd">Intermédiaire du paiement des 10 000 € (31/05). Le 07/06, Alix lui vole <strong class="c-red">500 000 €</strong> en liquide lors d'une tournée de distribution de subventions au Paradise. Jeremy est complice par omission. L'incendie du Paradise peu après a probablement effacé les preuves. <strong class="c-red">Valmont ignore encore qui l'a volé.</strong></div>
       </div>
       <span class="rs rs-c">Contact politique</span>
     </div>
@@ -118,7 +118,7 @@
       <div>
         <div class="rn">Policière Pichon</div>
         <div class="rr">Policière · proche du fils Larouge · sœur de César · victime</div>
-        <div class="rd">Proche du fils Larouge et sœur de César (impliqué dans la fraude associative). Le 06/06, elle est enlevée en pleine rue par le groupe militant de Claude, puis relâchée avec un coup de tesson de bouteille. Une cible qui concentre plusieurs fils d'enquête dangereux.</div>
+        <div class="rd">Proche du fils Larouge et sœur de César (impliqué dans la fraude associative). Le 05/06, elle est enlevée en pleine rue par le groupe militant de Claude, puis relâchée avec un coup de tesson de bouteille. Une cible qui concentre plusieurs fils d'enquête dangereux.</div>
       </div>
       <span class="rs rs-h">Suspecte & victime</span>
     </div>
@@ -127,9 +127,19 @@
       <div class="rav ra-g">MR</div>
       <div>
         <div class="rn">Maxime Rousseau</div>
-        <div class="rr">Futur agent de sécurité · recruté le 06/06</div>
-        <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 06/06, il lui propose de rejoindre son futur service de sécurité — Maxime accepte. Leur discussion est interrompue par l'arrivée du groupe militant armé se réclamant de Claude.</div>
+        <div class="rr">Futur agent de sécurité · recruté le 05/06</div>
+        <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 05/06, il lui propose de rejoindre son futur service de sécurité — Maxime accepte. Leur discussion est interrompue par l'arrivée du groupe militant armé se réclamant de Claude.</div>
       </div>
       <span class="rs rs-c">Allié recruté</span>
+    </div>
+
+    <div class="rc">
+      <div class="rav ra-n">JCB</div>
+      <div>
+        <div class="rn">Jean-Claude Blanchard</div>
+        <div class="rr">Informateur infiltré · cercle Leblanc</div>
+        <div class="rd">Chargé par Jeremy d'infiltrer le cercle proche d'Ulysse Leblanc. Le 07/06, il lui révèle l'information capitale : <strong class="c-red">Leblanc serait le commanditaire du meurtre attribué à Claude Garnier</strong> du FTG-FTC. Collaborateur discret dont la fiabilité reste à confirmer.</div>
+      </div>
+      <span class="rs rs-c">Informateur</span>
     </div>
   </div>
