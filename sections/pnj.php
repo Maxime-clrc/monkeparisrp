@@ -129,7 +129,7 @@
         <div class="rav ra-r">Pc</div>
         <div>
           <div class="rn">Blanche Pichon</div>
-          <div class="rr">Policière · sœur de César · blessée en service</div>
+          <div class="rr">Policière · cousine de César · blessée en service</div>
           <div class="rd">Proche du fils Larouge et sœur de César (fraude associative). Enlevée par le FTG-FTC le 05/06, relâchée avec un coup de tesson. Le 07/06, <strong class="c-red">blessée lors de la fusillade sous le pont de la Concorde</strong> entre la police et les membres du FTG-FTC. Les deux assaillants ont été neutralisés.</div>
         </div>
         <span class="rs pnj-important">Suspecte & blessée</span>
@@ -138,7 +138,7 @@
       <div class="rc" data-updated="true">
         <div class="rav ra-r">Cx</div>
         <div>
-          <div class="rn">Claude Garnier — chef du FTG-FTC</div>
+          <div class="rn">Claude Garnier — FTG-FTC</div>
           <div class="rr">Militant armé · recherché pour meurtre · commandité par Leblanc</div>
           <div class="rd">D'abord évoqué anonymement par Vautrin (04/06), puis entendu en personne (05/06) lors de l'enlèvement de Pichon. Le 07/06, Blanchard révèle son identité complète : <strong class="c-red">Claude Garnier</strong>, membre du FTG-FTC recherché pour meurtre — mais le véritable commanditaire serait Ulysse Leblanc. Neutralisé lors de la fusillade du pont de la Concorde (07/06).</div>
         </div>
@@ -205,8 +205,8 @@
         <div class="rav ra-g">MxR</div>
         <div>
           <div class="rn">Maxime Rousseau</div>
-          <div class="rr">Futur agent de sécurité · recruté le 05/06</div>
-          <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 05/06, il lui propose de rejoindre son futur service de sécurité — Maxime accepte à la surprise de Jeremy. Leur discussion est interrompue par l'arrivée du groupe militant de Claude.</div>
+          <div class="rr">Futur agent de sécurité personnel · recruté le 05/06</div>
+          <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 05/06, il lui propose d'assurer sa sécurité si besoin contre rémunération — Maxime accepte à la surprise de Jeremy. Leur discussion est interrompue par l'arrivée du groupe militant de Claude.</div>
         </div>
         <span class="rs pnj-surveiller">Allié recruté</span>
       </div>
