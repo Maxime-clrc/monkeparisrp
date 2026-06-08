@@ -66,7 +66,7 @@
       detail: 'Alix et Mr Vautrin ont tout les deux été menacé de mort'
     },
     {
-      statut: 'en-cours',
+      statut: 'termine',
       titre: 'Faire passer le message de Claude au comissaire',
       detail: 'Après avoir été manacé par des opposants à la droite et à la police, un certain Claude et ses accolites demandent à Jeremy de faire passer le message au comissaire : "Blanche n\'est que la première sur la liste"'
     },
