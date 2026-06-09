@@ -6,201 +6,206 @@
 <title>Seven Wands Lore — Maquette</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#13110f; --bg2:#1b1714; --panel:#211c18; --panel2:#2a231d;
-  --ink:#ece3d4; --ink-soft:#b8ac98; --muted:#8a7e6c;
-  --gold:#c9a24b; --gold-soft:#e3c878; --line:#3a3027;
-  --accent:#7c5cff;
-  --r:14px; --maxw:1180px;
-  --house:#c9a24b;
+  --bg:#100d0b; --bg2:#19140f; --panel:#1f1812; --panel2:#291f16;
+  --ink:#ece0c9; --ink-soft:#bcae92; --muted:#8c7d63;
+  --gold:#c9a24b; --gold-soft:#ecd089; --gold-deep:#8a6d24; --line:#3d3122;
+  --accent:#8a6bff; --accent-soft:#b9a6ff;
+  --ok:#5a8f3f; --warn:#d6a428; --bad:#b5462f;
+  --r:13px; --maxw:1200px;
 }
 [data-theme="light"]{
-  --bg:#efe7d6; --bg2:#e6dcc6; --panel:#f6efe1; --panel2:#efe6d2;
-  --ink:#241d14; --ink-soft:#5c5040; --muted:#857a66;
-  --gold:#9c7818; --gold-soft:#b8902a; --line:#d6c9ad;
+  --bg:#e9dcc0; --bg2:#e0d1b0; --panel:#f4ebd6; --panel2:#ece0c4;
+  --ink:#2a2014; --ink-soft:#5c5040; --muted:#8a7c63;
+  --gold:#8f6d18; --gold-soft:#a9831f; --gold-deep:#6e5212; --line:#cdbb95;
+  --accent:#6b4ad6; --accent-soft:#6b4ad6;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(124,92,255,.10), transparent 60%),
-    radial-gradient(900px 500px at -10% 20%, rgba(201,162,75,.08), transparent 55%),
+    radial-gradient(1300px 700px at 82% -12%, rgba(138,107,255,.12), transparent 60%),
+    radial-gradient(1000px 600px at -12% 18%, rgba(201,162,75,.10), transparent 55%),
     var(--bg);
   color:var(--ink);
-  font-family:'EB Garamond',Garamond,serif;
-  font-size:18px; line-height:1.6;
-  min-height:100vh;
+  font-family:'EB Garamond',Garamond,serif;font-size:18px;line-height:1.62;min-height:100vh;
   transition:background .4s,color .4s;
 }
-body::before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E");
-  mix-blend-mode:overlay;
-}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+  mix-blend-mode:overlay}
 .wrap{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding:0 22px}
 a{color:inherit;text-decoration:none;cursor:pointer}
 
-/* ---------- DEMO TOOLBAR ---------- */
-.demobar{
-  position:sticky;top:0;z-index:50;
-  background:linear-gradient(90deg,var(--accent),#9b7bff);
-  color:#fff;font-family:'EB Garamond',serif;font-size:13.5px;
-  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
-  padding:8px 18px;letter-spacing:.02em;
-}
-.demobar b{font-weight:600}
+/* ornement divider */
+.orn{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold);margin:6px 0 22px;opacity:.8}
+.orn::before,.orn::after{content:"";height:1px;width:90px;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn::after{background:linear-gradient(270deg,transparent,var(--gold))}
+.orn span{font-size:15px}
+
+/* DEMO TOOLBAR */
+.demobar{position:sticky;top:0;z-index:60;background:linear-gradient(90deg,#5b3fa6,#8a6bff);color:#fff;
+  font-size:13.5px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:8px 18px;letter-spacing:.02em}
+.demobar b{font-weight:600;font-family:'Cinzel'}
 .demobar .seg{display:flex;gap:8px;align-items:center;margin-left:auto}
-.demobar button{
-  font:inherit;border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.12);
-  color:#fff;border-radius:999px;padding:4px 12px;cursor:pointer;transition:.2s
-}
+.demobar button{font:inherit;border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.12);color:#fff;border-radius:999px;padding:4px 12px;cursor:pointer;transition:.2s}
 .demobar button:hover{background:rgba(255,255,255,.25)}
-.demobar button.on{background:#fff;color:var(--accent);font-weight:600}
+.demobar button.on{background:#fff;color:#6b4ad6;font-weight:600}
 
-/* ---------- HEADER / BANNER ---------- */
-.banner{
-  position:relative;overflow:hidden;border-bottom:1px solid var(--line);
-  background:
-    linear-gradient(180deg,rgba(0,0,0,.0),rgba(0,0,0,.25)),
-    radial-gradient(700px 300px at 75% 30%, rgba(124,92,255,.18), transparent 60%),
-    linear-gradient(120deg,var(--bg2),var(--bg));
-}
-.banner .wrap{display:flex;align-items:center;justify-content:space-between;gap:26px;padding-top:30px;padding-bottom:30px}
-.brand{display:flex;align-items:center;gap:16px}
-.sigil{
-  width:62px;height:62px;flex:none;border-radius:50%;
-  border:1.5px solid var(--gold);
-  display:grid;place-items:center;color:var(--gold);
-  font-family:'Cinzel',serif;font-size:26px;font-weight:700;
-  background:radial-gradient(circle at 50% 30%, rgba(201,162,75,.18), transparent 70%);
-  box-shadow:0 0 32px rgba(201,162,75,.18) inset;
-}
-.brand h1{
-  font-family:'Cinzel',serif;font-weight:700;letter-spacing:.06em;
-  font-size:30px;line-height:1;color:var(--ink)
-}
-.brand .sub{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-soft);font-size:17px;margin-top:5px;letter-spacing:.02em}
+/* BANNER */
+.banner{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.3)),radial-gradient(800px 320px at 75% 20%,rgba(138,107,255,.2),transparent 60%),linear-gradient(120deg,var(--bg2),var(--bg))}
+.banner::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(circle at 50% 120%,rgba(201,162,75,.12),transparent 50%)}
+.banner .wrap{display:flex;align-items:center;justify-content:space-between;gap:26px;padding:28px 22px}
+.brand{display:flex;align-items:center;gap:18px}
+.sigil{width:70px;height:70px;flex:none;border-radius:50%;border:2px solid var(--gold);position:relative;
+  display:grid;place-items:center;color:var(--gold);font-family:'Cinzel Decorative',serif;font-size:28px;font-weight:700;
+  background:radial-gradient(circle at 50% 32%,rgba(201,162,75,.22),transparent 70%);box-shadow:0 0 38px rgba(201,162,75,.22) inset,0 0 18px rgba(201,162,75,.12)}
+.sigil::before,.sigil::after{content:"";position:absolute;border-radius:50%;border:1px solid var(--gold-deep)}
+.sigil::before{inset:5px;opacity:.6}
+.sigil::after{inset:-7px;opacity:.3}
+.brand h1{font-family:'Cinzel Decorative','Cinzel',serif;font-weight:700;letter-spacing:.04em;font-size:33px;line-height:1;
+  background:linear-gradient(180deg,var(--gold-soft),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand .sub{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold-soft);font-size:17px;margin-top:6px;letter-spacing:.03em;opacity:.85}
 
-/* account card */
-.account{
-  min-width:248px;background:var(--panel);border:1px solid var(--line);
-  border-radius:var(--r);padding:14px 16px;
-  box-shadow:0 10px 30px rgba(0,0,0,.25)
-}
-.account .lbl{font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);margin-bottom:8px;font-family:'Cinzel',serif}
-.account input{
-  width:100%;background:var(--bg);border:1px solid var(--line);color:var(--ink);
-  border-radius:8px;padding:8px 10px;font:inherit;font-size:15px;margin-bottom:8px
-}
+.account{min-width:250px;background:linear-gradient(180deg,var(--panel),var(--bg2));border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;box-shadow:0 12px 34px rgba(0,0,0,.3),0 0 0 1px rgba(201,162,75,.05)}
+.account .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:9px;font-family:'Cinzel'}
+.account input{width:100%;background:var(--bg);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:8px 10px;font:inherit;font-size:15px;margin-bottom:8px}
 .account .row{display:flex;gap:8px;align-items:center}
-.btn{
-  font-family:'Cinzel',serif;font-size:13px;letter-spacing:.05em;
-  border:1px solid var(--gold);color:var(--bg);background:var(--gold);
-  padding:8px 14px;border-radius:8px;cursor:pointer;transition:.2s;font-weight:600
-}
-.btn:hover{background:var(--gold-soft);border-color:var(--gold-soft)}
-.btn.ghost{background:transparent;color:var(--gold)}
+.btn{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.05em;border:1px solid var(--gold);color:#1a140d;
+  background:linear-gradient(180deg,var(--gold-soft),var(--gold));padding:8px 14px;border-radius:8px;cursor:pointer;transition:.2s;font-weight:600}
+.btn:hover{filter:brightness(1.08);box-shadow:0 4px 16px rgba(201,162,75,.3)}
+.btn.ghost{background:transparent;color:var(--gold);box-shadow:none}
 .btn.ghost:hover{background:rgba(201,162,75,.12)}
 .account.connected{display:flex;align-items:center;gap:12px}
-.avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--gold));flex:none;display:grid;place-items:center;color:#fff;font-family:'Cinzel';font-size:16px}
+.avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--gold));flex:none;display:grid;place-items:center;color:#fff;font-family:'Cinzel';font-size:17px}
 .account.connected .meta b{display:block;font-size:16px}
 .account.connected .meta span{font-size:13px;color:var(--muted)}
 
-/* ---------- NAV ---------- */
-nav.menu{
-  position:sticky;top:37px;z-index:40;
-  background:color-mix(in srgb,var(--bg) 88%, transparent);
-  backdrop-filter:blur(8px);
-  border-bottom:1px solid var(--line);
-}
-nav.menu .wrap{display:flex;gap:4px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px;align-items:center}
-nav.menu a{
-  font-family:'Cinzel',serif;font-size:13px;letter-spacing:.04em;
-  padding:9px 14px;border-radius:8px;color:var(--ink-soft);transition:.2s;position:relative
-}
-nav.menu a:hover{color:var(--ink);background:var(--panel)}
-nav.menu a.active{color:var(--gold);background:var(--panel)}
-nav.menu a.active::after{content:"";position:absolute;left:14px;right:14px;bottom:2px;height:2px;background:var(--gold);border-radius:2px}
+/* NAV */
+nav.menu{position:sticky;top:37px;z-index:50;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.menu .wrap{display:flex;gap:3px;flex-wrap:wrap;padding:8px 22px;align-items:center}
+nav.menu a.nav{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.04em;padding:9px 13px;border-radius:8px;color:var(--ink-soft);transition:.2s;position:relative}
+nav.menu a.nav:hover{color:var(--ink);background:var(--panel)}
+nav.menu a.nav.active{color:var(--gold)}
+nav.menu a.nav.active::after{content:"";position:absolute;left:13px;right:13px;bottom:3px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);border-radius:2px}
 
-/* ---------- PAGES ---------- */
-.page{display:none;padding:38px 0 80px;animation:fade .4s ease}
+/* search */
+.searchbox{position:relative;margin-left:6px}
+.searchbox input{background:var(--bg);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:7px 14px 7px 32px;font:inherit;font-size:14px;width:150px;transition:.25s}
+.searchbox input:focus{outline:none;border-color:var(--gold);width:210px}
+.searchbox .si{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px;pointer-events:none}
+.results{position:absolute;top:42px;left:0;right:0;background:var(--panel);border:1px solid var(--line);border-radius:10px;box-shadow:0 18px 40px rgba(0,0,0,.5);overflow:hidden;display:none;z-index:30;min-width:240px}
+.results.open{display:block}
+.results .grp{font-family:'Cinzel';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:8px 14px 4px}
+.results a{display:flex;gap:9px;align-items:center;padding:8px 14px;font-size:15px;transition:.15s}
+.results a:hover{background:var(--panel2);color:var(--gold)}
+.results .ic{width:20px;text-align:center;opacity:.7}
+.results .none{padding:12px 14px;color:var(--muted);font-style:italic;font-size:14px}
+
+/* PAGES */
+.page{display:none;padding:36px 0 80px;animation:fade .4s ease}
 .page.show{display:block}
 @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.kicker{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
-.h-sec{font-family:'Cinzel',serif;font-weight:600;font-size:30px;color:var(--ink);margin-bottom:6px;letter-spacing:.02em}
-.lead{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--ink-soft);max-width:760px;margin-bottom:26px;font-style:italic}
+.kicker{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.h-sec{font-family:'Cinzel Decorative','Cinzel',serif;font-weight:700;font-size:32px;color:var(--ink);margin-bottom:6px;letter-spacing:.02em}
+.lead{font-family:'Cormorant Garamond',serif;font-size:21px;color:var(--ink-soft);max-width:780px;margin-bottom:24px;font-style:italic}
 
-/* home content cards */
-.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:10px}
-.info{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px}
-.info h3{font-family:'Cinzel',serif;font-size:16px;color:var(--gold);margin-bottom:8px;letter-spacing:.03em}
-.info p{font-size:16px;color:var(--ink-soft)}
+/* HOME */
+.home-hero{text-align:center;padding:30px 0 10px}
+.home-hero h2{font-family:'Cinzel Decorative','Cinzel',serif;font-size:44px;line-height:1.1;
+  background:linear-gradient(180deg,var(--gold-soft),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:10px}
+.home-hero p{font-family:'Cormorant Garamond';font-style:italic;font-size:22px;color:var(--ink-soft);max-width:620px;margin:0 auto}
+.home-cols{display:grid;grid-template-columns:1.4fr 1fr;gap:26px;margin-top:14px}
+@media(max-width:840px){.home-cols{grid-template-columns:1fr}}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:520px){.info-grid{grid-template-columns:1fr}}
+.info{background:linear-gradient(180deg,var(--panel),var(--bg2));border:1px solid var(--line);border-radius:var(--r);padding:20px;position:relative;overflow:hidden}
+.info::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.5}
+.info h3{font-family:'Cinzel',serif;font-size:15px;color:var(--gold);margin-bottom:7px;letter-spacing:.03em}
+.info p{font-size:15px;color:var(--ink-soft)}
 
-/* ---------- GRID OF CHARACTERS ---------- */
-.house-band{display:flex;align-items:center;gap:16px;margin:6px 0 24px}
-.house-crest{width:48px;height:48px;border-radius:10px;display:grid;place-items:center;font-family:'Cinzel';font-weight:700;color:#fff;font-size:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:18px}
-.card{
-  background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
-  overflow:hidden;cursor:pointer;transition:.25s;position:relative
-}
-.card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 16px 36px rgba(0,0,0,.35)}
-.card .ph{
-  aspect-ratio:3/4;display:grid;place-items:center;
-  background:linear-gradient(160deg,var(--panel2),var(--bg2));
-  color:var(--muted);font-family:'Cinzel';font-size:13px;letter-spacing:.1em;position:relative
-}
-.card .ph .mono{font-size:40px;opacity:.5;font-family:'Cinzel'}
-.card .cap{padding:12px 14px}
+/* WHATS NEW feed */
+.feed{background:linear-gradient(180deg,var(--panel),var(--bg2));border:1px solid var(--line);border-radius:var(--r);padding:20px 22px}
+.feed h3{font-family:'Cinzel',serif;font-size:16px;color:var(--gold);letter-spacing:.04em;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.feed .sb{font-family:'Cormorant Garamond';font-style:italic;color:var(--muted);font-size:15px;margin-bottom:14px}
+.fitem{display:flex;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line);cursor:pointer;transition:.15s}
+.fitem:last-child{border-bottom:none}
+.fitem:hover{padding-left:5px}
+.fitem .fic{width:34px;height:34px;flex:none;border-radius:9px;display:grid;place-items:center;font-size:16px;background:var(--panel2);border:1px solid var(--line)}
+.fitem .ft b{font-family:'Cinzel';font-size:14px;display:block}
+.fitem .ft span{font-size:13px;color:var(--muted)}
+.fitem .fd{margin-left:auto;font-size:12px;color:var(--gold);font-family:'Cinzel';white-space:nowrap}
+
+/* grids */
+.house-band{display:flex;align-items:center;gap:16px;margin:6px 0 14px}
+.house-crest{width:52px;height:52px;border-radius:12px;display:grid;place-items:center;font-family:'Cinzel Decorative';font-weight:700;color:#fff;font-size:22px;box-shadow:0 6px 18px rgba(0,0,0,.4)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(195px,1fr));gap:18px}
+.card{background:linear-gradient(180deg,var(--panel),var(--bg2));border:1px solid var(--line);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:.25s;position:relative}
+.card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 18px 40px rgba(0,0,0,.4)}
+.card .ph{aspect-ratio:3/4;display:grid;place-items:center;background:linear-gradient(160deg,var(--panel2),var(--bg2));color:var(--muted);position:relative}
+.card .ph .mono{font-size:42px;opacity:.5;font-family:'Cinzel Decorative'}
+.card .ph::after{content:"";position:absolute;inset:7px;border:1px solid var(--gold-deep);border-radius:8px;opacity:.25;pointer-events:none}
+.card .cap{padding:12px 14px;position:relative}
 .card .cap b{font-family:'Cinzel',serif;font-size:15px;display:block;letter-spacing:.02em}
 .card .cap span{font-size:13px;color:var(--muted)}
-/* spoiler sur une carte : on floute la vignette + overlay propre, jamais de débordement */
-.card .ph .spoilcover{position:absolute;inset:0;display:none;place-items:center;flex-direction:column;gap:6px;
-  background:rgba(124,92,255,.14);backdrop-filter:blur(7px);border:1px dashed var(--accent);
-  font-family:'Cinzel';font-size:11px;letter-spacing:.08em;color:var(--ink);text-align:center;padding:10px;cursor:pointer}
+/* status pastille */
+.statusdot{position:absolute;top:10px;left:10px;display:flex;align-items:center;gap:6px;background:rgba(0,0,0,.55);backdrop-filter:blur(4px);padding:4px 9px;border-radius:999px;font-family:'Cinzel';font-size:10px;letter-spacing:.08em;color:#fff;z-index:2}
+.statusdot i{width:8px;height:8px;border-radius:50%;display:block}
+.st-actif i{background:var(--ok)} .st-disparu i{background:var(--warn)} .st-decede i{background:var(--bad)}
+.st-decede{opacity:.95}
+
+/* spoiler cards */
+.card .ph .spoilcover{position:absolute;inset:0;display:none;place-items:center;flex-direction:column;gap:6px;background:rgba(138,107,255,.16);backdrop-filter:blur(7px);border:1px dashed var(--accent);font-family:'Cinzel';font-size:11px;letter-spacing:.08em;color:var(--ink);text-align:center;padding:10px;cursor:pointer;z-index:3}
 .card .ph .spoilcover .lock{font-size:22px}
 [data-spoiler="on"] .card.is-spoiler:not(.revealed) .ph .mono{filter:blur(6px);opacity:.3}
 [data-spoiler="on"] .card.is-spoiler:not(.revealed) .ph .spoilcover{display:grid}
 [data-spoiler="on"] .card.is-spoiler:not(.revealed) .cap b{filter:blur(5px)}
 
-/* ---------- CHARACTER PAGE ---------- */
-.charhead{display:grid;grid-template-columns:300px 1fr;gap:30px;align-items:start;margin-bottom:14px}
-@media(max-width:760px){.charhead{grid-template-columns:1fr}.banner .wrap{flex-direction:column;align-items:flex-start}.account{width:100%}}
-.portrait{aspect-ratio:3/4;border-radius:var(--r);border:1px solid var(--line);background:linear-gradient(160deg,var(--panel2),var(--bg2));display:grid;place-items:center;color:var(--muted);font-family:'Cinzel';position:relative;overflow:hidden}
-.portrait .mono{font-size:78px;opacity:.45}
-.char-name{font-family:'Cinzel',serif;font-weight:700;font-size:40px;line-height:1.05;letter-spacing:.02em}
-.char-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;color:var(--gold-soft);margin:6px 0 16px}
+/* filters */
+.afilters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.af{font-family:'Cinzel';font-size:12px;letter-spacing:.04em;border:1px solid var(--line);background:var(--panel);color:var(--ink-soft);padding:7px 14px;border-radius:999px;cursor:pointer;transition:.2s}
+.af:hover{border-color:var(--gold);color:var(--ink)}
+.af.on{background:linear-gradient(180deg,var(--gold-soft),var(--gold));color:#1a140d;border-color:var(--gold);font-weight:600}
 
-/* structured block frame */
-.block{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;margin-top:20px;position:relative}
+/* CHARACTER */
+.charhead{display:grid;grid-template-columns:300px 1fr;gap:30px;align-items:start;margin-bottom:6px}
+@media(max-width:760px){.charhead{grid-template-columns:1fr}.banner .wrap{flex-direction:column;align-items:flex-start}.account{width:100%}}
+.portrait{aspect-ratio:3/4;border-radius:var(--r);border:1px solid var(--line);background:linear-gradient(160deg,var(--panel2),var(--bg2));display:grid;place-items:center;color:var(--muted);font-family:'Cinzel Decorative';position:relative;overflow:hidden}
+.portrait::after{content:"";position:absolute;inset:9px;border:1px solid var(--gold-deep);border-radius:9px;opacity:.3}
+.portrait .mono{font-size:80px;opacity:.45}
+.char-name{font-family:'Cinzel Decorative','Cinzel',serif;font-weight:700;font-size:40px;line-height:1.05;letter-spacing:.02em}
+.char-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;color:var(--gold-soft);margin:6px 0 12px}
+.statusline{display:inline-flex;align-items:center;gap:8px;font-family:'Cinzel';font-size:12px;letter-spacing:.08em;padding:5px 13px;border-radius:999px;border:1px solid var(--line);background:var(--panel)}
+.statusline i{width:9px;height:9px;border-radius:50%}
+
+/* blocks */
+.block{background:linear-gradient(180deg,var(--panel),var(--bg2));border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;margin-top:20px;position:relative}
 .block.struct{border-left:3px solid var(--gold)}
 .block.rich{border-left:3px solid var(--accent)}
-.block-label{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.block-label{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .block-label .pill{font-size:9px;padding:2px 8px;border-radius:999px;letter-spacing:.12em}
-.pill.fix{background:rgba(201,162,75,.16);color:var(--gold-soft);border:1px solid var(--gold)}
-.pill.free{background:rgba(124,92,255,.18);color:#b9a6ff;border:1px solid var(--accent)}
+.pill.fix{background:rgba(201,162,75,.16);color:var(--gold-soft);border:1px solid var(--gold-deep)}
+.pill.free{background:rgba(138,107,255,.18);color:var(--accent-soft);border:1px solid var(--accent)}
 
-/* identity table */
 .idy{display:grid;grid-template-columns:1fr 1fr;gap:2px 30px}
 @media(max-width:600px){.idy{grid-template-columns:1fr}}
 .idy .r{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
 .idy .r .k{color:var(--muted);font-size:15px}
 .idy .r .v{color:var(--ink);text-align:right}
 
-/* traits chips */
 .chips{display:flex;flex-wrap:wrap;gap:9px}
 .chip{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.04em;padding:6px 13px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--ink-soft)}
 
-/* gauges */
 .gauge{margin-bottom:13px}
 .gauge .gl{display:flex;justify-content:space-between;font-size:14px;margin-bottom:5px}
 .gauge .gl span:last-child{color:var(--gold);font-family:'Cinzel';font-size:13px}
 .bar{height:9px;border-radius:99px;background:var(--bg);overflow:hidden;border:1px solid var(--line)}
-.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-soft));border-radius:99px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold-deep),var(--gold-soft));border-radius:99px}
 
-/* relation cards */
 .rels{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
 .rel{background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:14px;position:relative}
 .rel .top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
@@ -210,106 +215,92 @@ nav.menu a.active::after{content:"";position:absolute;left:14px;right:14px;botto
 .rel p{font-size:14px;color:var(--ink-soft);margin-bottom:8px}
 .rel .st{font-family:'Cinzel';font-size:10px;letter-spacing:.08em;padding:3px 9px;border-radius:6px;background:var(--panel2);color:var(--gold-soft);border:1px solid var(--line)}
 
-/* timeline */
 .tl{position:relative;padding-left:26px}
 .tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
 .tl .ev{position:relative;margin-bottom:20px}
-.tl .ev::before{content:"";position:absolute;left:-23px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--panel)}
+.tl .ev::before{content:"";position:absolute;left:-23px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--panel),0 0 10px var(--gold)}
 .tl .date{font-family:'Cinzel';font-size:12px;letter-spacing:.1em;color:var(--gold);margin-bottom:3px}
 .tl .ev b{font-size:17px;display:block;margin-bottom:3px}
 .tl .ev p{font-size:15px;color:var(--ink-soft)}
 
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+.gal .gi{aspect-ratio:1;border-radius:10px;border:1px solid var(--line);background:linear-gradient(160deg,var(--panel2),var(--bg2));display:grid;place-items:center;font-size:30px;color:var(--muted);cursor:pointer;position:relative;overflow:hidden;transition:.2s}
+.gal .gi:hover{border-color:var(--gold);transform:scale(1.03)}
+.gal .gi .cap{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:4px 7px;font-family:'Cinzel'}
+
 .rich-body p{margin-bottom:13px;font-size:17px}
 .rich-body h4{font-family:'Cinzel';font-size:15px;color:var(--gold);margin:14px 0 6px;letter-spacing:.04em}
+/* auto-link */
+.xlink{color:var(--gold-soft);border-bottom:1px dotted var(--gold-deep);cursor:pointer;transition:.15s}
+.xlink:hover{color:var(--gold);border-bottom-style:solid}
+.xlink::before{content:"✦ ";font-size:10px;opacity:.7}
 
-/* ---------- SPOILER ---------- */
+/* SPOILER inline */
 .spoiler{position:relative;border-radius:8px;transition:.3s}
-[data-spoiler="on"] .spoiler:not(.revealed){
-  filter:blur(7px);user-select:none;cursor:pointer
-}
-[data-spoiler="on"] .spoiler:not(.revealed)::after{
-  content:"🔒 Spoiler — cliquez pour révéler";
-  position:absolute;inset:0;display:grid;place-items:center;
-  filter:blur(0);font-family:'Cinzel';font-size:12px;letter-spacing:.06em;
-  color:var(--ink);background:rgba(124,92,255,.12);border:1px dashed var(--accent);border-radius:8px
-}
+[data-spoiler="on"] .spoiler:not(.revealed){filter:blur(7px);user-select:none;cursor:pointer}
+[data-spoiler="on"] .spoiler:not(.revealed)::after{content:"🔒 Spoiler — cliquez pour révéler";position:absolute;inset:0;display:grid;place-items:center;filter:blur(0);font-family:'Cinzel';font-size:12px;letter-spacing:.06em;color:var(--ink);background:rgba(138,107,255,.12);border:1px dashed var(--accent);border-radius:8px}
 
-/* ---------- EDIT MODE ---------- */
+/* EDIT MODE */
 body[data-mode="edit"] .editable{outline:1.5px dashed var(--accent);outline-offset:4px;position:relative;border-radius:6px}
-body[data-mode="edit"] .editable::before{
-  content:"✎ "attr(data-edit);position:absolute;top:-11px;left:8px;
-  background:var(--accent);color:#fff;font-family:'EB Garamond';font-size:11px;
-  padding:1px 9px;border-radius:5px;letter-spacing:.03em;z-index:3
-}
+body[data-mode="edit"] .editable::before{content:"✎ "attr(data-edit);position:absolute;top:-11px;left:8px;background:var(--accent);color:#fff;font-family:'EB Garamond';font-size:11px;padding:1px 9px;border-radius:5px;letter-spacing:.03em;z-index:3}
 .editonly{display:none}
 body[data-mode="edit"] .editonly{display:flex}
-.addbtn{font-family:'Cinzel';font-size:11px;letter-spacing:.06em;border:1px dashed var(--accent);background:rgba(124,92,255,.1);color:#b9a6ff;padding:6px 12px;border-radius:8px;cursor:pointer;align-items:center;gap:6px;margin-top:12px}
+.addbtn{font-family:'Cinzel';font-size:11px;letter-spacing:.06em;border:1px dashed var(--accent);background:rgba(138,107,255,.1);color:var(--accent-soft);padding:6px 12px;border-radius:8px;cursor:pointer;align-items:center;gap:6px;margin-top:12px}
 .spoilchk{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);margin-top:10px}
 .spoilchk input{accent-color:var(--accent)}
+.histbtn{margin-left:auto;font-family:'Cinzel';font-size:11px;letter-spacing:.05em;border:1px solid var(--line);background:var(--panel);color:var(--ink-soft);padding:5px 12px;border-radius:999px;cursor:pointer;transition:.2s}
+.histbtn:hover{border-color:var(--gold);color:var(--gold)}
+.treebtn{margin-left:auto;font-family:'Cinzel';font-size:11px;letter-spacing:.05em;border:1px solid var(--accent);background:rgba(138,107,255,.12);color:var(--accent-soft);padding:5px 12px;border-radius:999px;cursor:pointer;transition:.2s}
+.treebtn:hover{background:rgba(138,107,255,.25)}
 
-/* ---------- INVESTIGATION BOARD ---------- */
-.board{position:relative;background:
-  repeating-linear-gradient(45deg,rgba(0,0,0,.04) 0 2px,transparent 2px 22px),
-  linear-gradient(160deg,#3a2c1e,#2a2017);
-  border:10px solid #5a4326;border-radius:10px;height:520px;overflow:hidden;
-  box-shadow:inset 0 0 80px rgba(0,0,0,.5)}
+/* BOARD */
+.board{position:relative;background:repeating-linear-gradient(45deg,rgba(0,0,0,.04) 0 2px,transparent 2px 22px),linear-gradient(160deg,#3a2c1e,#2a2017);border:10px solid #5a4326;border-radius:10px;height:520px;overflow:hidden;box-shadow:inset 0 0 80px rgba(0,0,0,.5)}
 [data-theme="light"] .board{background:linear-gradient(160deg,#d8c39a,#c8af82);border-color:#9c7a45}
 .pin{position:absolute;background:#f4ecd8;color:#241d14;border-radius:3px;padding:10px 12px;width:150px;font-size:13px;box-shadow:0 8px 18px rgba(0,0,0,.4);transform:rotate(var(--rot));font-family:'EB Garamond'}
 .pin::before{content:"";position:absolute;top:-7px;left:50%;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff6b6b,#b22)}
 .pin.photo{padding:0;width:120px}
-.pin.photo .pic{aspect-ratio:1;background:linear-gradient(160deg,#5a4a38,#2c2218);display:grid;place-items:center;color:#caa;font-family:'Cinzel';font-size:30px}
+.pin.photo .pic{aspect-ratio:1;background:linear-gradient(160deg,#5a4a38,#2c2218);display:grid;place-items:center;color:#caa;font-family:'Cinzel Decorative';font-size:30px}
 .pin.photo .cp{padding:6px 8px;font-size:12px;font-family:'Cinzel'}
-.thread{position:absolute;height:2px;background:linear-gradient(90deg,#c1453b,#e06);transform-origin:left center;opacity:.8}
 
-footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--muted);font-size:14px}
-
-/* archives filters */
-.afilters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
-.af{font-family:'Cinzel';font-size:12px;letter-spacing:.04em;border:1px solid var(--line);background:var(--panel);color:var(--ink-soft);padding:7px 14px;border-radius:999px;cursor:pointer;transition:.2s}
-.af:hover{border-color:var(--gold);color:var(--ink)}
-.af.on{background:var(--gold);color:var(--bg);border-color:var(--gold);font-weight:600}
-
-/* tree button */
-.treebtn{margin-left:auto;font-family:'Cinzel';font-size:11px;letter-spacing:.05em;border:1px solid var(--accent);background:rgba(124,92,255,.12);color:#b9a6ff;padding:5px 12px;border-radius:999px;cursor:pointer;transition:.2s}
-.treebtn:hover{background:rgba(124,92,255,.25)}
-
-/* modal shared */
+/* MODALS */
 .modal{display:none;position:fixed;inset:0;z-index:100;align-items:center;justify-content:center;padding:24px}
 .modal.open{display:flex;animation:fade .3s}
-.modal-bg{position:absolute;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(3px)}
+.modal-bg{position:absolute;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(3px)}
 .modal-x{position:absolute;top:14px;right:16px;z-index:3;background:none;border:none;color:var(--ink);font-size:20px;cursor:pointer;opacity:.7}
 .modal-x:hover{opacity:1}
-
-/* parchment reader */
-.parchment{position:relative;z-index:2;max-width:600px;width:100%;max-height:86vh;overflow:auto;border-radius:8px;
-  background:linear-gradient(135deg,#efe2c4,#e4d3a8);color:#2c2113;
-  padding:34px 38px;box-shadow:0 30px 80px rgba(0,0,0,.6);
-  border:1px solid #c9b27e}
-.parchment::before{content:"";position:absolute;inset:0;border-radius:8px;pointer-events:none;
-  box-shadow:inset 0 0 60px rgba(120,90,40,.35);background:
-  radial-gradient(circle at 20% 10%, rgba(150,110,50,.12), transparent 40%)}
+.parchment{position:relative;z-index:2;max-width:600px;width:100%;max-height:86vh;overflow:auto;border-radius:8px;background:linear-gradient(135deg,#efe2c4,#e4d3a8);color:#2c2113;padding:38px 40px;box-shadow:0 30px 80px rgba(0,0,0,.6);border:1px solid #c9b27e}
+.parchment::before{content:"";position:absolute;inset:0;border-radius:8px;pointer-events:none;box-shadow:inset 0 0 70px rgba(120,90,40,.4);background:radial-gradient(circle at 20% 10%,rgba(150,110,50,.14),transparent 42%)}
 .parch-inner{position:relative}
-.parchment h3{font-family:'Cinzel';text-align:center;font-size:22px;margin-bottom:18px;color:#5a3d18;letter-spacing:.05em}
-.parchment p{font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1.7;margin-bottom:14px;text-align:justify}
-.firstletter::first-letter{font-family:'Cinzel';font-size:46px;float:left;line-height:.8;padding:4px 8px 0 0;color:#7a3b1a}
+.parchment h3{font-family:'Cinzel Decorative','Cinzel';text-align:center;font-size:24px;margin-bottom:6px;color:#5a3d18;letter-spacing:.04em}
+.parchment .pornament{text-align:center;color:#8a6a32;margin-bottom:18px;font-size:15px}
+.parchment p{font-family:'Cormorant Garamond',serif;font-size:19px;line-height:1.72;margin-bottom:14px;text-align:justify}
+.firstletter::first-letter{font-family:'Cinzel Decorative';font-size:52px;float:left;line-height:.78;padding:6px 9px 0 0;color:#7a3b1a}
 .parchment .note{color:#7a6a4a}
-
-/* relations tree */
 .treebox{position:relative;z-index:2;max-width:820px;width:100%;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
 .tree-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
 .tree-head b{font-family:'Cinzel';font-size:16px;color:var(--gold)}
 .tree-svg{width:100%;height:auto;background:radial-gradient(circle at 50% 45%,var(--panel2),var(--bg2));border:1px solid var(--line);border-radius:10px}
 .tnode{cursor:grab}
-.tnode circle{transition:.2s}
 .tnode:hover circle{stroke:var(--gold)}
+/* history modal */
+.histbox{position:relative;z-index:2;max-width:560px;width:100%;max-height:84vh;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.histbox h3{font-family:'Cinzel';font-size:18px;color:var(--gold);margin-bottom:4px}
+.histbox .sb{font-style:italic;color:var(--muted);font-size:15px;margin-bottom:16px;font-family:'Cormorant Garamond'}
+.hrow{display:flex;gap:13px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.hrow .hav{width:32px;height:32px;flex:none;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--gold));display:grid;place-items:center;color:#fff;font-family:'Cinzel';font-size:13px}
+.hrow .ht b{font-family:'Cinzel';font-size:14px}
+.hrow .ht .meta{font-size:13px;color:var(--muted)}
+.hrow .ht p{font-size:14px;color:var(--ink-soft);margin-top:3px}
+.hrow .revert{margin-left:auto;align-self:center;font-family:'Cinzel';font-size:10px;letter-spacing:.06em;border:1px solid var(--line);background:var(--bg);color:var(--ink-soft);padding:5px 10px;border-radius:7px;cursor:pointer;white-space:nowrap}
+.hrow .revert:hover{border-color:var(--gold);color:var(--gold)}
 
-footer .wrap{display:block}
+footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--muted);font-size:14px;position:relative;z-index:1}
 .note{font-family:'Cormorant Garamond';font-style:italic;color:var(--muted);font-size:15px;margin-top:6px}
 </style>
 </head>
 <body data-mode="view">
 
-<!-- DEMO TOOLBAR (n'existe pas sur le vrai site) -->
 <div class="demobar">
   <b>◆ MAQUETTE</b> <span style="opacity:.85">aperçu non fonctionnel — pour recueillir des avis</span>
   <div class="seg">
@@ -319,119 +310,117 @@ footer .wrap{display:block}
   </div>
 </div>
 
-<!-- BANNER -->
 <header class="banner">
   <div class="wrap">
     <div class="brand">
       <div class="sigil">7</div>
       <div>
         <h1>SEVEN WANDS</h1>
-        <div class="sub">Chroniques d'Havengard — le lore de la communauté</div>
+        <div class="sub">Chroniques d'Havengard — le grimoire de la communauté</div>
       </div>
     </div>
-    <!-- account: visitor -->
     <div class="account" id="accVisitor">
-      <div class="lbl">Connexion</div>
+      <div class="lbl">⚜ Connexion</div>
       <input placeholder="Identifiant" />
       <input placeholder="Mot de passe" type="password" />
-      <div class="row">
-        <button class="btn" onclick="toggleRole()">Entrer</button>
-        <span style="font-size:12px;color:var(--muted)">Accès sur demande</span>
-      </div>
+      <div class="row"><button class="btn" onclick="toggleRole()">Entrer</button><span style="font-size:12px;color:var(--muted)">Accès sur demande</span></div>
     </div>
-    <!-- account: connected -->
     <div class="account connected" id="accConnected" style="display:none">
       <div class="avatar">T</div>
-      <div class="meta">
-        <b>Toto</b>
-        <span>Éditeur — 2 pages autorisées</span>
-        <a onclick="toggleRole()" style="font-size:12px;color:var(--gold)">Se déconnecter</a>
-      </div>
+      <div class="meta"><b>Toto</b><span>Éditeur — 2 pages autorisées</span><a onclick="toggleRole()" style="font-size:12px;color:var(--gold)">Se déconnecter</a></div>
     </div>
   </div>
 </header>
 
-<!-- NAV -->
 <nav class="menu">
   <div class="wrap" id="navwrap">
-    <a data-go="home" class="active">Accueil</a>
-    <a data-go="faction" data-house="Lombrasier">Lombrasier</a>
-    <a data-go="faction" data-house="Rongebois">Rongebois</a>
-    <a data-go="faction" data-house="Briselune">Briselune</a>
-    <a data-go="faction" data-house="Vervenin">Vervenin</a>
-    <a data-go="faction" data-house="Autres">Autres personnages</a>
-    <a data-go="havengard">Lieux</a>
-    <a data-go="archives">Archives magiques</a>
-    <a data-go="board" class="editorlink" style="display:none">Tableau d'enquête</a>
+    <a class="nav active" data-go="home">Accueil</a>
+    <a class="nav" data-go="faction" data-house="Lombrasier">Lombrasier</a>
+    <a class="nav" data-go="faction" data-house="Rongebois">Rongebois</a>
+    <a class="nav" data-go="faction" data-house="Briselune">Briselune</a>
+    <a class="nav" data-go="faction" data-house="Vervenin">Vervenin</a>
+    <a class="nav" data-go="faction" data-house="Autres">Autres</a>
+    <a class="nav" data-go="havengard">Lieux</a>
+    <a class="nav" data-go="archives">Archives</a>
+    <a class="nav editorlink" data-go="board" style="display:none">Tableau d'enquête</a>
+    <div class="searchbox">
+      <span class="si">🔍</span>
+      <input id="searchInput" placeholder="Rechercher…" autocomplete="off">
+      <div class="results" id="searchResults"></div>
+    </div>
     <div style="margin-left:auto;display:flex;gap:6px">
-      <button class="btn ghost" id="themeBtn" onclick="toggleTheme()" title="Thème">☾ Sombre</button>
-      <button class="btn ghost" id="spoilBtn" onclick="toggleSpoiler()" title="Mode spoiler">🔒 Spoilers ON</button>
+      <button class="btn ghost" id="themeBtn" onclick="toggleTheme()">☾ Sombre</button>
+      <button class="btn ghost" id="spoilBtn" onclick="toggleSpoiler()">🔒 Spoilers ON</button>
     </div>
   </div>
 </nav>
 
 <main class="wrap">
 
-<!-- ============ HOME ============ -->
+<!-- HOME -->
 <section class="page show" id="page-home">
-  <div class="kicker">Bienvenue</div>
-  <h2 class="h-sec">Le grimoire vivant d'Havengard</h2>
-  <p class="lead">Un wiki tenu par la communauté, où l'on suit le lore, les arcs narratifs et les évènements de chaque personnage du serveur. Cliquez sur une maison dans le menu pour parcourir ses élèves.</p>
-  <div class="info-grid">
-    <div class="info"><h3>Le principe</h3><p>Chaque personnage a sa page : identité, caractère, relations, timeline et récit. Le contenu est écrit et tenu à jour par des éditeurs de la communauté.</p></div>
-    <div class="info"><h3>Le mode spoiler</h3><p>Certains éléments cachent des révélations. Activez le mode spoiler pour les garder floutés, ou désactivez-le pour tout voir. Essayez le bouton 🔒 en haut.</p></div>
-    <div class="info"><h3>Devenir éditeur</h3><p>Les comptes sont créés sur demande. Un éditeur ne peut modifier que les pages qui lui sont confiées. Cliquez « Entrer » pour simuler la vue éditeur.</p></div>
-    <div class="info"><h3>Les quatre maisons</h3><p>Lombrasier, Rongebois, Briselune et Vervenin. Plus une catégorie « Autres personnages » pour les figures hors maison.</p></div>
+  <div class="home-hero">
+    <h2>Le grimoire vivant d'Havengard</h2>
+    <p>Suivez le lore, les arcs et les destins de tous les personnages du serveur, écrits par la communauté.</p>
+  </div>
+  <div class="orn"><span>✦ ⚜ ✦</span></div>
+  <div class="home-cols">
+    <div class="feed">
+      <h3>📜 Quoi de neuf</h3>
+      <div class="sb">Les dernières mises à jour du grimoire</div>
+      <div id="feedlist"></div>
+    </div>
+    <div class="info-grid">
+      <div class="info"><h3>Le principe</h3><p>Chaque personnage a sa page : identité, caractère, relations, timeline et récit, tenus à jour par des éditeurs.</p></div>
+      <div class="info"><h3>Mode spoiler</h3><p>Gardez les révélations floutées, ou dévoilez tout. Essayez le bouton 🔒 en haut.</p></div>
+      <div class="info"><h3>Devenir éditeur</h3><p>Comptes créés sur demande. Cliquez « Entrer » pour simuler la vue éditeur.</p></div>
+      <div class="info"><h3>Les archives</h3><p>Livres, objets, sorts et potions de l'univers, consultables comme in-game.</p></div>
+    </div>
   </div>
 </section>
 
-<!-- ============ FACTION GRID ============ -->
+<!-- FACTION -->
 <section class="page" id="page-faction">
   <div class="kicker" id="fk">Maison</div>
   <div class="house-band">
     <div class="house-crest" id="crest">L</div>
-    <div>
-      <h2 class="h-sec" id="ftitle">Lombrasier</h2>
-      <div style="color:var(--ink-soft);font-style:italic;font-family:'Cormorant Garamond';font-size:19px" id="fdesc">Passionnés, courageux, idéalistes et loyaux.</div>
-    </div>
+    <div><h2 class="h-sec" id="ftitle">Lombrasier</h2><div style="color:var(--ink-soft);font-style:italic;font-family:'Cormorant Garamond';font-size:19px" id="fdesc"></div></div>
   </div>
-  <button class="addbtn editonly" onclick="alert('Maquette : ouvrirait le formulaire de création de personnage.')">+ Ajouter un personnage</button>
-  <div class="grid" id="fgrid" style="margin-top:18px"></div>
+  <button class="addbtn editonly" onclick="alert('Maquette : formulaire de création de personnage.')">+ Ajouter un personnage</button>
+  <div class="grid" id="fgrid" style="margin-top:14px"></div>
 </section>
 
-<!-- ============ CHARACTER ============ -->
+<!-- CHARACTER -->
 <section class="page" id="page-char">
   <a onclick="go('faction')" style="color:var(--gold);font-family:'Cinzel';font-size:12px;letter-spacing:.06em">← Retour à la maison</a>
-  <button id="editBtn2" class="btn ghost editonly" style="float:right" onclick="toggleEdit()">Quitter l'édition</button>
-
+  <button class="btn ghost editonly" style="float:right" onclick="toggleEdit()">Quitter l'édition</button>
   <div class="charhead" style="margin-top:16px">
     <div class="portrait editable" data-edit="Photo"><div class="mono">⚜</div></div>
     <div>
       <div class="kicker">Maison Vervenin</div>
       <div class="char-name editable" data-edit="Nom">Aldwin Serpefroide</div>
-      <div class="char-sub">5e année · Sang-mêlé · Préfet déchu · Havengard</div>
-      <div class="chips" style="margin-top:6px">
-        <span class="chip">Ambitieux</span><span class="chip">Manipulateur</span>
-        <span class="chip">Loyal… en façade</span><span class="chip">Érudit</span>
+      <div class="char-sub">5e année · Sang-mêlé · Préfet déchu</div>
+      <span class="statusline editable" data-edit="Statut"><i style="background:var(--warn)"></i> Disparu</span>
+      <div class="chips" style="margin-top:12px">
+        <span class="chip">Ambitieux</span><span class="chip">Manipulateur</span><span class="chip">Loyal… en façade</span><span class="chip">Érudit</span>
       </div>
     </div>
   </div>
 
-  <!-- IDENTITY -->
   <div class="block struct editable" data-edit="Bloc identité">
-    <div class="block-label">Fiche d'identité <span class="pill fix">forme fixe · contenu libre</span></div>
+    <div class="block-label">Fiche d'identité <span class="pill fix">forme fixe · contenu libre</span>
+      <button class="histbtn" onclick="openHist()">⟲ Historique</button></div>
     <div class="idy">
       <div class="r"><span class="k">Âge</span><span class="v">17 ans</span></div>
       <div class="r"><span class="k">Maison</span><span class="v">Vervenin</span></div>
       <div class="r"><span class="k">Année</span><span class="v">5e année</span></div>
       <div class="r"><span class="k">Nature</span><span class="v">Sorcier (sang-mêlé)</span></div>
-      <div class="r"><span class="k">Statut</span><span class="v spoiler">Espion des Briselune</span></div>
+      <div class="r"><span class="k">Statut RP</span><span class="v spoiler">Espion des Briselune</span></div>
       <div class="r"><span class="k">Baguette</span><span class="v">If & plume de phénix</span></div>
     </div>
     <div class="spoilchk editonly"><input type="checkbox" checked> Marquer ce bloc comme spoiler</div>
   </div>
 
-  <!-- GAUGES -->
   <div class="block struct editable" data-edit="Jauges">
     <div class="block-label">Jauges de caractère <span class="pill fix">forme fixe · contenu libre</span></div>
     <div class="gauge"><div class="gl"><span>Ambition</span><span>88%</span></div><div class="bar"><i style="width:88%"></i></div></div>
@@ -441,49 +430,56 @@ footer .wrap{display:block}
     <button class="addbtn editonly">+ Ajouter une jauge (max 6)</button>
   </div>
 
-  <!-- RELATIONS -->
   <div class="block struct editable" data-edit="Relations">
     <div class="block-label">Relations <span class="pill fix">forme fixe · contenu libre</span>
-      <button class="treebtn" onclick="openTree()">⬡ Arbre des relations</button>
-    </div>
+      <button class="treebtn" onclick="openTree()">⬡ Arbre des relations</button></div>
     <div class="rels">
       <div class="rel"><div class="top"><div class="ava">M</div><div><b>Maïa Briselune</b><div class="lien">Rivale · Briselune</div></div></div><p>Se méfie d'Aldwin depuis l'affaire de la bibliothèque interdite.</p><span class="st">Rivalité</span></div>
-      <div class="rel"><div class="top"><div class="ava">K</div><div><b>Pr. Korvanis</b><div class="lien">Mentor · professeur</div></div></div><p>Le pousse discrètement vers la magie grise. Intentions floues.</p><span class="st">Mentor ambigu</span></div>
+      <div class="rel"><div class="top"><div class="ava">K</div><div><b>Pr. Korvanis</b><div class="lien">Mentor · professeur</div></div></div><p>Le pousse vers la magie grise. Intentions floues.</p><span class="st">Mentor ambigu</span></div>
       <div class="rel spoiler"><div class="top"><div class="ava">?</div><div><b>L'Encapuchonné</b><div class="lien">Contact secret</div></div></div><p>Lui transmet des ordres venus de la Forêt des Brumes.</p><span class="st">Allié caché</span></div>
     </div>
     <button class="addbtn editonly">+ Ajouter une relation</button>
   </div>
 
-  <!-- TIMELINE -->
+  <div class="block struct editable" data-edit="Galerie">
+    <div class="block-label">Galerie <span class="pill fix">forme fixe · captures de moments</span></div>
+    <div class="gal">
+      <div class="gi" onclick="alert('Maquette : visionneuse plein écran.')">🖼<div class="cap">Le duel</div></div>
+      <div class="gi" onclick="alert('Maquette : visionneuse plein écran.')">🖼<div class="cap">Cérémonie</div></div>
+      <div class="gi spoiler">🖼<div class="cap">???</div></div>
+      <div class="gi" onclick="alert('Maquette : visionneuse plein écran.')">🖼<div class="cap">La Réserve</div></div>
+    </div>
+    <button class="addbtn editonly">+ Ajouter une image</button>
+  </div>
+
   <div class="block struct editable" data-edit="Timeline">
     <div class="block-label">Évènements <span class="pill fix">forme fixe · contenu libre</span></div>
     <div class="tl">
       <div class="ev"><div class="date">Session — 21/11</div><b>Le duel du grand hall</b><p>Aldwin défie publiquement un Lombrasier et perd son titre de préfet.</p></div>
       <div class="ev"><div class="date">Session — 14/11</div><b>La bibliothèque interdite</b><p>Surpris par Maïa dans la réserve. Un grimoire disparaît la nuit même.</p></div>
-      <div class="ev spoiler"><div class="date">Session — 08/11</div><b>Le pacte des Brumes</b><p>Aldwin scelle un accord avec une entité de la forêt — révélation majeure.</p></div>
+      <div class="ev spoiler"><div class="date">Session — 08/11</div><b>Le pacte des Brumes</b><p>Aldwin scelle un accord avec une entité de la forêt.</p></div>
     </div>
     <button class="addbtn editonly">+ Ajouter un évènement</button>
   </div>
 
-  <!-- RICH LORE -->
   <div class="block rich editable" data-edit="Lore (libre)">
     <div class="block-label">Lore & arc narratif <span class="pill free">mise en page libre · type Word</span></div>
     <div class="rich-body">
-      <p>Né d'une mère moldue et d'un père issu d'une vieille lignée Vervenin, Aldwin a grandi entre deux mondes qui ne se reconnaissaient pas en lui. Cette dualité a forgé un caractère caméléon, capable de séduire autant que de trahir.</p>
+      <p>Né d'une mère moldue et d'un père issu d'une vieille lignée <span class="xlink" onclick="go('faction','Vervenin')">Vervenin</span>, Aldwin a grandi entre deux mondes. Cette dualité a forgé un caractère caméléon.</p>
       <h4>L'ascension</h4>
-      <p>Arrivé à Havengard, il gravit les échelons de sa maison à une vitesse remarquable, devenant préfet en quatrième année — un exploit rare.</p>
+      <p>Arrivé à <span class="xlink" onclick="go('havengard')">Havengard</span>, il devint préfet en quatrième année — un exploit rare.</p>
       <h4>La chute</h4>
-      <p class="spoiler">Mais son alliance secrète avec une entité de la Forêt des Brumes finit par fissurer le masque. Le duel du grand hall n'était qu'un prétexte : on cherchait à l'écarter avant qu'il n'en sache trop.</p>
+      <p class="spoiler">Son alliance avec une entité de la <span class="xlink">Forêt des Brumes</span> finit par fissurer le masque. Le duel n'était qu'un prétexte pour l'écarter.</p>
     </div>
-    <div class="spoilchk editonly"><input type="checkbox"> Marquer ce bloc comme spoiler · ou utilisez les balises [spoiler] dans le texte</div>
+    <div class="spoilchk editonly"><input type="checkbox"> Marquer ce bloc comme spoiler · ou balises [spoiler] dans le texte</div>
   </div>
 </section>
 
-<!-- ============ HAVENGARD ============ -->
+<!-- LIEUX -->
 <section class="page" id="page-havengard">
   <div class="kicker">Les lieux</div>
   <h2 class="h-sec">Lieux</h2>
-  <p class="lead">Tous les lieux qui façonnent les histoires du serveur, regroupés par zone — de l'école d'Havengard aux rues de Los Santos.</p>
+  <p class="lead">Tous les lieux du serveur, regroupés par zone — de l'école d'Havengard aux rues de Los Santos.</p>
   <div class="afilters" id="placefilters">
     <button class="af on" data-z="all">Toutes les zones</button>
     <button class="af" data-z="Havengard">Havengard</button>
@@ -492,41 +488,28 @@ footer .wrap{display:block}
     <button class="af" data-z="Autres">Autres</button>
   </div>
   <button class="addbtn editonly" style="margin-top:6px">+ Ajouter un lieu</button>
-  <div class="grid" id="placegrid" style="margin-top:18px"></div>
+  <div class="grid" id="placegrid" style="margin-top:14px"></div>
 </section>
 
-<!-- ============ BOARD ============ -->
-<section class="page" id="page-board">
-  <div class="kicker">Outil éditeur</div>
-  <h2 class="h-sec">Mon tableau d'enquête</h2>
-  <p class="lead">Un mur personnel où disposer photos et notes, et tirer des ficelles entre les indices. Chaque éditeur a le sien.</p>
-  <div class="board" id="board">
-    <div class="pin photo" style="left:6%;top:12%;--rot:-3deg"><div class="pic">⚜</div><div class="cp">Aldwin</div></div>
-    <div class="pin photo" style="left:62%;top:8%;--rot:4deg"><div class="pic">🜂</div><div class="cp">L'Encapuchonné</div></div>
-    <div class="pin" style="left:34%;top:42%;--rot:-1deg">Grimoire volé la nuit du 14/11 ?</div>
-    <div class="pin" style="left:70%;top:55%;--rot:3deg">Pacte des Brumes — qui d'autre est au courant ?</div>
-    <div class="pin photo" style="left:12%;top:60%;--rot:2deg"><div class="pic">M</div><div class="cp">Maïa</div></div>
-  </div>
-  <p class="note">Maquette statique — sur le site, les éléments seront déplaçables et les ficelles reliables à la souris.</p>
-</section>
-
-<!-- ============ ARCHIVES INDEX ============ -->
+<!-- ARCHIVES -->
 <section class="page" id="page-archives">
   <div class="kicker">Le savoir d'Havengard</div>
   <h2 class="h-sec">Archives magiques</h2>
-  <p class="lead">Livres, documents, objets et artefacts qui façonnent l'histoire du serveur. Consultez-les comme les personnages le font in-game.</p>
+  <p class="lead">Livres, documents, objets, cartes, sorts et potions qui façonnent l'histoire du serveur.</p>
   <div class="afilters" id="afilters">
     <button class="af on" data-t="all">Tout</button>
-    <button class="af" data-t="livre">Livres / grimoires</button>
+    <button class="af" data-t="livre">Livres</button>
     <button class="af" data-t="doc">Documents</button>
-    <button class="af" data-t="objet">Objets & artefacts</button>
-    <button class="af" data-t="carte">Cartes & plans</button>
+    <button class="af" data-t="objet">Objets</button>
+    <button class="af" data-t="carte">Cartes</button>
+    <button class="af" data-t="sort">Sorts</button>
+    <button class="af" data-t="potion">Potions</button>
   </div>
   <button class="addbtn editonly" style="margin-top:6px">+ Ajouter une archive</button>
-  <div class="grid" id="archgrid" style="margin-top:18px"></div>
+  <div class="grid" id="archgrid" style="margin-top:14px"></div>
 </section>
 
-<!-- ============ ARCHIVE DETAIL ============ -->
+<!-- ARCHIVE DETAIL (book) -->
 <section class="page" id="page-archive">
   <a onclick="go('archives')" style="color:var(--gold);font-family:'Cinzel';font-size:12px;letter-spacing:.06em">← Retour aux archives</a>
   <div class="charhead" style="margin-top:16px">
@@ -538,71 +521,117 @@ footer .wrap{display:block}
       <button class="btn" style="margin-top:8px" onclick="openReader()">📖 Lire le contenu intégral</button>
     </div>
   </div>
-
   <div class="block struct editable" data-edit="Métadonnées">
     <div class="block-label">Fiche de l'archive <span class="pill fix">forme fixe · contenu libre</span></div>
     <div class="idy">
       <div class="r"><span class="k">Type</span><span class="v">Livre / grimoire</span></div>
       <div class="r"><span class="k">Origine</span><span class="v">Fondation d'Havengard</span></div>
-      <div class="r"><span class="k">Propriétaire actuel</span><span class="v spoiler">Aldwin Serpefroide</span></div>
+      <div class="r"><span class="k">Propriétaire</span><span class="v spoiler">Aldwin Serpefroide</span></div>
       <div class="r"><span class="k">Statut</span><span class="v">Dans la Réserve interdite</span></div>
     </div>
   </div>
-
   <div class="block struct editable" data-edit="Liens">
     <div class="block-label">Liens <span class="pill fix">vers personnages & lieux</span></div>
     <div class="chips">
-      <span class="chip" onclick="go('char')" style="cursor:pointer">⬡ Possédé par : Aldwin</span>
-      <span class="chip">📍 Trouvé à : Réserve interdite</span>
-      <span class="chip spoiler">⬡ Convoité par : L'Encapuchonné</span>
+      <span class="chip xlink" onclick="go('char')" style="cursor:pointer">Possédé par : Aldwin</span>
+      <span class="chip">📍 Réserve interdite</span>
+      <span class="chip spoiler">Convoité par : L'Encapuchonné</span>
     </div>
     <button class="addbtn editonly">+ Lier un personnage / lieu</button>
   </div>
-
   <div class="block rich editable" data-edit="Lore (libre)">
     <div class="block-label">Lore <span class="pill free">mise en page libre · type Word</span></div>
-    <div class="rich-body">
-      <p>Rédigé à la fondation de l'école, ce grimoire recense des sortilèges liés aux entités de la Forêt des Brumes. Disparu pendant des siècles, il refait surface au cœur des intrigues actuelles.</p>
-      <p class="spoiler">On murmure que celui qui en maîtrise les dernières pages peut converser avec les Brumes elles-mêmes.</p>
+    <div class="rich-body"><p>Rédigé à la fondation de l'école, ce grimoire recense des sortilèges liés aux entités de la Forêt des Brumes.</p><p class="spoiler">On murmure que celui qui en maîtrise les dernières pages peut converser avec les Brumes.</p></div>
+  </div>
+</section>
+
+<!-- SPELL DETAIL -->
+<section class="page" id="page-spell">
+  <a onclick="go('archives')" style="color:var(--gold);font-family:'Cinzel';font-size:12px;letter-spacing:.06em">← Retour aux archives</a>
+  <div class="charhead" style="margin-top:16px">
+    <div class="portrait editable" data-edit="Symbole"><div class="mono">✶</div></div>
+    <div>
+      <div class="kicker">Sort</div>
+      <div class="char-name editable" data-edit="Nom">Lumen Brumæ</div>
+      <div class="char-sub">Sortilège de lumière · école d'Illusion</div>
+      <span class="statusline"><i style="background:var(--warn)"></i> Difficulté : avancée</span>
     </div>
   </div>
+  <div class="block struct editable" data-edit="Champs du sort">
+    <div class="block-label">Fiche du sort <span class="pill fix">forme fixe · champs spécifiques</span></div>
+    <div class="idy">
+      <div class="r"><span class="k">Formule</span><span class="v">« Lumen Brumæ »</span></div>
+      <div class="r"><span class="k">École de magie</span><span class="v">Illusion</span></div>
+      <div class="r"><span class="k">Effet</span><span class="v">Dissipe les brumes magiques</span></div>
+      <div class="r"><span class="k">Difficulté</span><span class="v">Avancée</span></div>
+      <div class="r"><span class="k">Geste de baguette</span><span class="v">Spirale ascendante</span></div>
+      <div class="r"><span class="k">Maîtrisé par</span><span class="v xlink" onclick="go('char')">Aldwin Serpefroide</span></div>
+    </div>
+  </div>
+  <div class="block rich editable" data-edit="Description (libre)">
+    <div class="block-label">Description & lore <span class="pill free">mise en page libre</span></div>
+    <div class="rich-body"><p>Un sort rare, enseigné uniquement aux élèves de dernière année. Il révèle ce que la brume dissimule — parfois au prix de ce que l'on n'aurait pas dû voir.</p></div>
+  </div>
+</section>
+
+<!-- BOARD -->
+<section class="page" id="page-board">
+  <div class="kicker">Outil éditeur</div>
+  <h2 class="h-sec">Mon tableau d'enquête</h2>
+  <p class="lead">Un mur personnel où disposer photos et notes, et tirer des ficelles entre les indices.</p>
+  <div class="board" id="board">
+    <div class="pin photo" style="left:6%;top:12%;--rot:-3deg"><div class="pic">⚜</div><div class="cp">Aldwin</div></div>
+    <div class="pin photo" style="left:62%;top:8%;--rot:4deg"><div class="pic">🜂</div><div class="cp">L'Encapuchonné</div></div>
+    <div class="pin" style="left:34%;top:42%;--rot:-1deg">Grimoire volé la nuit du 14/11 ?</div>
+    <div class="pin" style="left:70%;top:55%;--rot:3deg">Pacte des Brumes — qui sait ?</div>
+    <div class="pin photo" style="left:12%;top:60%;--rot:2deg"><div class="pic">M</div><div class="cp">Maïa</div></div>
+  </div>
+  <p class="note">Maquette statique — sur le site, éléments déplaçables et ficelles reliables.</p>
 </section>
 
 </main>
 
-<!-- ============ READER OVERLAY ============ -->
+<!-- READER -->
 <div class="modal" id="reader">
   <div class="modal-bg" onclick="closeReader()"></div>
-  <div class="parchment">
-    <button class="modal-x" onclick="closeReader()">✕</button>
+  <div class="parchment"><button class="modal-x" onclick="closeReader()">✕</button>
     <div class="parch-inner">
       <h3>Le Codex des Brumes</h3>
+      <div class="pornament">✦ ⚜ ✦</div>
       <p class="firstletter">Au commencement, Havengard n'était qu'une clairière cernée de brume, où les premiers sorciers vinrent chercher refuge loin du monde des hommes.</p>
-      <p>Celui qui lit ces lignes doit savoir : la brume n'oublie pas. Elle observe, elle attend, et elle réclame son dû à qui ose prononcer les mots anciens.</p>
+      <p>Celui qui lit ces lignes doit savoir : la brume n'oublie pas. Elle observe, elle attend, et réclame son dû à qui ose prononcer les mots anciens.</p>
       <p>Que le lecteur imprudent referme ce livre avant la dernière page, car ce qui y est écrit ne peut être désappris…</p>
     </div>
     <p class="note" style="text-align:center">Maquette : le contenu intégral sera un bloc éditable type Word, mis en page façon parchemin.</p>
   </div>
 </div>
 
-<!-- ============ RELATIONS TREE OVERLAY ============ -->
+<!-- TREE -->
 <div class="modal" id="tree">
   <div class="modal-bg" onclick="closeTree()"></div>
-  <div class="treebox">
-    <button class="modal-x" onclick="closeTree()">✕</button>
-    <div class="tree-head">
-      <b>Arbre des relations — Aldwin Serpefroide</b>
-      <span class="editonly" style="font-size:12px;color:var(--muted)">✎ Mode édition : déplacez les nœuds, ils seront mémorisés</span>
-    </div>
+  <div class="treebox"><button class="modal-x" onclick="closeTree()">✕</button>
+    <div class="tree-head"><b>Arbre des relations — Aldwin Serpefroide</b><span class="editonly" style="font-size:12px;color:var(--muted)">✎ Déplacez les nœuds, ils seront mémorisés</span></div>
     <svg class="tree-svg" id="treesvg" viewBox="0 0 760 420" preserveAspectRatio="xMidYMid meet"></svg>
-    <p class="note" style="text-align:center">Généré automatiquement depuis les relations · réorganisable à la main sur le site.</p>
+    <p class="note" style="text-align:center">Généré depuis les relations · réorganisable à la main sur le site.</p>
   </div>
 </div>
 
-<footer><div class="wrap">Seven Wands Lore — maquette de présentation · contenu fictif d'exemple<div class="note">Les couleurs, polices et libellés sont indicatifs et pourront évoluer.</div></div></footer>
+<!-- HISTORY -->
+<div class="modal" id="hist">
+  <div class="modal-bg" onclick="closeHist()"></div>
+  <div class="histbox"><button class="modal-x" onclick="closeHist()">✕</button>
+    <h3>⟲ Historique des modifications</h3>
+    <div class="sb">Page : Aldwin Serpefroide</div>
+    <div class="hrow"><div class="hav">T</div><div class="ht"><b>Toto</b><div class="meta">aujourd'hui, 14:32</div><p>Ajout de l'évènement « Le duel du grand hall » + statut passé à « Disparu ».</p></div><button class="revert">Restaurer</button></div>
+    <div class="hrow"><div class="hav">L</div><div class="ht"><b>Lyra</b><div class="meta">hier, 21:10</div><p>Mise à jour des jauges de caractère et ajout d'une relation.</p></div><button class="revert">Restaurer</button></div>
+    <div class="hrow"><div class="hav">T</div><div class="ht"><b>Toto</b><div class="meta">12/11, 18:45</div><p>Création de la fiche personnage.</p></div><button class="revert">Restaurer</button></div>
+    <p class="note" style="text-align:center">Maquette : permet de comparer et revenir à une version antérieure.</p>
+  </div>
+</div>
+
+<footer><div class="wrap">Seven Wands Lore — maquette de présentation · contenu fictif d'exemple<div class="note">Couleurs, polices et libellés indicatifs, susceptibles d'évoluer. Inspiration d'ambiance, sans élément de licence existante.</div></div></footer>
 
 <script>
-// ---- data ----
 const houses={
   Lombrasier:{c:'#b5462f',d:'Passionnés, courageux, idéalistes et loyaux.',init:'L'},
   Rongebois:{c:'#d6a428',d:'Bâtisseurs, protecteurs, solidité et entraide.',init:'R'},
@@ -612,6 +641,9 @@ const houses={
 };
 const names=['Aldwin Serpefroide','Maïa Lumecendre','Brann Taillepierre','Nivelle Aubevent','Cassien Vorne','Lyra Solenne','Orin Brisefer','Thessaly Vance','Edric Faulne','Wynn Ashbourne'];
 const sub=['3e année','5e année','7e année','Diplômé','Professeur','1re année'];
+const statuses=[['actif','Actif'],['disparu','Disparu'],['decede','Décédé']];
+
+function statusHTML(i){const s=statuses[i%3==2?(i%5==0?2:0):i%3];return `<div class="statusdot st-${s[0]}"><i></i>${s[1]}</div>`;}
 
 function fillGrid(house){
   const g=document.getElementById('fgrid');g.innerHTML='';
@@ -620,174 +652,136 @@ function fillGrid(house){
     const nm=names[(i*3+house.length)%names.length];
     const sp=(i===2||i===5);
     g.innerHTML+=`<div class="card ${sp?'is-spoiler':''}" onclick="cardClick(event,this,'char')">
+      ${statusHTML(i)}
       <div class="ph"><span class="mono">${house==='Autres'?'?':houses[house].init}</span>
-        <div class="spoilcover"><span class="lock">🔒</span>Spoiler<br>cliquez pour révéler</div>
-      </div>
-      <div class="cap"><b>${nm}</b><span>${sub[i%sub.length]} · ${house}</span></div>
-    </div>`;
+        <div class="spoilcover"><span class="lock">🔒</span>Spoiler<br>cliquez pour révéler</div></div>
+      <div class="cap"><b>${nm}</b><span>${sub[i%sub.length]} · ${house}</span></div></div>`;
   }
 }
+
 const places=[
-  ['La Grande Salle','🜍','Havengard',false],
-  ['La Réserve interdite','📕','Havengard',false],
-  ['Les Cachots Vervenin','🜄','Havengard',false],
-  ['La Volière','🦉','Havengard',false],
-  ['La Forêt des Brumes','🌲','Forêt des Brumes',true],
-  ['Le Lac Noir','🌑','Forêt des Brumes',false],
-  ['Le Bar du Vieux Port','🍺','Los Santos',false],
-  ['Planque de Mirror Park','🏚','Los Santos',true],
-  ['Commissariat de Vespucci','🚓','Los Santos',false],
-  ['Le Portail oublié','🌀','Autres',true]
+  ['La Grande Salle','🜍','Havengard',false],['La Réserve interdite','📕','Havengard',false],
+  ['Les Cachots Vervenin','🜄','Havengard',false],['La Volière','🦉','Havengard',false],
+  ['La Forêt des Brumes','🌲','Forêt des Brumes',true],['Le Lac Noir','🌑','Forêt des Brumes',false],
+  ['Le Bar du Vieux Port','🍺','Los Santos',false],['Planque de Mirror Park','🏚','Los Santos',true],
+  ['Commissariat de Vespucci','🚓','Los Santos',false],['Le Portail oublié','🌀','Autres',true]
 ];
 let placeZone='all';
 function fillPlaces(){
   const g=document.getElementById('placegrid');g.innerHTML='';
   places.filter(p=>placeZone==='all'||p[2]===placeZone).forEach(p=>{
-    const sp=p[3];
-    g.innerHTML+=`<div class="card ${sp?'is-spoiler':''}" onclick="cardClick(event,this)">
-      <div class="ph"><span class="mono">${p[1]}</span>
-        <div class="spoilcover"><span class="lock">🔒</span>Spoiler<br>cliquez pour révéler</div>
-      </div>
+    g.innerHTML+=`<div class="card ${p[3]?'is-spoiler':''}" onclick="cardClick(event,this)">
+      <div class="ph"><span class="mono">${p[1]}</span><div class="spoilcover"><span class="lock">🔒</span>Spoiler<br>cliquez pour révéler</div></div>
       <div class="cap"><b>${p[0]}</b><span>${p[2]}</span></div></div>`;
   });
 }
-fillPlaces();
-document.querySelectorAll('#placefilters .af').forEach(b=>{
-  b.onclick=()=>{document.querySelectorAll('#placefilters .af').forEach(x=>x.classList.remove('on'));b.classList.add('on');placeZone=b.dataset.z;fillPlaces();};
-});
+document.querySelectorAll('#placefilters .af').forEach(b=>{b.onclick=()=>{document.querySelectorAll('#placefilters .af').forEach(x=>x.classList.remove('on'));b.classList.add('on');placeZone=b.dataset.z;fillPlaces();};});
 
-// ---- archives ----
 const archives=[
-  ['Le Codex des Brumes','📕','livre','Grimoire interdit',true],
-  ['Lettre du Préfet déchu','✉','doc','Correspondance',false],
-  ['Le Talisman de Vervenin','🜄','objet','Artefact de maison',false],
-  ['Plan de la Réserve interdite','🗺','carte','Plan secret',true],
-  ['Bestiaire d\'Havengard','📗','livre','Manuel',false],
-  ['Décret de bannissement','📜','doc','Document officiel',false],
-  ['L\'Amulette des Brumes','🔮','objet','Relique maudite',true],
-  ['Carte de la Forêt','🧭','carte','Cartographie',false]
+  ['Le Codex des Brumes','📕','livre','Grimoire interdit',true,'archive'],
+  ['Lettre du Préfet déchu','✉','doc','Correspondance',false,'archive'],
+  ['Le Talisman de Vervenin','🜄','objet','Artefact',false,'archive'],
+  ['Plan de la Réserve','🗺','carte','Plan secret',true,'archive'],
+  ['Lumen Brumæ','✶','sort','École d\'Illusion',false,'spell'],
+  ['Expelliarmis','➶','sort','École de Combat',false,'spell'],
+  ['Philtre de Clairevue','⚗','potion','Effet : vision',false,'archive'],
+  ['Potion de Brume','🧪','potion','Effet : dissimulation',true,'archive']
 ];
-const aTypeLabel={livre:'Livre',doc:'Document',objet:'Objet',carte:'Carte'};
+const aTypeLabel={livre:'Livre',doc:'Document',objet:'Objet',carte:'Carte',sort:'Sort',potion:'Potion'};
 let archFilter='all';
 function fillArchives(){
   const g=document.getElementById('archgrid');g.innerHTML='';
   archives.filter(a=>archFilter==='all'||a[2]===archFilter).forEach(a=>{
-    const sp=a[4];
-    g.innerHTML+=`<div class="card ${sp?'is-spoiler':''}" onclick="cardClick(event,this,'archive')">
-      <div class="ph"><span class="mono">${a[1]}</span>
-        <div class="spoilcover"><span class="lock">🔒</span>Spoiler<br>cliquez pour révéler</div>
-      </div>
+    g.innerHTML+=`<div class="card ${a[4]?'is-spoiler':''}" onclick="cardClick(event,this,'${a[5]}')">
+      <div class="ph"><span class="mono">${a[1]}</span><div class="spoilcover"><span class="lock">🔒</span>Spoiler<br>cliquez pour révéler</div></div>
       <div class="cap"><b>${a[0]}</b><span>${aTypeLabel[a[2]]} · ${a[3]}</span></div></div>`;
   });
 }
-fillArchives();
-document.querySelectorAll('#afilters .af').forEach(b=>{
-  b.onclick=()=>{document.querySelectorAll('#afilters .af').forEach(x=>x.classList.remove('on'));b.classList.add('on');archFilter=b.dataset.t;fillArchives();};
-});
+document.querySelectorAll('#afilters .af').forEach(b=>{b.onclick=()=>{document.querySelectorAll('#afilters .af').forEach(x=>x.classList.remove('on'));b.classList.add('on');archFilter=b.dataset.t;fillArchives();};});
 
-// ---- reader & tree modals ----
+// feed
+const feed=[
+  ['⚔','Aldwin Serpefroide','Nouvel évènement : « Le duel du grand hall »','il y a 2 h','char'],
+  ['📕','Le Codex des Brumes','Nouvelle archive ajoutée','il y a 5 h','archive'],
+  ['✶','Lumen Brumæ','Nouveau sort répertorié','hier','spell'],
+  ['🏚','Planque de Mirror Park','Nouveau lieu (Los Santos)','hier','havengard'],
+  ['🖼','Maïa Lumecendre','3 images ajoutées à la galerie','12/11','char']
+];
+function fillFeed(){
+  document.getElementById('feedlist').innerHTML=feed.map(f=>`<div class="fitem" onclick="go('${f[4]}')">
+    <div class="fic">${f[0]}</div><div class="ft"><b>${f[1]}</b><span>${f[2]}</span></div><div class="fd">${f[3]}</div></div>`).join('');
+}
+
+// search
+const searchData=[
+  ...names.map(n=>({t:'Personnage',ic:'⚜',label:n,go:'char'})),
+  ...archives.map(a=>({t:'Archive',ic:a[1],label:a[0],go:a[5]})),
+  ...places.map(p=>({t:'Lieu',ic:p[1],label:p[0],go:'havengard'}))
+];
+const si=document.getElementById('searchInput'),sr=document.getElementById('searchResults');
+si.addEventListener('input',()=>{
+  const q=si.value.trim().toLowerCase();
+  if(!q){sr.classList.remove('open');return;}
+  const hits=searchData.filter(d=>d.label.toLowerCase().includes(q)).slice(0,8);
+  if(!hits.length){sr.innerHTML='<div class="none">Aucun résultat</div>';sr.classList.add('open');return;}
+  const groups={};hits.forEach(h=>{(groups[h.t]=groups[h.t]||[]).push(h);});
+  sr.innerHTML=Object.entries(groups).map(([g,items])=>`<div class="grp">${g}</div>`+items.map(h=>`<a onclick="pick('${h.go}')"><span class="ic">${h.ic}</span>${h.label}</a>`).join('')).join('');
+  sr.classList.add('open');
+});
+function pick(dest){si.value='';sr.classList.remove('open');go(dest);}
+document.addEventListener('click',e=>{if(!e.target.closest('.searchbox'))sr.classList.remove('open');});
+
+// modals
 function openReader(){document.getElementById('reader').classList.add('open')}
 function closeReader(){document.getElementById('reader').classList.remove('open')}
+function openHist(){document.getElementById('hist').classList.add('open')}
+function closeHist(){document.getElementById('hist').classList.remove('open')}
 function openTree(){document.getElementById('tree').classList.add('open');drawTree()}
 function closeTree(){document.getElementById('tree').classList.remove('open')}
 
-// graphe relations : centre + noeuds, liens étiquetés, déplaçables en mode édition
 const relNodes=[
   {id:'c',label:'Aldwin',x:380,y:210,center:true},
   {id:'m',label:'Maïa',x:150,y:90,link:'Rivalité'},
-  {id:'k',label:'Pr. Korvanis',x:620,y:110,link:'Mentor'},
-  {id:'e',label:'L\'Encapuchonné',x:560,y:340,link:'Allié caché',sp:true}
+  {id:'k',label:'Korvanis',x:620,y:110,link:'Mentor'},
+  {id:'e',label:'Encapuchonné',x:560,y:340,link:'Allié',sp:true}
 ];
 function drawTree(){
-  const svg=document.getElementById('treesvg');
-  const C=relNodes[0];
-  const edges=relNodes.slice(1).map(n=>`
-    <line x1="${C.x}" y1="${C.y}" x2="${n.x}" y2="${n.y}" stroke="var(--line)" stroke-width="2"/>
-    <text x="${(C.x+n.x)/2}" y="${(C.y+n.y)/2-6}" fill="var(--muted)" font-size="12" font-family="Cinzel" text-anchor="middle">${n.link}</text>`).join('');
-  const nodes=relNodes.map(n=>{
-    const r=n.center?34:26;
-    const fill=n.center?'var(--gold)':(n.sp?'var(--accent)':'var(--panel2)');
-    const tcol=n.center?'#13110f':'var(--ink)';
-    return `<g class="tnode" data-id="${n.id}" transform="translate(${n.x},${n.y})">
-      <circle r="${r}" fill="${fill}" stroke="var(--line)" stroke-width="2"/>
-      <text y="5" text-anchor="middle" fill="${tcol}" font-size="13" font-family="Cinzel">${n.label}</text>
-    </g>`;
-  }).join('');
-  svg.innerHTML=edges+nodes;
-  enableDrag(svg);
+  const svg=document.getElementById('treesvg'),C=relNodes[0];
+  const edges=relNodes.slice(1).map(n=>`<line x1="${C.x}" y1="${C.y}" x2="${n.x}" y2="${n.y}" stroke="var(--line)" stroke-width="2"/><text x="${(C.x+n.x)/2}" y="${(C.y+n.y)/2-6}" fill="var(--muted)" font-size="12" font-family="Cinzel" text-anchor="middle">${n.link}</text>`).join('');
+  const nodes=relNodes.map(n=>{const r=n.center?34:26;const fill=n.center?'var(--gold)':(n.sp?'var(--accent)':'var(--panel2)');const tc=n.center?'#13110f':'var(--ink)';
+    return `<g class="tnode" data-id="${n.id}" transform="translate(${n.x},${n.y})"><circle r="${r}" fill="${fill}" stroke="var(--line)" stroke-width="2"/><text y="5" text-anchor="middle" fill="${tc}" font-size="12" font-family="Cinzel">${n.label}</text></g>`;}).join('');
+  svg.innerHTML=edges+nodes;enableDrag(svg);
 }
 function enableDrag(svg){
   let cur=null;
-  const pt=(e)=>{const r=svg.getBoundingClientRect();const vb=svg.viewBox.baseVal;
-    const cx=(e.touches?e.touches[0].clientX:e.clientX);const cy=(e.touches?e.touches[0].clientY:e.clientY);
-    return {x:(cx-r.left)/r.width*vb.width,y:(cy-r.top)/r.height*vb.height};};
-  svg.querySelectorAll('.tnode').forEach(g=>{
-    g.addEventListener('mousedown',e=>{if(document.body.dataset.mode!=='edit')return;cur=g;});
-    g.addEventListener('touchstart',e=>{if(document.body.dataset.mode!=='edit')return;cur=g;});
-  });
-  function move(e){if(!cur)return;const p=pt(e);const id=cur.dataset.id;
-    const n=relNodes.find(x=>x.id===id);n.x=p.x;n.y=p.y;drawTree();
-    cur=svg.querySelector(`.tnode[data-id="${id}"]`);e.preventDefault();}
+  const pt=e=>{const r=svg.getBoundingClientRect(),vb=svg.viewBox.baseVal;const cx=e.touches?e.touches[0].clientX:e.clientX,cy=e.touches?e.touches[0].clientY:e.clientY;return{x:(cx-r.left)/r.width*vb.width,y:(cy-r.top)/r.height*vb.height};};
+  svg.querySelectorAll('.tnode').forEach(g=>{const s=()=>{if(document.body.dataset.mode==='edit')cur=g;};g.addEventListener('mousedown',s);g.addEventListener('touchstart',s);});
+  const move=e=>{if(!cur)return;const p=pt(e),id=cur.dataset.id,n=relNodes.find(x=>x.id===id);n.x=p.x;n.y=p.y;drawTree();cur=svg.querySelector(`.tnode[data-id="${id}"]`);e.preventDefault();};
   svg.addEventListener('mousemove',move);svg.addEventListener('touchmove',move,{passive:false});
   window.addEventListener('mouseup',()=>cur=null);window.addEventListener('touchend',()=>cur=null);
 }
 
-// ---- nav ----
+let currentHouse='Lombrasier';
+function cardClick(e,card,dest){
+  if(card.classList.contains('is-spoiler')&&document.documentElement.getAttribute('data-spoiler')==='on'&&!card.classList.contains('revealed')){e.stopPropagation();card.classList.add('revealed');return;}
+  if(dest)go(dest);
+}
 function go(p,house){
   document.querySelectorAll('.page').forEach(s=>s.classList.remove('show'));
-  document.getElementById('page-'+p).classList.add('show');
-  if(p==='faction'){
-    const h=house||currentHouse;currentHouse=h;
-    document.getElementById('ftitle').textContent=h;
-    document.getElementById('fdesc').textContent=houses[h].d;
+  const pg=document.getElementById('page-'+p);if(pg)pg.classList.add('show');
+  document.querySelectorAll('#navwrap a.nav').forEach(a=>a.classList.toggle('active',a.dataset.go===p&&(!house||a.dataset.house===house)));
+  if(p==='faction'){const h=house||currentHouse;currentHouse=h;
+    document.getElementById('ftitle').textContent=h;document.getElementById('fdesc').textContent=houses[h].d;
     document.getElementById('fk').textContent=h==='Autres'?'Catégorie':'Maison';
-    const cr=document.getElementById('crest');cr.textContent=houses[h].init;cr.style.background=houses[h].c;
-    fillGrid(h);
-  }
+    const cr=document.getElementById('crest');cr.textContent=houses[h].init;cr.style.background=houses[h].c;fillGrid(h);}
   window.scrollTo({top:0,behavior:'smooth'});
 }
-let currentHouse='Lombrasier';
+document.querySelectorAll('#navwrap a.nav').forEach(a=>{a.onclick=()=>go(a.dataset.go,a.dataset.house);});
 
-// clic sur une carte : si spoiler actif et non révélée, on révèle d'abord ; sinon on navigue
-function cardClick(e,card,dest){
-  if(card.classList.contains('is-spoiler')
-     && document.documentElement.getAttribute('data-spoiler')==='on'
-     && !card.classList.contains('revealed')){
-    e.stopPropagation();
-    card.classList.add('revealed');
-    return;
-  }
-  if(dest) go(dest);
-}
-document.querySelectorAll('#navwrap a[data-go]').forEach(a=>{
-  a.onclick=()=>{
-    document.querySelectorAll('#navwrap a').forEach(x=>x.classList.remove('active'));
-    a.classList.add('active');
-    go(a.dataset.go,a.dataset.house);
-  };
-});
+function toggleTheme(){const cur=document.documentElement.getAttribute('data-theme'),nx=cur==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',nx);document.getElementById('themeBtn').textContent=nx==='dark'?'☾ Sombre':'☀ Clair';}
+function toggleSpoiler(){const cur=document.documentElement.getAttribute('data-spoiler'),nx=cur==='on'?'off':'on';document.documentElement.setAttribute('data-spoiler',nx);document.getElementById('spoilBtn').textContent=nx==='on'?'🔒 Spoilers ON':'🔓 Spoilers OFF';}
+document.addEventListener('click',e=>{const s=e.target.closest('.spoiler');if(s&&document.documentElement.getAttribute('data-spoiler')==='on'&&!e.target.closest('.searchbox')){s.classList.toggle('revealed');}});
 
-// ---- theme ----
-function toggleTheme(){
-  const b=document.body.parentElement;// html
-  const cur=document.documentElement.getAttribute('data-theme');
-  const nx=cur==='dark'?'light':'dark';
-  document.documentElement.setAttribute('data-theme',nx);
-  document.getElementById('themeBtn').textContent=nx==='dark'?'☾ Sombre':'☀ Clair';
-}
-// ---- spoiler ----
-function toggleSpoiler(){
-  const cur=document.documentElement.getAttribute('data-spoiler');
-  const nx=cur==='on'?'off':'on';
-  document.documentElement.setAttribute('data-spoiler',nx);
-  document.getElementById('spoilBtn').textContent=nx==='on'?'🔒 Spoilers ON':'🔓 Spoilers OFF';
-}
-document.addEventListener('click',e=>{
-  const s=e.target.closest('.spoiler');
-  if(s && document.documentElement.getAttribute('data-spoiler')==='on'){s.classList.toggle('revealed')}
-});
-
-// ---- role / edit ----
 let isEditor=false;
 function toggleRole(){
   isEditor=!isEditor;
@@ -800,12 +794,10 @@ function toggleRole(){
   if(!isEditor)setMode('view');
 }
 function toggleEdit(){setMode(document.body.dataset.mode==='edit'?'view':'edit')}
-function setMode(m){
-  document.body.dataset.mode=m;
-  const b=document.getElementById('editBtn');
-  b.textContent=m==='edit'?'Quitter l\'édition':'Mode édition';
-  b.classList.toggle('on',m==='edit');
-}
+function setMode(m){document.body.dataset.mode=m;const b=document.getElementById('editBtn');b.textContent=m==='edit'?'Quitter l\'édition':'Mode édition';b.classList.toggle('on',m==='edit');}
+
+// init
+fillPlaces();fillArchives();fillFeed();
 </script>
 </body>
 </html>
