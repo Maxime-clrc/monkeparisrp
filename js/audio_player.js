@@ -140,7 +140,7 @@
     var hdrImg       = document.querySelector('.hdr-img');
     var hdrImgMobile = document.querySelector('.hdr-img-mobile');
     // if (hdrImg)       hdrImg.addEventListener('click', startMusic);
-    if (hdrImgMobile) hdrImgMobile.addEventListener('click', startMusic);
+    // if (hdrImgMobile) hdrImgMobile.addEventListener('click', startMusic);
 
     // ══════════════════════════════════
     //  CONTRÔLES
