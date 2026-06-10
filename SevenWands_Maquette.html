@@ -293,13 +293,46 @@ nav.menu a.nav.active::after{content:"";position:absolute;left:14px;right:14px;b
 [data-spoiler="on"] .spoiler:not(.revealed)::after{content:"🔒 Spoiler — cliquez pour révéler";position:absolute;inset:0;display:grid;place-items:center;filter:blur(0);font-family:'Fraunces';font-size:12px;letter-spacing:.04em;color:var(--ink);background:rgba(155,125,255,.1);border:1px dashed var(--vio);border-radius:8px}
 
 /* EDIT MODE */
+/* En mode édition : on montre les contours + bouton Modifier sur chaque bloc éditable */
 body[data-mode="edit"] .editable{outline:1.5px dashed var(--vio);outline-offset:5px;position:relative;border-radius:6px}
 body[data-mode="edit"] .editable::before{content:"✎ "attr(data-edit);position:absolute;top:-11px;left:8px;background:var(--vio);color:#fff;font-family:'Spectral';font-size:11px;padding:1px 9px;border-radius:5px;letter-spacing:.02em;z-index:3}
 .editonly{display:none}
 body[data-mode="edit"] .editonly{display:flex}
+
+/* bouton "Modifier" présent sur chaque bloc en mode édition, caché quand le bloc s'édite */
+.editbtn{display:none}
+body[data-mode="edit"] .block.editable > .editbtn{display:inline-flex;align-items:center;gap:6px;
+  position:absolute;top:14px;right:16px;z-index:4;
+  font-family:'Fraunces';font-size:11px;letter-spacing:.04em;border:1px solid var(--vio);
+  background:rgba(155,125,255,.12);color:var(--vio-soft);padding:5px 12px;border-radius:999px;cursor:pointer;transition:.2s}
+body[data-mode="edit"] .block.editable > .editbtn:hover{background:rgba(155,125,255,.25)}
+body[data-mode="edit"] .block.editing > .editbtn{display:none}
+/* en mode édition, on laisse de la place au bouton Modifier à droite du label */
+body[data-mode="edit"] .block.editable .histbtn,
+body[data-mode="edit"] .block.editable .treebtn{margin-right:104px}
+
+/* quand un bloc est EN COURS d'édition */
+.block.editing{outline:2px solid var(--vio);outline-offset:5px;box-shadow:0 0 0 6px rgba(155,125,255,.08)}
+.editing-field{outline:1px dashed var(--vio);outline-offset:3px;border-radius:5px;background:rgba(155,125,255,.06);padding:2px 4px;cursor:text}
+.editing-field:focus{outline:1.5px solid var(--vio);background:rgba(155,125,255,.1)}
+
+/* barre d'édition du bloc (spoiler + enregistrer/annuler) : visible UNIQUEMENT pendant l'édition du bloc */
+.editbar{display:none;align-items:center;gap:14px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
+.block.editing .editbar{display:flex}
+.editbar .spoilchk{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink-soft);margin:0;cursor:pointer}
+.editbar .spoilchk input{accent-color:var(--vio);width:16px;height:16px}
+.editbar .ebtns{margin-left:auto;display:flex;gap:8px}
+.esave{font-family:'Fraunces';font-size:12px;letter-spacing:.03em;border:1px solid var(--gold);background:linear-gradient(180deg,var(--gold-soft),var(--gold));color:#1a140d;padding:7px 16px;border-radius:8px;cursor:pointer;font-weight:600}
+.esave:hover{filter:brightness(1.08)}
+.ecancel{font-family:'Fraunces';font-size:12px;letter-spacing:.03em;border:1px solid var(--line);background:var(--panel);color:var(--ink-soft);padding:7px 14px;border-radius:8px;cursor:pointer}
+.ecancel:hover{border-color:var(--muted)}
+
+/* petit indicateur "contient un spoiler" visible côté éditeur seulement, après sauvegarde */
+.spoilflag{display:none;align-items:center;gap:5px;font-family:'Fraunces';font-size:10px;letter-spacing:.06em;color:var(--vio-soft);
+  background:rgba(155,125,255,.12);border:1px solid var(--vio);padding:2px 9px;border-radius:999px}
+body[data-mode="edit"] .block.has-spoiler .spoilflag{display:inline-flex}
+
 .addbtn{font-family:'Fraunces';font-size:11.5px;letter-spacing:.04em;border:1px dashed var(--vio);background:rgba(155,125,255,.08);color:var(--vio-soft);padding:7px 13px;border-radius:9px;cursor:pointer;align-items:center;gap:6px;margin-top:14px}
-.spoilchk{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin-top:11px}
-.spoilchk input{accent-color:var(--vio)}
 .histbtn{margin-left:auto;font-family:'Fraunces';font-size:11px;letter-spacing:.04em;border:1px solid var(--line);background:var(--panel);color:var(--ink-soft);padding:6px 13px;border-radius:999px;cursor:pointer;transition:.22s}
 .histbtn:hover{border-color:var(--gold);color:var(--gold-soft)}
 .treebtn{margin-left:auto;font-family:'Fraunces';font-size:11px;letter-spacing:.04em;border:1px solid var(--vio);background:rgba(155,125,255,.1);color:var(--vio-soft);padding:6px 13px;border-radius:999px;cursor:pointer;transition:.22s}
@@ -475,7 +508,6 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
       <div class="r"><span class="k">Statut RP</span><span class="v spoiler">Espion des Briselune</span></div>
       <div class="r"><span class="k">Baguette</span><span class="v">If & plume de phénix</span></div>
     </div>
-    <div class="spoilchk editonly"><input type="checkbox" checked> Marquer ce bloc comme spoiler</div>
   </div>
 
   <div class="block struct editable" data-edit="Jauges">
@@ -528,7 +560,6 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
       <h4>La chute</h4>
       <p class="spoiler">Son alliance avec une entité de la <span class="xlink">Forêt des Brumes</span> finit par fissurer le masque. Le duel n'était qu'un prétexte pour l'écarter.</p>
     </div>
-    <div class="spoilchk editonly"><input type="checkbox"> Marquer ce bloc comme spoiler · ou balises [spoiler] dans le texte</div>
   </div>
 </section>
 
@@ -852,7 +883,81 @@ function toggleRole(){
   if(!isEditor)setMode('view');
 }
 function toggleEdit(){setMode(document.body.dataset.mode==='edit'?'view':'edit')}
-function setMode(m){document.body.dataset.mode=m;const b=document.getElementById('editBtn');b.textContent=m==='edit'?'Quitter l\'édition':'Mode édition';b.classList.toggle('on',m==='edit');}
+function setMode(m){
+  document.body.dataset.mode=m;
+  const b=document.getElementById('editBtn');
+  b.textContent=m==='edit'?'Quitter l\'édition':'Mode édition';
+  b.classList.toggle('on',m==='edit');
+  if(m==='edit'){prepareBlocks();
+    document.querySelectorAll('.editable:not(.block)').forEach(el=>{el.contentEditable='true';});
+  }
+  else{document.querySelectorAll('.block.editing').forEach(bl=>cancelEdit(bl));
+    document.querySelectorAll('.editable:not(.block)').forEach(el=>{el.contentEditable='false';});
+  }
+}
+
+// Prépare chaque bloc éditable : bouton "Modifier", barre d'édition (spoiler + enregistrer/annuler),
+// et un repère "contient un spoiler" visible côté éditeur. Injecté une seule fois.
+function prepareBlocks(){
+  document.querySelectorAll('.block.editable').forEach(bl=>{
+    // détecte si le bloc contient déjà du contenu spoiler
+    if(bl.querySelector('.spoiler')) bl.classList.add('has-spoiler');
+    if(bl.dataset.prepared)return;
+    bl.dataset.prepared='1';
+
+    // repère discret dans le label
+    const label=bl.querySelector('.block-label');
+    if(label){const flag=document.createElement('span');flag.className='spoilflag';flag.innerHTML='🔒 contient un spoiler';label.appendChild(flag);}
+
+    // bouton Modifier
+    const eb=document.createElement('button');
+    eb.className='editbtn';eb.innerHTML='✎ Modifier';
+    eb.onclick=(e)=>{e.stopPropagation();startEdit(bl);};
+    bl.appendChild(eb);
+
+    // barre d'édition (cachée tant que le bloc n'est pas en édition)
+    const bar=document.createElement('div');
+    bar.className='editbar';
+    bar.innerHTML=`
+      <label class="spoilchk"><input type="checkbox" class="spoiltoggle"> Marquer ce bloc comme spoiler</label>
+      <span style="font-size:12px;color:var(--muted)">ou balises [spoiler] dans le texte</span>
+      <span class="ebtns"><button class="ecancel">Annuler</button><button class="esave">Enregistrer</button></span>`;
+    bl.appendChild(bar);
+    bar.querySelector('.esave').onclick=(e)=>{e.stopPropagation();saveEdit(bl);};
+    bar.querySelector('.ecancel').onclick=(e)=>{e.stopPropagation();cancelEdit(bl);};
+  });
+}
+
+function startEdit(bl){
+  // un seul bloc en édition à la fois
+  document.querySelectorAll('.block.editing').forEach(o=>{if(o!==bl)cancelEdit(o);});
+  bl.classList.add('editing');
+  // pré-coche la case selon l'état actuel du bloc
+  bl.querySelector('.spoiltoggle').checked=bl.classList.contains('has-spoiler');
+  // rend les textes éditables (titres, valeurs, paragraphes), sauf les libellés techniques
+  bl.querySelectorAll('.idy .v, .gl span, .ev b, .ev p, .ev .date, .rich-body p, .rich-body h4, .rel p, .rel b, .gal .cap, .chip').forEach(el=>{
+    el.contentEditable='true';el.classList.add('editing-field');
+  });
+}
+
+function saveEdit(bl){
+  // applique le choix spoiler
+  const wantsSpoiler=bl.querySelector('.spoiltoggle').checked;
+  bl.classList.toggle('has-spoiler',wantsSpoiler);
+  // dans cette maquette : marquer/démarquer tout le bloc comme spoiler visuellement
+  // (sur le vrai site, ce serait stocké en base ; ici ça illustre le rendu)
+  if(wantsSpoiler){
+    bl.querySelectorAll('.idy, .rels, .tl, .rich-body, .gal').forEach(z=>z.classList.add('spoiler'));
+  }else{
+    bl.querySelectorAll('.idy, .rels, .tl, .rich-body, .gal').forEach(z=>z.classList.remove('spoiler','revealed'));
+  }
+  endEdit(bl);
+}
+function cancelEdit(bl){endEdit(bl);}
+function endEdit(bl){
+  bl.classList.remove('editing');
+  bl.querySelectorAll('.editing-field').forEach(el=>{el.contentEditable='false';el.classList.remove('editing-field');});
+}
 
 fillPlaces();fillArchives();fillFeed();
 </script>
