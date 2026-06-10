@@ -8,7 +8,7 @@
       <div class="sr"><span class="sl">Raison de sa venue à Paris</span><span class="sv">Rééducation & meilleurs médecins</span></div>
       <div class="sr"><span class="sl">Logement</span><span class="sv">Chez les De Saint-Claire (imposé par le père)</span></div>
       <div class="sr"><span class="sl">Rapport à l'argent</span><span class="sv sv-r">Habitué au luxe mais privé des fonds familiaux</span></div>
-      <div class="sr"><span class="sl">Rapport au père</span><span class="sv">Contrôlé, sous tutelle, peu de liberté</span></div>
+      <div class="sr"><span class="sl">Rapport au père</span><span class="sv sv-r">Rejeté — confié à Armand "pour s'en débarrasser"</span></div>
     </div>
     <div class="card cq">
       <div class="ct">Traits de personnalité</div>

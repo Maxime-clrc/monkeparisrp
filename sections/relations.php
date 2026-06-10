@@ -78,7 +78,7 @@
       <div>
         <div class="rn">Ulysse Leblanc</div>
         <div class="rr">Antagoniste · commanditaire de meurtre · guerre totale</div>
-        <div class="rd">Rivalité escaladée jusqu'à la violence physique (accident de voiture, 05/06). Le 07/06, l'informateur Jean-Claude Blanchard révèle que Leblanc serait le <strong class="c-red">véritable commanditaire du meurtre attribué à Claude Garnier</strong> (FTG-FTC). Leblanc cumule désormais : guerre personnelle avec Jeremy ET implication dans des affaires criminelles majeures.</div>
+        <div class="rd">Rivalité escaladée jusqu'à la violence physique (accident de voiture, 06/06). Le 07/06, l'informateur Jean-Claude Blanchard révèle que Leblanc serait le <strong class="c-red">véritable commanditaire du meurtre attribué à Claude Garnier</strong> (FTG-FTC). Leblanc cumule désormais : guerre personnelle avec Jeremy ET implication dans des affaires criminelles majeures.</div>
       </div>
       <span class="rs rs-h">Guerre totale</span>
     </div>
@@ -118,7 +118,7 @@
       <div>
         <div class="rn">Policière Pichon</div>
         <div class="rr">Policière · proche du fils Larouge · sœur de César · victime</div>
-        <div class="rd">Proche du fils Larouge et sœur de César (impliqué dans la fraude associative). Le 05/06, elle est enlevée en pleine rue par le groupe militant de Claude, puis relâchée avec un coup de tesson de bouteille. Une cible qui concentre plusieurs fils d'enquête dangereux.</div>
+        <div class="rd">Proche du fils Larouge et sœur de César (impliqué dans la fraude associative). Le 06/06, elle est enlevée en pleine rue par le groupe militant de Claude, puis relâchée avec un coup de tesson de bouteille. Une cible qui concentre plusieurs fils d'enquête dangereux.</div>
       </div>
       <span class="rs rs-h">Suspecte & victime</span>
     </div>
@@ -127,8 +127,8 @@
       <div class="rav ra-g">MR</div>
       <div>
         <div class="rn">Maxime Rousseau</div>
-        <div class="rr">Futur agent de sécurité · recruté le 05/06</div>
-        <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 05/06, il lui propose de rejoindre son futur service de sécurité — Maxime accepte. Leur discussion est interrompue par l'arrivée du groupe militant armé se réclamant de Claude.</div>
+        <div class="rr">Futur agent de sécurité · recruté le 06/06</div>
+        <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 06/06, il lui propose de rejoindre son futur service de sécurité — Maxime accepte. Leur discussion est interrompue par l'arrivée du groupe militant armé se réclamant de Claude.</div>
       </div>
       <span class="rs rs-c">Allié recruté</span>
     </div>

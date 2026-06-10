@@ -11,10 +11,10 @@
         <div class="rav ra-g">A</div>
         <div>
           <div class="rn">Armand De Saint-Claire</div>
-          <div class="rr">Oncle · figure d'autorité familiale</div>
-          <div class="rd">Jeremy cherche activement à maintenir sa confiance pour obtenir de l'argent et de l'influence. C'est sa principale cible de manipulation au sein de la famille. <strong class="c-red">L'incident Leblanc au Céleste (25/05) menace directement cette relation si l'affaire remonte jusqu'à lui.</strong></div>
+          <div class="rr">Oncle · tuteur · relation ambiguë</div>
+          <div class="rd">Principale cible de manipulation de Jeremy pour l'argent et l'influence. Le 08/06, il lui fait écouter un enregistrement d'un appel avec Archibald (le père de Jeremy), révélant qu'il se plaint du <strong class="c-red">poids financier de Jeremy</strong> et évoque un ancien secret familial. Geste ambigu : avertissement bienveillant ou manipulation ? La confiance reste fragile.</div>
         </div>
-        <span class="rs rs-c">À manipuler</span>
+        <span class="rs rs-c">Ambigu</span>
       </div>
       <div class="rc">
         <div class="rav ra-r">Cl</div>

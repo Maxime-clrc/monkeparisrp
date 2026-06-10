@@ -69,13 +69,18 @@
       </div>
       <div class="tli" data-tl-old="true">
         <div class="tldot td-r"></div>
-        <div class="tlt">Pichon enlevée, Claude confirmé, Maxime recruté & accident Leblanc — 05/06</div>
+        <div class="tlt">Pichon enlevée, Claude confirmé, Maxime recruté & accident Leblanc — 06/06</div>
         <div class="tld">Rencontre des familles avortée (De Saint-Claire absents). En service, Blanche Pichon est enlevée en pleine rue par un groupe militant armé. Jeremy recrute Maxime Rousseau pour son futur service de sécurité. Le groupe se présente — l'un d'eux est appelé <strong class="c-red">"Claude"</strong> — et menace de "faire tomber un policier chaque jour", ciblant directement le commissaire. En fin de soirée, Ulysse Leblanc percute Jeremy en voiture près du commissariat, se renverse lui-même dans la confusion. Les deux terminent inconscients à l'hôpital.</div>
       </div>
-      <div class="tli" data-updated="true">
+      <div class="tli">
         <div class="tldot td-r"></div>
         <div class="tlt">Fusillade FTG-FTC, 500k€ volés, Leblanc commanditaire & mystère Larouge — 07/06</div>
         <div class="tld">Fusillade pont de la Concorde : Blanche Pichon blessée, deux assaillants du FTG-FTC neutralisés. Commissaire indifférent aux menaces. Alix vole <strong class="c-red">500 000 €</strong> à Valmont au Paradise — le Paradise brûle peu après. Blanchard révèle que <strong class="c-red">Leblanc serait le commanditaire du meurtre de Claude Garnier</strong>. Rencontre de Danie (employée Larouge) : salle secrète avec poupées de cire géantes, article XIXe siècle prouvant l'immortalité de Philomène, vrai nom <strong class="c-red">Capet</strong> (lien Capétiens), Nancy Larouge transformerait des personnes en "poupées". Plan d'infiltration de la demeure Larouge élaboré.</div>
+      </div>
+      <div class="tli" data-updated="true">
+        <div class="tldot td-r"></div>
+        <div class="tlt">Secret familial, musée d'Orsay & secte — 08/06</div>
+        <div class="tld">Armand fait écouter à Jeremy un enregistrement où Archibald (son père) avoue l'avoir confié <strong class="c-red">"pour s'en débarrasser"</strong>, évoque un ancien secret familial (une femme, un "arrangement") et rejette ses fiançailles. En service avec l'IGPN (lieutenant Moreau), cambriolage étrange au musée d'Orsay : gardien assommé, chien mort. Nancy Larouge interpellée en fuite avec Mortecouille, les Montclair et Archibald Larouge. À la Fashion Week, fausse alerte sur l'enlèvement d'Alix — Jeremy est sélectionné au défilé. Alix a en réalité <strong class="c-red">failli être enlevée par une secte visant Jean Lefèvre</strong>. Révélations : les Larouge ne seraient pas des vampires mais cacheraient des choses par nécessité, et le commissaire reste compromis.</div>
       </div>
     </div>
   </div>

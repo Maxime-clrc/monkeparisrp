@@ -94,7 +94,7 @@
         <div>
           <div class="rn">Juste Mortecouille</div>
           <div class="rr">Professeur d'université · suspect affaire Montclair</div>
-          <div class="rd">Interrogé le 29/05 dans le cadre de la mort de Léo Montclair, retrouvé dans une benne à ordures. Affirme avoir été absent de Paris une semaine. Reconnaît être l'une des dernières personnes à avoir vu Léo vivant lors d'une soirée dans les égouts de Paris. Relâché avec interdiction de quitter la ville.</div>
+          <div class="rd">Interrogé le 29/05 dans le cadre de la mort de Léo Montclair (benne à ordures). Affirme avoir été absent de Paris une semaine, reconnaît être l'une des dernières personnes à avoir vu Léo vivant dans les égouts. Relâché avec interdiction de quitter la ville. Le 08/06, <strong class="c-red">retrouvé dans le groupe Larouge en fuite du musée d'Orsay</strong> — confirme son appartenance au cercle Larouge.</div>
         </div>
         <span class="rs pnj-surveiller">Sous surveillance</span>
       </div>
@@ -125,22 +125,22 @@
 
   <div class="g2">
     <div>
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-r">Pc</div>
         <div>
           <div class="rn">Blanche Pichon</div>
-          <div class="rr">Policière · cousine de César · blessée en service</div>
-          <div class="rd">Proche du fils Larouge et sœur de César (fraude associative). Enlevée par le FTG-FTC le 05/06, relâchée avec un coup de tesson. Le 07/06, <strong class="c-red">blessée lors de la fusillade sous le pont de la Concorde</strong> entre la police et les membres du FTG-FTC. Les deux assaillants ont été neutralisés.</div>
+          <div class="rr">Policière · sœur de César · blessée en service</div>
+          <div class="rd">Proche du fils Larouge et sœur de César (fraude associative). Enlevée par le FTG-FTC le 06/06, relâchée avec un coup de tesson. Le 07/06, <strong class="c-red">blessée lors de la fusillade sous le pont de la Concorde</strong> entre la police et les membres du FTG-FTC. Les deux assaillants ont été neutralisés.</div>
         </div>
         <span class="rs pnj-important">Suspecte & blessée</span>
       </div>
 
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-r">Cx</div>
         <div>
-          <div class="rn">Claude Garnier — FTG-FTC</div>
+          <div class="rn">Claude Garnier — membre FTG-FTC</div>
           <div class="rr">Militant armé · recherché pour meurtre · commandité par Leblanc</div>
-          <div class="rd">D'abord évoqué anonymement par Vautrin (04/06), puis entendu en personne (05/06) lors de l'enlèvement de Pichon. Le 07/06, Blanchard révèle son identité complète : <strong class="c-red">Claude Garnier</strong>, membre du FTG-FTC recherché pour meurtre — mais le véritable commanditaire serait Ulysse Leblanc. Neutralisé lors de la fusillade du pont de la Concorde (07/06).</div>
+          <div class="rd">D'abord évoqué anonymement par Vautrin (04/06), puis entendu en personne (06/06) lors de l'enlèvement de Pichon. Le 07/06, Blanchard révèle son identité complète : <strong class="c-red">Claude Garnier</strong>, membre du FTG-FTC recherché pour meurtre — mais le véritable commanditaire serait Ulysse Leblanc. Neutralisé lors de la fusillade du pont de la Concorde (07/06).</div>
         </div>
         <span class="rs pnj-important">Neutralisé</span>
       </div>
@@ -201,12 +201,12 @@
         <span class="rs pnj-surveiller">À surveiller</span>
       </div>
 
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-g">MxR</div>
         <div>
           <div class="rn">Maxime Rousseau</div>
-          <div class="rr">Futur agent de sécurité personnel · recruté le 05/06</div>
-          <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 05/06, il lui propose d'assurer sa sécurité si besoin contre rémunération — Maxime accepte à la surprise de Jeremy. Leur discussion est interrompue par l'arrivée du groupe militant de Claude.</div>
+          <div class="rr">Futur agent de sécurité · recruté le 06/06</div>
+          <div class="rd">Jeremy cherchait à le croiser depuis plusieurs jours. Le 06/06, il lui propose de rejoindre son futur service de sécurité — Maxime accepte à la surprise de Jeremy. Leur discussion est interrompue par l'arrivée du groupe militant de Claude.</div>
         </div>
         <span class="rs pnj-surveiller">Allié recruté</span>
       </div>
@@ -225,7 +225,7 @@
 
   <div class="g2">
     <div>
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-g">Da</div>
         <div>
           <div class="rn">Danie</div>
@@ -236,14 +236,59 @@
       </div>
     </div>
     <div>
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-g">Na</div>
         <div>
           <div class="rn">Nancy Larouge</div>
-          <div class="rr">Membre de la famille Larouge · comportement menaçant</div>
-          <div class="rd">Un "tea time" avec elle est prévu à court terme à l'initiative de Jeremy. Selon Danie (07/06), elle parlerait régulièrement de ses <em>"poupées"</em> pour désigner des personnes qui attirent son attention et chercherait à les <strong class="c-red">transformer en véritables poupées</strong>. Jeremy est invité chez elle — ce qui l'expose directement.</div>
+          <div class="rr">Membre de la famille Larouge · interpellée au musée d'Orsay</div>
+          <div class="rd">Le 08/06, interpellée en fuite près du musée d'Orsay (gardien assommé, chien mort) — prétend être là par hasard, peu crédible. Selon Danie, elle parlerait de ses <em>"poupées"</em> pour désigner des personnes qu'elle chercherait à <strong class="c-red">transformer en véritables poupées</strong>. Un "tea time" avec elle reste prévu, exposant directement Jeremy.</div>
         </div>
         <span class="rs pnj-important">Danger potentiel</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="g2">
+    <div>
+      <div class="rc" data-updated="true">
+        <div class="rav ra-r">AR</div>
+        <div>
+          <div class="rn">Archibald de Rochefort — le père</div>
+          <div class="rr">Père de Jeremy · l'a rejeté</div>
+          <div class="rd">Révélé via un enregistrement le 08/06 : Archibald a confié Jeremy à Armand <strong class="c-red">"pour s'en débarrasser"</strong> plus que pour le soigner. Il évoque un ancien secret familial (une femme, un "arrangement") et rejette les fiançailles de son fils avec une femme "qui n'est pas de leur monde". Considère Jeremy comme un problème.</div>
+        </div>
+        <span class="rs pnj-important">Père hostile</span>
+      </div>
+
+      <div class="rc" data-updated="true">
+        <div class="rav ra-b">Mo</div>
+        <div>
+          <div class="rn">Lieutenant Moreau — IGPN</div>
+          <div class="rr">Enquête sur les taupes dans la police</div>
+          <div class="rd">Intègre la patrouille de Jeremy le 08/06 dans le cadre d'une enquête de l'IGPN sur les possibles taupes au sein des forces de l'ordre. Présence menaçante pour Jeremy, qui mène une double vie criminelle tout en étant stagiaire de police.</div>
+        </div>
+        <span class="rs pnj-surveiller">Menace IGPN</span>
+      </div>
+    </div>
+    <div>
+      <div class="rc" data-updated="true">
+        <div class="rav ra-n">AL</div>
+        <div>
+          <div class="rn">Archibald Larouge</div>
+          <div class="rr">Membre de la famille Larouge · présent au musée</div>
+          <div class="rd">Arrivé sur les lieux du cambriolage du musée d'Orsay le 08/06 avec Nancy, Mortecouille et les Montclair. Participe aux explications confuses servies à la patrouille avant de filer vers la Fashion Week. À ne pas confondre avec Archibald de Rochefort (le père de Jeremy).</div>
+        </div>
+        <span class="rs pnj-surveiller">À surveiller</span>
+      </div>
+
+      <div class="rc" data-updated="true">
+        <div class="rav ra-n">AM</div>
+        <div>
+          <div class="rn">Angi & Maël Montclair</div>
+          <div class="rr">Liés à l'affaire Léo Montclair · entourage Larouge</div>
+          <div class="rd">Présents au musée d'Orsay le 08/06 dans le groupe Larouge. Leur nom les relie à Léo Montclair (retrouvé mort dans une benne). Connexion entre l'affaire Montclair et le cercle Larouge — un fil que Jeremy commence à démêler.</div>
+        </div>
+        <span class="rs pnj-surveiller">À surveiller</span>
       </div>
     </div>
   </div>

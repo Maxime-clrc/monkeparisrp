@@ -67,11 +67,11 @@
       Vautrin mentionne un individu nommé Claude, potentiellement impliqué dans le meurtre de son garde du corps. Identité et motivations inconnues — mais le nom circule dans des sphères dangereuses.
     </div>
     <div class="warn">
-      <strong>Groupe militant & menace sur la police — 05/06</strong><br>
+      <strong>Groupe militant & menace sur la police — 06/06</strong><br>
       Un groupe armé se réclamant de la gauche militante a enlevé Blanche Pichon et menacé de "faire tomber un policier chaque jour", ciblant directement le commissaire. L'un des membres répond au nom de <strong>Claude</strong> — première apparition directe. Jeremy est désormais témoin et cible potentielle en tant que policier.
     </div>
     <div class="warn">
-      <strong>Leblanc — commanditaire de meurtre — 05/06→07/06</strong><br>
+      <strong>Leblanc — commanditaire de meurtre — 06/06→07/06</strong><br>
       La rivalité avec Leblanc dépasse désormais le cadre personnel : selon l'informateur Blanchard, Leblanc serait le commanditaire du meurtre attribué à Claude Garnier (FTG-FTC). Jeremy détient une information explosive — mais sans preuve formelle et sans pouvoir la transmettre officiellement sans exposer ses propres activités illicites.
     </div>
     <div class="warn">
@@ -81,5 +81,17 @@
     <div class="warn">
       <strong>Mystère Larouge — poupées & Capétiens — 07/06</strong><br>
       Les révélations de Danie font basculer l'affaire Larouge dans le surnaturel : salle secrète, poupées de cire géantes, immortalité photographiée, vrai nom Capet. Nancy Larouge "transformerait" des personnes qui attirent son attention. Jeremy et Alix ont prévu d'infiltrer la propriété — une opération à très haut risque.
+    </div>
+    <div class="warn">
+      <strong>Secret familial & rejet du père — 08/06</strong><br>
+      L'enregistrement diffusé par Armand confirme que Jeremy a été "placé pour s'en débarrasser". Au-delà de la blessure personnelle, il existe un ancien secret familial impliquant une femme et un "arrangement" toujours actif. Armand a-t-il un intérêt à monter Jeremy contre son père ? Les motivations de l'oncle deviennent illisibles.
+    </div>
+    <div class="warn">
+      <strong>Une secte cible Jean Lefèvre — 08/06</strong><br>
+      Alix a failli être enlevée par une secte cherchant à atteindre son père. Cette menace nouvelle s'ajoute à la corruption policière et au mystère Larouge — et place Alix, donc Jeremy par ricochet, dans une zone de danger direct.
+    </div>
+    <div class="warn">
+      <strong>IGPN dans la place — 08/06</strong><br>
+      Le lieutenant Moreau de l'IGPN enquête sur les taupes au sein de la police. Pour Jeremy, stagiaire menant une double vie criminelle, une enquête interne rapprochée est une menace permanente — d'autant que le commissaire est lui-même soupçonné.
     </div>
   </div>

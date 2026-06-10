@@ -1,13 +1,68 @@
 <div class="sec" id="events">Récents évènements</div>
 
   <!-- ══════════════════════════════════
-    SESSION 07/06
+    SESSION 08/06
   ══════════════════════════════════ -->
 
   <div class="event-session">
-    <div class="event-session-date">Session — 07/06</div>
+    <div class="event-session-date">Session — 08/06</div>
 
     <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-famille">Armand · l'enregistrement révélateur</span>
+      </div>
+      <div class="event-body">
+        Lors d'une discussion privée, Armand fait écouter à Jeremy l'enregistrement d'un appel avec <strong class="c-gold">Archibald de Rochefort</strong>, son père. La conversation est brutale : Archibald admet à demi-mot avoir confié Jeremy à Armand <strong class="c-red">moins pour le soigner que pour s'en débarrasser</strong>. Armand se plaint du poids financier croissant des traitements et des demandes d'argent de Jeremy.
+      </div>
+      <div class="event-body">
+        Les deux hommes évoquent un <strong class="c-red">ancien secret familial</strong> : une femme jamais nommée ayant joué un rôle majeur dans leur passé, un "arrangement" toujours en vigueur, et des "erreurs de leur génération" à ne pas reproduire. Archibald réagit très mal aux fiançailles de Jeremy avec une femme "qui n'est pas de leur monde", qu'il juge dangereuses. Jeremy comprend que sa famille cache des secrets anciens et que son père le voit comme un problème.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-police">Musée d'Orsay · IGPN & cambriolage étrange</span>
+      </div>
+      <div class="event-body">
+        Jeremy prend son service avec Maurice Cointreau et le <strong class="c-gold">lieutenant Moreau de l'IGPN</strong>, chargé d'enquêter sur les possibles taupes dans la police. La patrouille est appelée au musée d'Orsay : ils ne trouvent qu'un <strong class="c-red">gardien assommé et son chien de garde mort</strong>, aucune trace des intrus.
+      </div>
+      <div class="event-body">
+        En repassant plus tard, ils aperçoivent des individus en fuite et interpellent <strong class="c-gold">Nancy Larouge</strong>, qui prétend peu crédiblement être là par hasard. Arrivent ensuite Juste Mortecouille, <strong class="c-gold">Angi et Maël Montclair</strong> ainsi qu'<strong class="c-gold">Archibald Larouge</strong>. Le groupe embrouille la patrouille avec des explications confuses avant de filer vers le défilé de la Fashion Week. Les soupçons de Jeremy autour des Larouge se renforcent.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-relation">Fashion Week · fausse alerte & sélection</span>
+      </div>
+      <div class="event-body">
+        Jeremy se rend au défilé pour se présenter comme candidat, tandis qu'Alix y participe aussi. À son arrivée, <strong class="c-gold">Anthéa</strong> paniquée lui annonce qu'Alix aurait été enlevée. Après confusion, il découvre qu'Alix serait simplement partie avec son père — mais reste injoignable. Jeremy participe au défilé et est <strong class="c-green">sélectionné pour le prochain tour</strong>, nourrissant son goût pour la reconnaissance.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-danger">Alix · tentative d'enlèvement par une secte</span>
+      </div>
+      <div class="event-body">
+        Plus tard, Jeremy quitte son service pour rejoindre Alix. Elle était bien avec son père, mais a <strong class="c-red">réellement failli être kidnappée par une secte</strong> cherchant à atteindre Jean Lefèvre à travers elle. Son père serait intervenu à temps.
+      </div>
+      <div class="event-body">
+        Alix révèle aussi plusieurs informations : les enfants Larouge ne seraient finalement <strong class="c-gold">pas des vampires</strong> ; ils cacheraient des choses par nécessité plutôt que par monstruosité ; et il ne faut <strong class="c-red">surtout pas faire confiance au commissaire</strong>, que Jean Lefèvre considère toujours comme compromis. La soirée se clôt dans une atmosphère lourde où famille manipulatrice, sectes, corruption policière et mystère Larouge commencent à s'entremêler.
+      </div>
+    </div>
+
+  </div>
+  <!-- FIN SESSION 08/06 -->
+
+  <!-- ══════════════════════════════════
+    SESSION 07/06
+  ══════════════════════════════════ -->
+
+  <div class="event-session" style="opacity:0.7">
+    <div class="event-session-date">Session — 07/06</div>
+
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-police">FTG-FTC · commissaire indifférent & fusillade</span>
       </div>
@@ -16,7 +71,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-mystere">Tea time Larouge · Cointreau conseille d'enquêter</span>
       </div>
@@ -25,7 +80,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-famille">Clothilde · faux profil pour tester Ragnar</span>
       </div>
@@ -34,7 +89,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-danger">Alix vole 500 000 € à Valmont</span>
       </div>
@@ -43,7 +98,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-danger">Jean-Claude Blanchard · Leblanc commanditaire de meurtre</span>
       </div>
@@ -52,7 +107,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-danger">Incendie du Paradise · preuves effacées</span>
       </div>
@@ -61,7 +116,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-mystere">Révélations sur les Larouge · Capétiens, poupées de cire & salle secrète</span>
       </div>
@@ -80,13 +135,13 @@
   <!-- FIN SESSION 07/06 -->
 
   <!-- ══════════════════════════════════
-    SESSION 05/06
+    SESSION 06/06
   ══════════════════════════════════ -->
 
   <div class="event-session" style="opacity:0.7">
-    <div class="event-session-date">Session — 05/06</div>
+    <div class="event-session-date">Session — 06/06</div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-relation">Rencontre des familles · projet avorté</span>
       </div>
@@ -95,7 +150,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-police">Service police · enlèvement de Blanche Pichon</span>
       </div>
@@ -107,7 +162,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-relation">Maxime Rousseau · futur agent de sécurité</span>
       </div>
@@ -116,7 +171,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-danger">Groupe militant · Claude identifié · menaces sur la police</span>
       </div>
@@ -128,7 +183,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-danger">Accident · Jeremy & Ulysse Leblanc à l'hôpital</span>
       </div>
@@ -141,7 +196,7 @@
     </div>
 
   </div>
-  <!-- FIN SESSION 05/06 -->
+  <!-- FIN SESSION 06/06 -->
 
   <!-- ══════════════════════════════════
     SESSION 04/06
