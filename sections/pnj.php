@@ -138,7 +138,7 @@
       <div class="rc">
         <div class="rav ra-r">Cx</div>
         <div>
-          <div class="rn">Claude Garnier — membre FTG-FTC</div>
+          <div class="rn">Claude Garnier — chef du FTG-FTC</div>
           <div class="rr">Militant armé · recherché pour meurtre · commandité par Leblanc</div>
           <div class="rd">D'abord évoqué anonymement par Vautrin (04/06), puis entendu en personne (06/06) lors de l'enlèvement de Pichon. Le 07/06, Blanchard révèle son identité complète : <strong class="c-red">Claude Garnier</strong>, membre du FTG-FTC recherché pour meurtre — mais le véritable commanditaire serait Ulysse Leblanc. Neutralisé lors de la fusillade du pont de la Concorde (07/06).</div>
         </div>
@@ -161,10 +161,10 @@
         <div class="rav ra-n">BB</div>
         <div>
           <div class="rn">Commissaire Broussard</div>
-          <div class="rr">Commissaire · comportement suspect · visé par plusieurs sources</div>
-          <div class="rd">D'abord simple supérieur hiérarchique. Le 04/06, à la fois Jean Lefèvre et Vautrin évoquent indépendamment des soupçons à son égard. Son comportement est jugé de plus en plus suspect. Figure centrale dans la question de la corruption policière généralisée.</div>
+          <div class="rr">Commissaire · comportement suspect · propos inquiétants</div>
+          <div class="rd">Visé par les soupçons de Jean Lefèvre et Vautrin (corruption). Le 12/06, il accompagne Jeremy vers le Céleste et dénigre Jean Lefèvre (bar miteux, dettes), tient des <strong class="c-red">propos eugénistes</strong> ("certains méritent de vivre plus que d'autres") et affirme qu'Alix serait proche de Valmont. Juste après, le père d'Alix s'effondre — coïncidence troublante qui le place en tête des suspects.</div>
         </div>
-        <span class="rs pnj-important">Suspect actif</span>
+        <span class="rs pnj-important">Suspect majeur</span>
       </div>
     </div>
   </div>  <div class="g2">
@@ -211,7 +211,7 @@
         <span class="rs pnj-surveiller">Allié recruté</span>
       </div>
 
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-n">JCB</div>
         <div>
           <div class="rn">Jean-Claude Blanchard</div>
@@ -250,7 +250,7 @@
 
   <div class="g2">
     <div>
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-r">AR</div>
         <div>
           <div class="rn">Archibald de Rochefort — le père</div>
@@ -260,7 +260,7 @@
         <span class="rs pnj-important">Père hostile</span>
       </div>
 
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-b">Mo</div>
         <div>
           <div class="rn">Lieutenant Moreau — IGPN</div>
@@ -271,7 +271,7 @@
       </div>
     </div>
     <div>
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-n">AL</div>
         <div>
           <div class="rn">Archibald Larouge</div>
@@ -281,7 +281,7 @@
         <span class="rs pnj-surveiller">À surveiller</span>
       </div>
 
-      <div class="rc" data-updated="true">
+      <div class="rc">
         <div class="rav ra-n">AM</div>
         <div>
           <div class="rn">Angi & Maël Montclair</div>

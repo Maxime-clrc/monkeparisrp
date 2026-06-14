@@ -94,4 +94,16 @@
       <strong>IGPN dans la place — 08/06</strong><br>
       Le lieutenant Moreau de l'IGPN enquête sur les taupes au sein de la police. Pour Jeremy, stagiaire menant une double vie criminelle, une enquête interne rapprochée est une menace permanente — d'autant que le commissaire est lui-même soupçonné.
     </div>
+    <div class="warn">
+      <strong>Empoisonnement présumé de Jean Lefèvre — 12/06</strong><br>
+      Le père d'Alix s'effondre au dîner des fiançailles, et Jeremy ressent des effets anormaux après avoir bu. Empoisonnement ciblé ? Le commissaire venait de tenir des propos menaçants sur Lefèvre. Adrien rejette la faute sur Jeremy et Alix — bannis du Céleste.
+    </div>
+    <div class="warn">
+      <strong>La trêve suspecte avec Leblanc — 12/06</strong><br>
+      Leblanc, commanditaire présumé d'un meurtre et ennemi juré, propose soudainement la paix au nom d'un "ennemi commun". Jeremy accepte tout en ayant déjà recruté contre lui. Piège, manipulation ou réel renversement d'alliance ? La nature de cet ennemi commun reste à découvrir.
+    </div>
+    <div class="warn">
+      <strong>Clothilde — alliée ou calcul ? — 12/06</strong><br>
+      Après des semaines de mépris mutuel, Clothilde veille sur Jeremy à l'hôpital et l'accompagne toute la journée. Revirement sincère ou manœuvre dans le contexte tendu du Céleste ? Un rapprochement qui change la donne familiale.
+    </div>
   </div>

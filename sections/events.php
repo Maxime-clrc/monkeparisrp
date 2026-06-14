@@ -1,13 +1,71 @@
 <div class="sec" id="events">Récents évènements</div>
 
   <!-- ══════════════════════════════════
-    SESSION 08/06
+    SESSION 12/06
   ══════════════════════════════════ -->
 
   <div class="event-session">
-    <div class="event-session-date">Session — 08/06</div>
+    <div class="event-session-date">Session — 12/06</div>
 
     <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-police">Le commissaire · propos troubles sur le trajet</span>
+      </div>
+      <div class="event-body">
+        En route vers le Céleste, Jeremy croise le commissaire qui l'accompagne. Celui-ci tient des propos peu flatteurs sur <strong class="c-gold">Jean Lefèvre</strong> : un bar miteux gagné au poker, des difficultés financières. Il glisse aussi des phrases énigmatiques — <strong class="c-red">certains mériteraient de réussir, voire de vivre, plus que d'autres</strong> — et affirme qu'Alix serait très proche de Valmont et n'en voudrait qu'à l'agent de Jeremy.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-danger">Dîner au Céleste · fiançailles & malaise du père</span>
+      </div>
+      <div class="event-body">
+        Le repas réunit les deux familles. Alix annonce officiellement leurs <strong class="c-gold">fiançailles</strong>, créant un malaise autour de la table. Peu après, son père se sent mal, va aux toilettes et est <strong class="c-red">retrouvé au sol</strong>. Alix est en pleine crise de panique, les secours sont appelés.
+      </div>
+      <div class="event-body">
+        Jeremy, qui a beaucoup bu, ressent des effets anormalement intenses. <strong class="c-gold">Clothilde</strong> arrive et l'emmène à l'hôpital — un possible empoisonnement plane sur la scène.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-famille">Hôpital, Clothilde & bannissement du Céleste</span>
+      </div>
+      <div class="event-body">
+        Après plusieurs heures d'observation, Jeremy sort de l'hôpital. <strong class="c-gold">Clothilde est restée à ses côtés tout du long</strong> — un rapprochement inattendu vu leur rivalité. Adrien l'appelle ensuite pour lui annoncer qu'il <strong class="c-red">ne veut plus voir Jeremy ni Alix au Céleste</strong>, les tenant pour responsables de l'incident.
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-relation">Première voiture & soirée au Paradise</span>
+      </div>
+      <div class="event-body">
+        Jeremy et Clothilde se rendent chez un concessionnaire : Jeremy devient enfin propriétaire d'un <strong class="c-green">véhicule adapté à son handicap</strong>. Ils rejoignent ensuite le Paradise où les attendent Alix et ses amis. Anthéa traverse une peine de cœur et s'isole aux toilettes. Bonne nouvelle : <strong class="c-gold">l'état du père d'Alix s'améliore.</strong>
+      </div>
+    </div>
+
+    <div class="event-card" data-updated="true">
+      <div class="event-header">
+        <span class="event-theme et-danger">Trêve avec Ulysse Leblanc</span>
+      </div>
+      <div class="event-body">
+        Jeremy reçoit un appel d'Ulysse Leblanc qui souhaite <strong class="c-red">enterrer la hache de guerre</strong>, affirmant qu'ils ont désormais un ennemi commun. Jeremy accepte — alors même qu'il était en train de recruter des gens pour agir contre lui. La session se termine par un retour à l'appartement familial avec Clothilde.
+      </div>
+    </div>
+
+  </div>
+  <!-- FIN SESSION 12/06 -->
+
+  <!-- ══════════════════════════════════
+    SESSION 08/06
+  ══════════════════════════════════ -->
+
+  <div class="event-session" style="opacity:0.7">
+    <div class="event-session-date">Session — 08/06</div>
+
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-famille">Armand · l'enregistrement révélateur</span>
       </div>
@@ -19,7 +77,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-police">Musée d'Orsay · IGPN & cambriolage étrange</span>
       </div>
@@ -31,7 +89,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-relation">Fashion Week · fausse alerte & sélection</span>
       </div>
@@ -40,7 +98,7 @@
       </div>
     </div>
 
-    <div class="event-card" data-updated="true">
+    <div class="event-card">
       <div class="event-header">
         <span class="event-theme et-danger">Alix · tentative d'enlèvement par une secte</span>
       </div>

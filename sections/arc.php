@@ -77,10 +77,15 @@
         <div class="tlt">Fusillade FTG-FTC, 500k€ volés, Leblanc commanditaire & mystère Larouge — 07/06</div>
         <div class="tld">Fusillade pont de la Concorde : Blanche Pichon blessée, deux assaillants du FTG-FTC neutralisés. Commissaire indifférent aux menaces. Alix vole <strong class="c-red">500 000 €</strong> à Valmont au Paradise — le Paradise brûle peu après. Blanchard révèle que <strong class="c-red">Leblanc serait le commanditaire du meurtre de Claude Garnier</strong>. Rencontre de Danie (employée Larouge) : salle secrète avec poupées de cire géantes, article XIXe siècle prouvant l'immortalité de Philomène, vrai nom <strong class="c-red">Capet</strong> (lien Capétiens), Nancy Larouge transformerait des personnes en "poupées". Plan d'infiltration de la demeure Larouge élaboré.</div>
       </div>
-      <div class="tli" data-updated="true">
+      <div class="tli" data-tl-old="true">
         <div class="tldot td-r"></div>
         <div class="tlt">Secret familial, musée d'Orsay & secte — 08/06</div>
         <div class="tld">Armand fait écouter à Jeremy un enregistrement où Archibald (son père) avoue l'avoir confié <strong class="c-red">"pour s'en débarrasser"</strong>, évoque un ancien secret familial (une femme, un "arrangement") et rejette ses fiançailles. En service avec l'IGPN (lieutenant Moreau), cambriolage étrange au musée d'Orsay : gardien assommé, chien mort. Nancy Larouge interpellée en fuite avec Mortecouille, les Montclair et Archibald Larouge. À la Fashion Week, fausse alerte sur l'enlèvement d'Alix — Jeremy est sélectionné au défilé. Alix a en réalité <strong class="c-red">failli être enlevée par une secte visant Jean Lefèvre</strong>. Révélations : les Larouge ne seraient pas des vampires mais cacheraient des choses par nécessité, et le commissaire reste compromis.</div>
+      </div>
+      <div class="tli" data-updated="true">
+        <div class="tldot td-r"></div>
+        <div class="tlt">Fiançailles, malaise au Céleste, première voiture & trêve Leblanc — 12/06</div>
+        <div class="tld">Dîner des deux familles au Céleste. Sur le trajet, le commissaire dénigre Jean Lefèvre et tient des propos eugénistes troublants. Alix annonce les <strong class="c-gold">fiançailles</strong> ; peu après, son père fait un malaise et s'effondre (empoisonnement suspecté). Jeremy, ivre, ressent des effets anormaux et est emmené à l'hôpital par Clothilde, qui reste à ses côtés. Adrien <strong class="c-red">bannit Jeremy et Alix du Céleste</strong>. Jeremy s'achète enfin une voiture adaptée. Au Paradise, l'état du père s'améliore. Coup de théâtre : <strong class="c-red">Ulysse Leblanc propose une trêve</strong> (ennemi commun) que Jeremy accepte. Retour à l'appartement avec Clothilde.</div>
       </div>
     </div>
   </div>

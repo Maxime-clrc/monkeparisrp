@@ -77,8 +77,8 @@
       <div class="rav ra-r">UL</div>
       <div>
         <div class="rn">Ulysse Leblanc</div>
-        <div class="rr">Antagoniste · commanditaire de meurtre · guerre totale</div>
-        <div class="rd">Rivalité escaladée jusqu'à la violence physique (accident de voiture, 06/06). Le 07/06, l'informateur Jean-Claude Blanchard révèle que Leblanc serait le <strong class="c-red">véritable commanditaire du meurtre attribué à Claude Garnier</strong> (FTG-FTC). Leblanc cumule désormais : guerre personnelle avec Jeremy ET implication dans des affaires criminelles majeures.</div>
+        <div class="rr">Ex-ennemi · trêve fragile · ennemi commun</div>
+        <div class="rd">Après une guerre totale (plat piégé, piège humiliant, accident de voiture) et la révélation qu'il aurait commandité le meurtre attribué à Claude Garnier, coup de théâtre le 12/06 : Leblanc appelle Jeremy pour <strong class="c-red">enterrer la hache de guerre</strong>, évoquant un ennemi commun. Jeremy accepte — alors qu'il recrutait justement des gens contre lui. <strong class="c-gold">Trêve aussi soudaine que suspecte.</strong></div>
       </div>
       <span class="rs rs-h">Guerre totale</span>
     </div>
@@ -87,8 +87,8 @@
       <div class="rav ra-r">JL</div>
       <div>
         <div class="rn">Jean Lefèvre — père d'Alix</div>
-        <div class="rr">Ancien haut gradé de la police · acteur dans l'ombre</div>
-        <div class="rd">D'abord simple facteur de risque silencieux, Jean Lefèvre devient un acteur clé. Le 04/06, il révèle à Alix (et indirectement Jeremy) des informations troublantes sur la famille Larouge et exprime sa méfiance envers plusieurs membres de la police, notamment le commissaire. C'est lui qui mandate Jeremy et Alix pour se rapprocher discrètement des enfants Larouge.</div>
+        <div class="rr">Ancien haut gradé · futur beau-père · victime d'un malaise suspect</div>
+        <div class="rd">Acteur clé dans l'ombre : il a mandaté Jeremy et Alix sur les Larouge et se méfie du commissaire. Le 12/06, lors du dîner des fiançailles au Céleste, il est pris d'un <strong class="c-red">malaise soudain et retrouvé au sol</strong> (possible empoisonnement). Son état s'améliore en fin de soirée. Le commissaire avait tenu des propos méprisants à son égard juste avant.</div>
       </div>
       <span class="rs rs-c">Allié ambigu</span>
     </div>

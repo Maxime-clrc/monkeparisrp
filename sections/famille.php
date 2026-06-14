@@ -20,19 +20,19 @@
         <div class="rav ra-r">Cl</div>
         <div>
           <div class="rn">Clothilde De Saint-Claire</div>
-          <div class="rr">Cousine · en couple avec Ragnar (policier)</div>
-          <div class="rd">Jeremy la méprise profondément. Il cherche activement à saboter son couple avec Ragnar. A participé au piège Leblanc (25/05). Le 28/05, leur rivalité explose lors d'une séance de kung-fu au Palais de Jade : Jeremy prend la fuite sans payer les 500 € dus, Clothilde refuse également de régler — les deux sont désormais sous menace de plainte pour escroquerie.</div>
+          <div class="rr">Cousine · rivale · rapprochement inattendu</div>
+          <div class="rd">Mépris mutuel de longue date (sabotage du couple Ragnar, dette du Palais de Jade). Mais le 12/06, retournement : quand Jeremy fait un malaise au Céleste, <strong class="c-gold">Clothilde l'emmène à l'hôpital et reste à ses côtés des heures</strong>, l'accompagne acheter sa voiture et rentre avec lui à l'appartement familial. Un dégel surprenant après des semaines d'hostilité.</div>
         </div>
-        <span class="rs rs-h">Cible sabotage</span>
+        <span class="rs rs-c">Rapprochement</span>
       </div>
       <div class="rc">
         <div class="rav ra-g">Ad</div>
         <div>
           <div class="rn">Adrien De Saint-Claire</div>
-          <div class="rr">Cousin · à l'origine de la candidature police</div>
-          <div class="rd">C'est lui qui a proposé le nom de Jeremy à Maurice Cointro pour lui donner une occupation. A participé au plan contre Ulysse Leblanc le 25/05.</div>
+          <div class="rr">Cousin · à l'origine de la candidature police · hostile</div>
+          <div class="rd">C'est lui qui a proposé le nom de Jeremy à Maurice Cointreau. A participé au plan contre Leblanc (25/05). Le 12/06, après le malaise de Jean Lefèvre au Céleste, il appelle pour annoncer qu'il <strong class="c-red">ne veut plus voir Jeremy ni Alix au Céleste</strong>, les tenant pour responsables. Relation désormais tendue.</div>
         </div>
-        <span class="rs rs-c">Neutre</span>
+        <span class="rs rs-h">Hostile</span>
       </div>
     </div>
     <div>
