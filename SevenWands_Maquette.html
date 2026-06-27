@@ -188,6 +188,81 @@ nav.menu a.nav.active::after{content:"";position:absolute;left:14px;right:14px;b
 /* grids */
 .house-band{display:flex;align-items:center;gap:18px;margin:6px 0 16px}
 .house-crest{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font-family:'Fraunces';font-weight:600;color:#fff;font-size:24px;box-shadow:0 8px 22px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.08) inset}
+
+/* house hero banner (themed per house) */
+.house-hero{--house:var(--gold);display:flex;align-items:center;gap:26px;margin:4px 0 20px;padding:24px 26px;border-radius:var(--r);position:relative;overflow:hidden;
+  background:linear-gradient(120deg,color-mix(in srgb,var(--house) 22%,transparent),transparent 70%),var(--panel);border:1px solid var(--line);backdrop-filter:blur(12px)}
+.house-hero::before{content:"";position:absolute;inset:0;border-left:3px solid var(--house);opacity:.85;pointer-events:none;border-radius:var(--r)}
+.house-hero::after{content:"";position:absolute;right:-40px;top:-40px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--house) 30%,transparent),transparent 70%);pointer-events:none}
+.house-emblem{flex:none;width:118px;filter:drop-shadow(0 8px 20px rgba(0,0,0,.5))}
+.house-emblem img,.house-emblem svg{width:118px;height:auto;display:block}
+.house-hero-txt{position:relative;z-index:1}
+.house-desc{color:var(--ink-soft);font-style:italic;font-family:'Spectral';font-size:19px;margin-top:2px}
+.house-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tag{font-family:'Fraunces';font-size:12px;letter-spacing:.02em;padding:4px 11px;border-radius:999px;background:color-mix(in srgb,var(--house,var(--gold)) 16%,transparent);border:1px solid color-mix(in srgb,var(--house,var(--gold)) 45%,transparent);color:var(--ink);cursor:pointer;transition:.2s}
+.tag:hover{background:color-mix(in srgb,var(--house,var(--gold)) 30%,transparent)}
+@media(max-width:640px){.house-hero{flex-direction:column;text-align:center}.house-tags{justify-content:center}}
+
+/* TABS on character page */
+.tabs{display:flex;gap:4px;flex-wrap:wrap;margin:22px 0 4px;border-bottom:1px solid var(--line)}
+.tab{font-family:'Fraunces';font-size:13.5px;letter-spacing:.02em;padding:10px 16px;color:var(--ink-soft);cursor:pointer;position:relative;transition:.2s;border-radius:8px 8px 0 0}
+.tab:hover{color:var(--ink);background:var(--panel)}
+.tab.on{color:var(--gold-soft)}
+.tab.on::after{content:"";position:absolute;left:8px;right:8px;bottom:-1px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.tabpane{display:none;animation:fade .35s}
+.tabpane.on{display:block}
+
+/* backlinks */
+.backlinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.backlink{display:inline-flex;align-items:center;gap:6px;font-size:14px;padding:6px 12px;border-radius:999px;background:var(--panel2);border:1px solid var(--line);color:var(--ink-soft);cursor:pointer;transition:.2s}
+.backlink:hover{border-color:var(--arc);color:var(--ink)}
+.backlink .bi{opacity:.7}
+
+/* CHRONICLE (server event feed) */
+.chron{position:relative;margin-top:8px;padding-left:24px}
+.chron::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--gold-deep),transparent)}
+.cev{position:relative;display:flex;gap:14px;padding:12px 0;cursor:pointer;border-bottom:1px dashed var(--line);transition:.15s}
+.cev:hover{padding-left:5px}
+.cev::before{content:"";position:absolute;left:-21px;top:18px;width:11px;height:11px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--bg),0 0 10px var(--gold)}
+.cev .cdate{flex:none;width:96px;font-family:'Fraunces';font-size:12px;letter-spacing:.06em;color:var(--gold-soft);padding-top:2px}
+.cev .cbody b{display:block;font-family:'Fraunces';font-size:15px}
+.cev .cbody span{font-size:14px;color:var(--ink-soft)}
+.cev .chouse{flex:none;align-self:center;font-family:'Fraunces';font-size:10px;letter-spacing:.05em;padding:3px 9px;border-radius:999px;border:1px solid var(--line);color:var(--ink-soft);margin-left:auto}
+
+/* MAP */
+.mapwrap{position:relative;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--panel);backdrop-filter:blur(8px)}
+.mapsvg{width:100%;height:auto;display:block;cursor:grab}
+.mapsvg .region{transition:.25s}
+.mappin{cursor:pointer}
+.mappin circle{transition:.2s}
+.mappin:hover circle{r:9}
+.maptip{position:absolute;pointer-events:none;background:var(--solid);border:1px solid var(--gold-deep);border-radius:9px;padding:8px 12px;font-size:13px;color:var(--ink);box-shadow:0 12px 30px rgba(0,0,0,.5);opacity:0;transition:.15s;transform:translateY(-6px);z-index:5;max-width:220px}
+.maptip.show{opacity:1}
+.maptip b{font-family:'Fraunces';color:var(--gold-soft);display:block;font-size:14px}
+.maptip .mz{font-size:11px;color:var(--muted);letter-spacing:.05em}
+.maplegend{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;font-size:13px;color:var(--ink-soft)}
+.maplegend span{display:inline-flex;align-items:center;gap:7px}
+.maplegend i{width:11px;height:11px;border-radius:50%;display:block}
+.mapviews{display:flex;gap:8px;margin-bottom:12px}
+
+/* home feature row */
+.home-feature{display:grid;grid-template-columns:1.3fr 1fr;gap:18px;margin-top:18px}
+@media(max-width:840px){.home-feature{grid-template-columns:1fr}}
+.feat-spot,.feat-arcs{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;backdrop-filter:blur(12px)}
+.feat-spot{cursor:pointer;transition:.25s;position:relative;overflow:hidden}
+.feat-spot:hover{border-color:var(--gold);transform:translateY(-3px)}
+.feat-spot::after{content:"";position:absolute;right:-30px;top:-30px;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(155,125,255,.18),transparent 70%)}
+.fs-label{font-family:'Fraunces';font-size:13px;color:var(--gold-soft);letter-spacing:.04em;margin-bottom:12px}
+.fs-body{display:flex;gap:16px;align-items:center;position:relative;z-index:1}
+.fs-portrait{width:74px;height:92px;flex:none;border-radius:10px;border:1px solid var(--line);background:radial-gradient(circle at 50% 38%,var(--panel2),rgba(6,8,15,.7));display:grid;place-items:center;font-size:34px;color:var(--arc);filter:drop-shadow(0 0 14px rgba(95,214,198,.3))}
+.fs-body b{font-family:'Fraunces';font-size:19px}
+.fs-sub{font-style:italic;font-family:'Spectral';color:var(--gold-soft);font-size:15px;margin:2px 0 7px}
+.fs-body p{font-size:15px;color:var(--ink-soft)}
+.arc-item{padding:11px 0;border-bottom:1px dashed var(--line);cursor:pointer;transition:.15s}
+.arc-item:last-child{border-bottom:none}
+.arc-item:hover{padding-left:5px}
+.arc-item b{font-family:'Fraunces';font-size:15px;display:block}
+.arc-item span{font-size:13px;color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:.28s cubic-bezier(.2,.7,.2,1);position:relative;backdrop-filter:blur(10px)}
 .card:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 26px 50px rgba(0,0,0,.5),var(--glow)}
@@ -426,12 +501,13 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   <div class="wrap" id="navwrap">
     <a class="nav active" data-go="home">Accueil</a>
     <a class="nav" data-go="faction" data-house="Lombrasier">Lombrasier</a>
-    <a class="nav" data-go="faction" data-house="Rongebois">Rongebois</a>
-    <a class="nav" data-go="faction" data-house="Briselune">Briselune</a>
     <a class="nav" data-go="faction" data-house="Vervenin">Vervenin</a>
+    <a class="nav" data-go="faction" data-house="Briselune">Briselune</a>
+    <a class="nav" data-go="faction" data-house="Rongebois">Rongebois</a>
     <a class="nav" data-go="faction" data-house="Autres">Autres</a>
     <a class="nav" data-go="havengard">Lieux</a>
     <a class="nav" data-go="archives">Archives</a>
+    <a class="nav" data-go="chronicle">Chronique</a>
     <a class="nav editorlink" data-go="board" style="display:none">Tableau d'enquête</a>
     <div class="searchbox">
       <span class="si">🔍</span>
@@ -467,14 +543,38 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
       <div class="info"><h3>Les archives</h3><p>Livres, objets, sorts et potions de l'univers, consultables comme in-game.</p></div>
     </div>
   </div>
+
+  <div class="home-feature">
+    <div class="feat-spot" onclick="go('char')">
+      <div class="fs-label">✦ Personnage à la une</div>
+      <div class="fs-body">
+        <div class="fs-portrait">✦</div>
+        <div>
+          <b>Aldwin Serpefroide</b>
+          <div class="fs-sub">Maison Vervenin · Préfet déchu</div>
+          <p>Entre ambition et trahison, son pacte avec la Forêt des Brumes secoue Havengard.</p>
+        </div>
+      </div>
+    </div>
+    <div class="feat-arcs">
+      <div class="fs-label">🔥 Arcs en cours</div>
+      <div class="arc-item" onclick="go('chronicle')"><b>Le mystère de la Réserve interdite</b><span>5 personnages impliqués · maj récente</span></div>
+      <div class="arc-item" onclick="go('chronicle')"><b>La corruption des professeurs</b><span>3 personnages · en développement</span></div>
+      <div class="arc-item" onclick="go('chronicle')"><b>Les disparitions de la Forêt</b><span>spoiler · cliquez pour suivre</span></div>
+    </div>
+  </div>
 </section>
 
 <!-- FACTION -->
 <section class="page" id="page-faction">
-  <div class="kicker" id="fk">Maison</div>
-  <div class="house-band">
-    <div class="house-crest" id="crest">L</div>
-    <div><h2 class="h-sec" id="ftitle">Lombrasier</h2><div style="color:var(--ink-soft);font-style:italic;font-family:'Spectral';font-size:19px" id="fdesc"></div></div>
+  <div class="house-hero" id="househero">
+    <div class="house-emblem" id="crest"></div>
+    <div class="house-hero-txt">
+      <div class="kicker" id="fk">Maison</div>
+      <h2 class="h-sec" id="ftitle">Lombrasier</h2>
+      <div class="house-desc" id="fdesc"></div>
+      <div class="house-tags" id="ftags"></div>
+    </div>
   </div>
   <button class="addbtn editonly" onclick="alert('Maquette : formulaire de création de personnage.')">+ Ajouter un personnage</button>
   <div class="grid" id="fgrid" style="margin-top:16px"></div>
@@ -497,6 +597,14 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
     </div>
   </div>
 
+  <div class="tabs" id="chartabs">
+    <div class="tab on" data-tab="apercu">Vue d'ensemble</div>
+    <div class="tab" data-tab="histoire">Histoire</div>
+    <div class="tab" data-tab="relations">Relations</div>
+    <div class="tab" data-tab="galerie">Galerie</div>
+  </div>
+
+  <div class="tabpane on" data-pane="apercu">
   <div class="block struct editable" data-edit="Bloc identité">
     <div class="block-label">Fiche d'identité <span class="pill fix">forme fixe · contenu libre</span>
       <button class="histbtn" onclick="openHist()">⟲ Historique</button></div>
@@ -519,28 +627,18 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
     <button class="addbtn editonly">+ Ajouter une jauge (max 6)</button>
   </div>
 
-  <div class="block struct editable" data-edit="Relations">
-    <div class="block-label">Relations <span class="pill fix">forme fixe · contenu libre</span>
-      <button class="treebtn" onclick="openTree()">⬡ Arbre des relations</button></div>
-    <div class="rels">
-      <div class="rel"><div class="top"><div class="ava">M</div><div><b>Maïa Briselune</b><div class="lien">Rivale · Briselune</div></div></div><p>Se méfie d'Aldwin depuis l'affaire de la bibliothèque interdite.</p><span class="st">Rivalité</span></div>
-      <div class="rel"><div class="top"><div class="ava">K</div><div><b>Pr. Korvanis</b><div class="lien">Mentor · professeur</div></div></div><p>Le pousse vers la magie grise. Intentions floues.</p><span class="st">Mentor ambigu</span></div>
-      <div class="rel spoiler"><div class="top"><div class="ava">?</div><div><b>L'Encapuchonné</b><div class="lien">Contact secret</div></div></div><p>Lui transmet des ordres venus de la Forêt des Brumes.</p><span class="st">Allié caché</span></div>
+  <div class="block struct">
+    <div class="block-label">Apparaît dans <span class="pill fix">liens automatiques</span></div>
+    <div class="backlinks">
+      <span class="backlink" onclick="go('archive')"><span class="bi">📕</span> Le Codex des Brumes</span>
+      <span class="backlink" onclick="go('char')"><span class="bi">✦</span> Maïa Lumecendre</span>
+      <span class="backlink" onclick="go('spell')"><span class="bi">✶</span> Lumen Brumæ</span>
+      <span class="backlink" onclick="go('havengard')"><span class="bi">📍</span> La Réserve interdite</span>
     </div>
-    <button class="addbtn editonly">+ Ajouter une relation</button>
+  </div>
   </div>
 
-  <div class="block struct editable" data-edit="Galerie">
-    <div class="block-label">Galerie <span class="pill fix">forme fixe · captures de moments</span></div>
-    <div class="gal">
-      <div class="gi" onclick="alert('Maquette : visionneuse plein écran.')">🖼<div class="cap">Le duel</div></div>
-      <div class="gi" onclick="alert('Maquette : visionneuse plein écran.')">🖼<div class="cap">Cérémonie</div></div>
-      <div class="gi spoiler">🖼<div class="cap">???</div></div>
-      <div class="gi" onclick="alert('Maquette : visionneuse plein écran.')">🖼<div class="cap">La Réserve</div></div>
-    </div>
-    <button class="addbtn editonly">+ Ajouter une image</button>
-  </div>
-
+  <div class="tabpane" data-pane="histoire">
   <div class="block struct editable" data-edit="Timeline">
     <div class="block-label">Évènements <span class="pill fix">forme fixe · contenu libre</span></div>
     <div class="tl">
@@ -561,6 +659,33 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
       <p class="spoiler">Son alliance avec une entité de la <span class="xlink">Forêt des Brumes</span> finit par fissurer le masque. Le duel n'était qu'un prétexte pour l'écarter.</p>
     </div>
   </div>
+  </div>
+
+  <div class="tabpane" data-pane="relations">
+  <div class="block struct editable" data-edit="Relations">
+    <div class="block-label">Relations <span class="pill fix">forme fixe · contenu libre</span>
+      <button class="treebtn" onclick="openTree()">⬡ Arbre des relations</button></div>
+    <div class="rels">
+      <div class="rel"><div class="top"><div class="ava">M</div><div><b>Maïa Briselune</b><div class="lien">Rivale · Briselune</div></div></div><p>Se méfie d'Aldwin depuis l'affaire de la bibliothèque interdite.</p><span class="st">Rivalité</span></div>
+      <div class="rel"><div class="top"><div class="ava">K</div><div><b>Pr. Korvanis</b><div class="lien">Mentor · professeur</div></div></div><p>Le pousse vers la magie grise. Intentions floues.</p><span class="st">Mentor ambigu</span></div>
+      <div class="rel spoiler"><div class="top"><div class="ava">?</div><div><b>L'Encapuchonné</b><div class="lien">Contact secret</div></div></div><p>Lui transmet des ordres venus de la Forêt des Brumes.</p><span class="st">Allié caché</span></div>
+    </div>
+    <button class="addbtn editonly">+ Ajouter une relation</button>
+  </div>
+  </div>
+
+  <div class="tabpane" data-pane="galerie">
+  <div class="block struct editable" data-edit="Galerie">
+    <div class="block-label">Galerie <span class="pill fix">forme fixe · captures de moments</span></div>
+    <div class="gal">
+      <div class="gi" onclick="alert('Maquette : visionneuse plein écran.')">🖼<div class="cap">Le duel</div></div>
+      <div class="gi" onclick="alert('Maquette : visionneuse plein écran.')">🖼<div class="cap">Cérémonie</div></div>
+      <div class="gi spoiler">🖼<div class="cap">???</div></div>
+      <div class="gi" onclick="alert('Maquette : visionneuse plein écran.')">🖼<div class="cap">La Réserve</div></div>
+    </div>
+    <button class="addbtn editonly">+ Ajouter une image</button>
+  </div>
+  </div>
 </section>
 
 <!-- LIEUX -->
@@ -568,15 +693,25 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   <div class="kicker">Les lieux</div>
   <h2 class="h-sec">Lieux</h2>
   <p class="lead">Tous les lieux du serveur, regroupés par zone — de l'école d'Havengard aux rues de Los Santos.</p>
-  <div class="afilters" id="placefilters">
-    <button class="af on" data-z="all">Toutes les zones</button>
-    <button class="af" data-z="Havengard">Havengard</button>
-    <button class="af" data-z="Los Santos">Los Santos</button>
-    <button class="af" data-z="Forêt des Brumes">Forêt des Brumes</button>
-    <button class="af" data-z="Autres">Autres</button>
+  <div class="mapviews">
+    <button class="af on" id="view-map" onclick="setPlaceView('map')">🗺 Carte</button>
+    <button class="af" id="view-grid" onclick="setPlaceView('grid')">▦ Grille</button>
   </div>
-  <button class="addbtn editonly" style="margin-top:6px">+ Ajouter un lieu</button>
-  <div class="grid" id="placegrid" style="margin-top:16px"></div>
+  <div id="placemap">
+    <div class="mapwrap"><div class="maptip" id="maptip"></div><div id="mapholder"></div></div>
+    <div class="maplegend" id="maplegend"></div>
+  </div>
+  <div id="placegridwrap" style="display:none">
+    <div class="afilters" id="placefilters">
+      <button class="af on" data-z="all">Toutes les zones</button>
+      <button class="af" data-z="Havengard">Havengard</button>
+      <button class="af" data-z="Los Santos">Los Santos</button>
+      <button class="af" data-z="Forêt des Brumes">Forêt des Brumes</button>
+      <button class="af" data-z="Autres">Autres</button>
+    </div>
+    <button class="addbtn editonly" style="margin-top:6px">+ Ajouter un lieu</button>
+    <div class="grid" id="placegrid" style="margin-top:16px"></div>
+  </div>
 </section>
 
 <!-- ARCHIVES -->
@@ -677,6 +812,21 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   <p class="note">Maquette statique — sur le site, éléments déplaçables et ficelles reliables.</p>
 </section>
 
+<!-- CHRONIQUE (fil d'évènements du serveur) -->
+<section class="page" id="page-chronicle">
+  <div class="kicker">La chronique du serveur</div>
+  <h2 class="h-sec">Chronique</h2>
+  <p class="lead">Tous les évènements du serveur en une chronologie commune. Chaque ligne renvoie vers la page du personnage concerné. Le suivi détaillé reste sur chaque fiche.</p>
+  <div class="afilters" id="chronfilters">
+    <button class="af on" data-f="all">Tout</button>
+    <button class="af" data-f="Lombrasier">Lombrasier</button>
+    <button class="af" data-f="Vervenin">Vervenin</button>
+    <button class="af" data-f="Briselune">Briselune</button>
+    <button class="af" data-f="Rongebois">Rongebois</button>
+  </div>
+  <div class="chron" id="chronlist" style="margin-top:18px"></div>
+</section>
+
 </main>
 
 <!-- READER -->
@@ -721,12 +871,28 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
 
 <script>
 const houses={
-  Lombrasier:{c:'#d9694e',d:'Passionnés, courageux, idéalistes et loyaux.',init:'L'},
-  Rongebois:{c:'#e0b04a',d:'Bâtisseurs, protecteurs, solidité et entraide.',init:'R'},
-  Briselune:{c:'#5fd6c6',d:'Rêveurs, érudits, intuitifs et discrets.',init:'B'},
-  Vervenin:{c:'#9b7dff',d:'Rusés, stratèges, ambitieux et profonds.',init:'V'},
-  Autres:{c:'#8a7e6c',d:'Figures hors maison : professeurs, créatures, intrus.',init:'?'}
+  Lombrasier:{c:'#d9694e',d:'Passionnés, courageux, idéalistes et loyaux.',init:'L',sym:'phénix',glyph:'🜂',img:'assets/lombrasier.png'},
+  Vervenin:{c:'#5a8f3f',d:'Rusés, stratèges, ambitieux et profonds.',init:'V',sym:'serpent',glyph:'🜃',img:'assets/vervenin.png'},
+  Briselune:{c:'#5fd6c6',d:'Rêveurs, érudits, intuitifs et discrets.',init:'B',sym:'chouette',glyph:'🜁',img:'assets/briselune.png'},
+  Rongebois:{c:'#e0b04a',d:'Bâtisseurs, protecteurs, solidité et entraide.',init:'R',sym:'castor',glyph:'🜄',img:'assets/rongebois.png'},
+  Autres:{c:'#8a7e6c',d:'Figures hors maison : professeurs, créatures, intrus.',init:'?',sym:'',glyph:'✦',img:''}
 };
+// Emblème placeholder dessiné (écusson + glyphe). Remplaçable par <img src=houses[h].img>.
+// data-emblem="Nom" sur un conteneur => placeholder injecté. Si une vraie image existe, la mettre à la place.
+function emblemSVG(h,size){
+  const o=houses[h]; size=size||120;
+  return `<svg class="emblem" viewBox="0 0 100 120" width="${size}" height="${size*1.2}" role="img" aria-label="Emblème ${h}">
+    <defs><linearGradient id="eg-${h}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="${o.c}" stop-opacity=".9"/><stop offset="1" stop-color="${o.c}" stop-opacity=".35"/>
+    </linearGradient></defs>
+    <path d="M50 4 L92 18 V60 C92 88 72 104 50 116 C28 104 8 88 8 60 V18 Z"
+      fill="url(#eg-${h})" stroke="var(--gold)" stroke-width="2.5"/>
+    <path d="M50 12 L85 23 V60 C85 83 68 97 50 108 C32 97 15 83 15 60 V23 Z"
+      fill="none" stroke="var(--gold-deep)" stroke-width="1" opacity=".7"/>
+    <text x="50" y="68" text-anchor="middle" font-size="38" fill="var(--ink)" opacity=".92">${o.glyph}</text>
+    <text x="50" y="92" text-anchor="middle" font-size="9" fill="var(--ink)" opacity=".7" font-family="Fraunces" letter-spacing="1">${o.sym||''}</text>
+  </svg>`;
+}
 const names=['Aldwin Serpefroide','Maïa Lumecendre','Brann Taillepierre','Nivelle Aubevent','Cassien Vorne','Lyra Solenne','Orin Brisefer','Thessaly Vance','Edric Faulne','Wynn Ashbourne'];
 const sub=['3e année','5e année','7e année','Diplômé','Professeur','1re année'];
 const statuses=[['actif','Actif'],['disparu','Disparu'],['decede','Décédé']];
@@ -746,6 +912,127 @@ function fillGrid(house){
       <div class="cap"><b>${nm}</b><span>${sub[i%sub.length]} · ${house}</span></div></div>`;
   }
 }
+
+// ---- ONGLETS fiche perso ----
+document.querySelectorAll('#chartabs .tab').forEach(t=>{
+  t.onclick=()=>{
+    document.querySelectorAll('#chartabs .tab').forEach(x=>x.classList.remove('on'));
+    t.classList.add('on');
+    document.querySelectorAll('#page-char .tabpane').forEach(p=>p.classList.toggle('on',p.dataset.pane===t.dataset.tab));
+    if(t.dataset.tab==='apercu')animGauges();
+  };
+});
+
+// ---- LIEUX : bascule carte / grille ----
+function setPlaceView(v){
+  document.getElementById('placemap').style.display=v==='map'?'block':'none';
+  document.getElementById('placegridwrap').style.display=v==='grid'?'block':'none';
+  document.getElementById('view-map').classList.toggle('on',v==='map');
+  document.getElementById('view-grid').classList.toggle('on',v==='grid');
+  if(v==='map')drawMap();
+}
+
+// ---- CARTE interactive (SVG maison, style Poudlard & environs) ----
+const mapZones={
+  'Havengard':'#9b7dff','Forêt des Brumes':'#5fd6c6','Los Santos':'#e0b04a','Autres':'#8a7e6c'
+};
+// points : x,y (sur viewBox 0 0 800 480), nom, zone, spoiler
+const mapPins=[
+  [250,150,'Château d\'Havengard','Havengard',false],
+  [205,120,'La Grande Salle','Havengard',false],
+  [300,180,'La Réserve interdite','Havengard',false],
+  [180,200,'Les Cachots Vervenin','Havengard',false],
+  [320,110,'La Volière','Havengard',false],
+  [520,140,'La Forêt des Brumes','Forêt des Brumes',true],
+  [600,200,'Le Lac Noir','Forêt des Brumes',false],
+  [560,360,'Le Bar du Vieux Port','Los Santos',false],
+  [660,330,'Planque de Mirror Park','Los Santos',true],
+  [620,400,'Commissariat de Vespucci','Los Santos',false],
+  [410,300,'Le Portail oublié','Autres',true]
+];
+function drawMap(){
+  const sp=document.documentElement.getAttribute('data-spoiler')==='on';
+  // décor : masses de terrain stylisées + chemins
+  const decor=`
+    <defs>
+      <radialGradient id="mglow" cx="35%" cy="32%" r="70%">
+        <stop offset="0" stop-color="rgba(155,125,255,.18)"/><stop offset="1" stop-color="transparent"/>
+      </radialGradient>
+      <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+    </defs>
+    <rect x="0" y="0" width="800" height="480" fill="rgba(8,11,20,.6)"/>
+    <rect x="0" y="0" width="800" height="480" fill="url(#mglow)"/>
+    <!-- école (Havengard) -->
+    <path d="M120 90 Q260 40 360 120 Q380 210 280 250 Q160 270 110 190 Z" fill="rgba(155,125,255,.10)" stroke="#9b7dff" stroke-width="1.5" opacity=".8"/>
+    <text x="200" y="80" fill="#9b7dff" font-family="Cinzel,serif" font-size="15" opacity=".8">Havengard</text>
+    <!-- forêt -->
+    <path d="M470 80 Q650 70 700 180 Q710 250 600 250 Q480 240 460 150 Z" fill="rgba(95,214,198,.10)" stroke="#5fd6c6" stroke-width="1.5" opacity=".8"/>
+    <text x="540" y="105" fill="#5fd6c6" font-family="Cinzel,serif" font-size="15" opacity=".8">Forêt des Brumes</text>
+    <!-- ville -->
+    <path d="M500 300 Q680 290 710 390 Q700 450 560 440 Q500 420 490 360 Z" fill="rgba(224,176,74,.10)" stroke="#e0b04a" stroke-width="1.5" opacity=".8"/>
+    <text x="560" y="320" fill="#e0b04a" font-family="Cinzel,serif" font-size="15" opacity=".8">Los Santos</text>
+    <!-- chemins -->
+    <path d="M300 180 Q420 230 520 160" fill="none" stroke="var(--gold-deep)" stroke-width="1.5" stroke-dasharray="4 6" opacity=".6"/>
+    <path d="M340 230 Q420 290 540 340" fill="none" stroke="var(--gold-deep)" stroke-width="1.5" stroke-dasharray="4 6" opacity=".6"/>
+  `;
+  const pins=mapPins.map((p,i)=>{
+    const hidden=sp&&p[4];
+    const col=mapZones[p[3]];
+    const label=hidden?'? ? ?':p[2];
+    return `<g class="mappin" data-i="${i}" data-hidden="${hidden}" transform="translate(${p[0]},${p[1]})">
+      <circle r="7" fill="${col}" stroke="var(--bg)" stroke-width="2" ${hidden?'opacity=".5"':''}/>
+      <circle r="13" fill="none" stroke="${col}" stroke-width="1" opacity=".35"/>
+      ${hidden?'<text y="4" text-anchor="middle" font-size="10" fill="#fff">🔒</text>':''}
+    </g>`;
+  }).join('');
+  document.getElementById('mapholder').innerHTML=
+    `<svg class="mapsvg" id="mapsvg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid meet">${decor}${pins}</svg>`;
+  document.getElementById('maplegend').innerHTML=Object.entries(mapZones).map(([z,c])=>`<span><i style="background:${c}"></i>${z}</span>`).join('');
+  bindMap();
+}
+function bindMap(){
+  const tip=document.getElementById('maptip'),wrap=tip.parentElement;
+  document.querySelectorAll('#mapsvg .mappin').forEach(g=>{
+    const i=+g.dataset.i,p=mapPins[i],hidden=g.dataset.hidden==='true';
+    g.addEventListener('mousemove',e=>{
+      const r=wrap.getBoundingClientRect();
+      tip.style.left=(e.clientX-r.left+12)+'px';tip.style.top=(e.clientY-r.top+12)+'px';
+      tip.innerHTML=`<b>${hidden?'Lieu secret':p[2]}</b><span class="mz">${p[3]}</span>`;
+      tip.classList.add('show');
+    });
+    g.addEventListener('mouseleave',()=>tip.classList.remove('show'));
+    g.addEventListener('click',()=>{
+      if(hidden){alert('Maquette : ce lieu est un spoiler (désactivez le mode spoiler pour le révéler).');return;}
+      go('havengard'); // sur le vrai site → page du lieu
+      setTimeout(()=>alert('Maquette : ouvrirait la page « '+p[2]+' ».'),50);
+    });
+  });
+}
+
+// ---- CHRONIQUE (fil d'évènements serveur) ----
+const chronicle=[
+  ['21/11','Aldwin Serpefroide','Le duel du grand hall','Vervenin','char',false],
+  ['19/11','Maïa Lumecendre','Découverte dans la Réserve','Briselune','char',false],
+  ['16/11','Brann Taillepierre','Serment de la confrérie','Rongebois','char',false],
+  ['14/11','Aldwin Serpefroide','La bibliothèque interdite','Vervenin','char',false],
+  ['12/11','Nivelle Aubevent','L\'incendie du dortoir','Lombrasier','char',false],
+  ['08/11','Aldwin Serpefroide','Le pacte des Brumes','Vervenin','char',true],
+  ['05/11','Lyra Solenne','Première vision prophétique','Briselune','char',false]
+];
+let chronFilter='all';
+function fillChron(){
+  const g=document.getElementById('chronlist');
+  g.innerHTML=chronicle.filter(c=>chronFilter==='all'||c[3]===chronFilter).map(c=>`
+    <div class="cev ${c[5]?'spoiler':''}" onclick="go('${c[4]}')">
+      <div class="cdate">Session ${c[0]}</div>
+      <div class="cbody"><b>${c[2]}</b><span>${c[1]}</span></div>
+      <div class="chouse">${c[3]}</div>
+    </div>`).join('');
+}
+document.querySelectorAll('#chronfilters .af').forEach(b=>{b.onclick=()=>{document.querySelectorAll('#chronfilters .af').forEach(x=>x.classList.remove('on'));b.classList.add('on');chronFilter=b.dataset.f;fillChron();};});
+
+// ---- TAGS transversaux ----
+function openTag(t){alert('Maquette : ouvrirait la page-liste du tag « '+t+' » (tous les éléments associés).');}
 
 const places=[
   ['La Grande Salle','🜍','Havengard',false],['La Réserve interdite','📕','Havengard',false],
@@ -861,8 +1148,17 @@ function go(p,house){
   if(p==='faction'){const h=house||currentHouse;currentHouse=h;
     document.getElementById('ftitle').textContent=h;document.getElementById('fdesc').textContent=houses[h].d;
     document.getElementById('fk').textContent=h==='Autres'?'Catégorie':'Maison';
-    const cr=document.getElementById('crest');cr.textContent=houses[h].init;cr.style.background=houses[h].c;fillGrid(h);}
+    const cr=document.getElementById('crest');
+    cr.innerHTML = houses[h].img ? `<img src="${houses[h].img}" alt="Emblème ${h}" onerror="this.outerHTML=emblemSVG('${h}',120)">` : emblemSVG(h,120);
+    // thématise la bannière avec la couleur de maison
+    document.getElementById('househero').style.setProperty('--house',houses[h].c);
+    // tags transversaux d'exemple par maison
+    const tagsByHouse={Lombrasier:['Élèves','Courage'],Vervenin:['Élèves','Stratèges'],Briselune:['Élèves','Érudits'],Rongebois:['Élèves','Bâtisseurs'],Autres:['Professeurs','Créatures','PNJ']};
+    document.getElementById('ftags').innerHTML=(tagsByHouse[h]||[]).map(t=>`<span class="tag" onclick="openTag('${t}')">#${t}</span>`).join('');
+    fillGrid(h);}
   if(p==='char')animGauges();
+  if(p==='havengard'){const mv=document.getElementById('view-map').classList.contains('on');setPlaceView(mv?'map':'grid');}
+  if(p==='chronicle')fillChron();
   window.scrollTo({top:0,behavior:'smooth'});
 }
 document.querySelectorAll('#navwrap a.nav').forEach(a=>{a.onclick=()=>go(a.dataset.go,a.dataset.house);});
@@ -959,7 +1255,7 @@ function endEdit(bl){
   bl.querySelectorAll('.editing-field').forEach(el=>{el.contentEditable='false';el.classList.remove('editing-field');});
 }
 
-fillPlaces();fillArchives();fillFeed();
+fillPlaces();fillArchives();fillFeed();fillChron();
 </script>
 </body>
 </html>
