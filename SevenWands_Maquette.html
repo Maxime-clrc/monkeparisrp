@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Seven Wands — Refonte « Grimoire Astral »</title>
+<title>Seven Wands Lore — Maquette</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,500&family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
@@ -159,9 +159,9 @@ nav.menu a.nav.active::after{content:"";position:absolute;left:14px;right:14px;b
 
 /* HOME */
 .home-hero{text-align:center;padding:40px 0 8px;position:relative}
-.home-hero h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(38px,6vw,62px);line-height:1.5;
+.home-hero h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(34px,6vw,62px);line-height:1.18;
   background:linear-gradient(100deg,var(--gold-soft) 10%,var(--arc-soft) 50%,var(--vio-soft) 90%);-webkit-background-clip:text;background-clip:text;color:transparent;
-  margin-bottom:14px;filter:drop-shadow(0 4px 26px rgba(201,162,75,.18))}
+  margin-bottom:14px;padding-bottom:.12em;filter:drop-shadow(0 4px 26px rgba(201,162,75,.18))}
 .home-hero p{font-family:'Spectral';font-style:italic;font-size:22px;color:var(--ink-soft);max-width:640px;margin:0 auto}
 .home-cols{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;margin-top:16px}
 @media(max-width:840px){.home-cols{grid-template-columns:1fr}}
@@ -308,6 +308,17 @@ nav.menu a.nav.active::after{content:"";position:absolute;left:14px;right:14px;b
 @keyframes spin-rings{to{transform:translate(-50%,-50%) rotate(360deg)}}
 .portrait::after{content:"";position:absolute;inset:11px;border:1px solid var(--gold-deep);border-radius:6px;opacity:.4}
 .portrait .mono{font-size:88px;opacity:.55;filter:drop-shadow(0 0 24px rgba(201,162,75,.3));position:relative;z-index:1}
+/* mode édition image : on fige les cercles et on propose de remplacer l'image */
+.portrait.img-edit{cursor:pointer}
+.portrait.img-edit::before{animation:none}
+.portrait.img-edit .mono{filter:blur(2px);opacity:.3}
+.portrait.img-edit::after{content:"⤓ Changer l'image";
+  position:absolute;inset:auto;top:50%;left:50%;width:max-content;height:auto;
+  transform:translate(-50%,-50%);
+  border:1px dashed var(--vio);background:rgba(111,150,196,.18);color:var(--ink);
+  font-family:'Fraunces';font-size:12px;font-weight:400;letter-spacing:.04em;
+  padding:8px 14px;border-radius:8px;z-index:2;white-space:nowrap;line-height:1;opacity:1}
+body[data-mode="edit"] .portrait.img-edit{outline:1.5px dashed var(--vio);outline-offset:5px}
 .char-name{font-family:'Fraunces',serif;font-weight:600;font-size:46px;line-height:1.04;letter-spacing:.01em}
 .char-sub{font-family:'Spectral',serif;font-style:italic;font-size:21px;color:var(--gold-soft);margin:8px 0 14px}
 .statusline{display:inline-flex;align-items:center;gap:9px;font-family:'Fraunces';font-size:12px;letter-spacing:.06em;padding:6px 15px;border-radius:999px;border:1px solid var(--line);background:var(--panel)}
@@ -337,11 +348,16 @@ nav.menu a.nav.active::after{content:"";position:absolute;left:14px;right:14px;b
 .gauge{margin-bottom:15px}
 .gauge .gl{display:flex;justify-content:space-between;font-size:14px;margin-bottom:6px}
 .gauge .gl span:last-child{color:var(--gold-soft);font-family:'Fraunces';font-size:13px}
-.bar{height:11px;display:flex;gap:3px;background:none;border:none;overflow:visible}
-.bar i{flex:1;height:100%;background:rgba(0,0,0,.4);border:1px solid var(--line);transform:skewX(-18deg);border-radius:1px;
-  opacity:0;transition:opacity .5s,background .5s}
-.bar i.lit{opacity:1;background:linear-gradient(90deg,var(--gold-deep),var(--gold-soft));border-color:var(--gold);box-shadow:0 0 8px rgba(201,162,75,.4)}
-[data-theme="light"] .bar i{background:rgba(0,0,0,.08)}
+.bar{height:11px;border-radius:3px;background:rgba(0,0,0,.4);overflow:hidden;border:1px solid var(--line);position:relative}
+[data-theme="light"] .bar{background:rgba(0,0,0,.08)}
+.bar i{display:block;height:100%;width:0;border-radius:2px;
+  background:linear-gradient(90deg,var(--gold-deep),var(--gold-soft));
+  box-shadow:0 0 10px rgba(201,162,75,.45);
+  transition:width 1.05s cubic-bezier(.2,.7,.2,1)}
+/* fines stries facettées en surimpression (texture HUD, pas l'unité de mesure) */
+.bar::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:repeating-linear-gradient(115deg,transparent 0 6px,rgba(0,0,0,.18) 6px 7px);
+  mix-blend-mode:overlay;opacity:.5}
 
 .rels{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:15px}
 .rel{background:rgba(0,0,0,.2);border:1px solid var(--line);border-radius:12px;padding:15px;position:relative;transition:.22s}
@@ -367,6 +383,9 @@ nav.menu a.nav.active::after{content:"";position:absolute;left:14px;right:14px;b
 .gal .gi{aspect-ratio:1;border-radius:11px;border:1px solid var(--line);background:radial-gradient(circle at 50% 40%,var(--panel2),rgba(6,8,15,.7));display:grid;place-items:center;font-size:32px;color:var(--muted);cursor:pointer;position:relative;overflow:hidden;transition:.22s}
 .gal .gi:hover{border-color:var(--gold);transform:scale(1.04);box-shadow:var(--glow)}
 .gal .gi .cap{position:absolute;bottom:0;left:0;right:0;background:rgba(6,8,15,.7);color:#fff;font-size:11px;padding:5px 8px;font-family:'Fraunces'}
+.gal .gi.img-edit-mini{outline:1.5px dashed var(--vio);outline-offset:3px;cursor:pointer}
+.gal .gi.img-edit-mini::after{content:"⤓";position:absolute;top:6px;right:8px;width:24px;height:24px;display:grid;place-items:center;
+  background:rgba(111,150,196,.85);color:#fff;border-radius:6px;font-size:14px;z-index:2}
 
 .rich-body{max-width:68ch}
 .rich-body p{margin-bottom:14px;font-size:17.5px;line-height:1.72}
@@ -472,6 +491,35 @@ body[data-mode="edit"] .block.has-spoiler .spoilflag{display:inline-flex}
 
 footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:var(--muted);font-size:14px;position:relative;z-index:1}
 .note{font-family:'Spectral';font-style:italic;color:var(--muted);font-size:15px;margin-top:6px}
+/* ───────────── Responsive : tablettes & mobiles ───────────── */
+@media(max-width:760px){
+  .wrap{padding:0 16px}
+  .demobar{font-size:12px;padding:7px 14px;gap:8px}
+  .banner .wrap{padding:22px 16px}
+  .brand h1{font-size:30px}
+  .brand .sub{font-size:15px}
+  nav.menu{top:auto}
+  nav.menu .wrap{padding:8px 14px;gap:0}
+  nav.menu a.nav{font-size:11px;letter-spacing:.1em;padding:9px 10px}
+  /* recherche + bascules : pleine largeur, sur leur propre rangée */
+  .searchbox{margin-left:0;flex:1 1 100%;order:5}
+  .searchbox input{width:100%}
+  .searchbox input:focus{width:100%}
+  nav.menu .wrap > div[style*="margin-left:auto"]{margin-left:0 !important;width:100%;justify-content:center;order:6}
+}
+@media(max-width:520px){
+  .h-sec{font-size:26px}
+  .char-name{font-size:32px}
+  .home-hero h2{font-size:30px}
+  .home-hero p,.lead{font-size:18px}
+  .block{padding:18px 16px}
+  .tabs{gap:0}
+  .tab{padding:10px 11px;font-size:12.5px}
+  .rels{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+  /* bannière : compte connexion plein largeur déjà géré ; on resserre */
+  .account{min-width:0}
+}
 </style>
 </head>
 <body data-mode="view">
@@ -540,7 +588,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
 <section class="page show" id="page-home">
   <div class="home-hero">
     <h2>Le grimoire vivant d'Havengard</h2>
-    <p>Suivez le lore, les arcs et les destins de tous les personnages du serveur, écrits par la communauté.</p>
+    <p>Suivez le lore, les évènements et les destins de tous les personnages du serveur, écrits par la communauté.</p>
   </div>
   <div class="orn"><span>✦ ✦ ✦</span></div>
   <div class="home-cols">
@@ -570,10 +618,8 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
       </div>
     </div>
     <div class="feat-arcs">
-      <div class="fs-label">🔥 Arcs en cours</div>
-      <div class="arc-item" onclick="go('chronicle')"><b>Le mystère de la Réserve interdite</b><span>5 personnages impliqués · maj récente</span></div>
-      <div class="arc-item" onclick="go('chronicle')"><b>La corruption des professeurs</b><span>3 personnages · en développement</span></div>
-      <div class="arc-item" onclick="go('chronicle')"><b>Les disparitions de la Forêt</b><span>spoiler · cliquez pour suivre</span></div>
+      <div class="fs-label">📜 Derniers évènements</div>
+      <div id="homeevents"></div>
     </div>
   </div>
 </section>
@@ -633,10 +679,12 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
 
   <div class="block struct editable" data-edit="Jauges">
     <div class="block-label">Jauges de caractère <span class="pill fix">forme fixe · contenu libre</span></div>
-    <div class="gauge"><div class="gl"><span>Ambition</span><span>88%</span></div><div class="bar" data-v="88"></div></div>
-    <div class="gauge"><div class="gl"><span>Ruse</span><span>82%</span></div><div class="bar" data-v="82"></div></div>
-    <div class="gauge"><div class="gl"><span>Loyauté réelle</span><span>34%</span></div><div class="bar" data-v="34"></div></div>
-    <div class="gauge"><div class="gl"><span>Maîtrise magique</span><span>71%</span></div><div class="bar" data-v="71"></div></div>
+    <div class="gauges">
+    <div class="gauge"><div class="gl"><span>Ambition</span><span>88%</span></div><div class="bar"><i data-w="88"></i></div></div>
+    <div class="gauge"><div class="gl"><span>Ruse</span><span>82%</span></div><div class="bar"><i data-w="82"></i></div></div>
+    <div class="gauge"><div class="gl"><span>Loyauté réelle</span><span>34%</span></div><div class="bar"><i data-w="34"></i></div></div>
+    <div class="gauge"><div class="gl"><span>Maîtrise magique</span><span>71%</span></div><div class="bar"><i data-w="71"></i></div></div>
+    </div>
     <button class="addbtn editonly">+ Ajouter une jauge (max 6)</button>
   </div>
 
@@ -880,7 +928,7 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   </div>
 </div>
 
-<footer><div class="wrap">Seven Wands Lore — refonte « Grimoire Astral » · contenu fictif d'exemple<div class="note">Direction artistique alternative pour comparaison. Sans élément de licence existante.</div></div></footer>
+<footer><div class="wrap">Seven Wands Lore — maquette de présentation · contenu fictif d'exemple<div class="note">Couleurs, polices et libellés indicatifs, susceptibles d'évoluer. Inspiration d'ambiance, sans élément de licence existante.</div></div></footer>
 
 <script>
 const houses={
@@ -1044,6 +1092,15 @@ function fillChron(){
 }
 document.querySelectorAll('#chronfilters .af').forEach(b=>{b.onclick=()=>{document.querySelectorAll('#chronfilters .af').forEach(x=>x.classList.remove('on'));b.classList.add('on');chronFilter=b.dataset.f;fillChron();};});
 
+// encart accueil : 3 derniers évènements (issus de la chronique)
+function fillHomeEvents(){
+  const el=document.getElementById('homeevents');if(!el)return;
+  el.innerHTML=chronicle.slice(0,3).map(c=>`
+    <div class="arc-item ${c[5]?'spoiler':''}" onclick="go('${c[4]}')">
+      <b>${c[2]}</b><span>${c[1]} · ${c[3]} · session ${c[0]}</span>
+    </div>`).join('');
+}
+
 // ---- TAGS transversaux ----
 function openTag(t){alert('Maquette : ouvrirait la page-liste du tag « '+t+' » (tous les éléments associés).');}
 
@@ -1148,13 +1205,9 @@ function enableDrag(svg){
 
 // animation des jauges au passage sur la page perso
 function animGauges(){
-  const SEG=10;
-  document.querySelectorAll('#page-char .bar').forEach(bar=>{
-    const v=+bar.dataset.v||0, lit=Math.round(v/100*SEG);
-    bar.innerHTML='';
-    const segs=[];
-    for(let k=0;k<SEG;k++){const i=document.createElement('i');bar.appendChild(i);segs.push(i);}
-    segs.forEach((s,k)=>setTimeout(()=>{if(k<lit)s.classList.add('lit');},120+k*55));
+  document.querySelectorAll('#page-char .bar i').forEach(i=>{
+    i.style.width='0';
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{i.style.width=i.dataset.w+'%';}));
   });
 }
 
@@ -1207,10 +1260,14 @@ function setMode(m){
   b.textContent=m==='edit'?'Quitter l\'édition':'Mode édition';
   b.classList.toggle('on',m==='edit');
   if(m==='edit'){prepareBlocks();
-    document.querySelectorAll('.editable:not(.block)').forEach(el=>{el.contentEditable='true';});
+    document.querySelectorAll('.editable:not(.block):not(.portrait)').forEach(el=>{el.contentEditable='true';});
+    document.querySelectorAll('.portrait.editable').forEach(p=>p.classList.add('img-edit'));
+    document.querySelectorAll('.gal .gi').forEach(g=>g.classList.add('img-edit-mini'));
   }
   else{document.querySelectorAll('.block.editing').forEach(bl=>cancelEdit(bl));
-    document.querySelectorAll('.editable:not(.block)').forEach(el=>{el.contentEditable='false';});
+    document.querySelectorAll('.editable:not(.block):not(.portrait)').forEach(el=>{el.contentEditable='false';});
+    document.querySelectorAll('.portrait.editable').forEach(p=>p.classList.remove('img-edit'));
+    document.querySelectorAll('.gal .gi').forEach(g=>g.classList.remove('img-edit-mini'));
   }
 }
 
@@ -1262,12 +1319,12 @@ function saveEdit(bl){
   // applique le choix spoiler
   const wantsSpoiler=bl.querySelector('.spoiltoggle').checked;
   bl.classList.toggle('has-spoiler',wantsSpoiler);
-  // dans cette maquette : marquer/démarquer tout le bloc comme spoiler visuellement
-  // (sur le vrai site, ce serait stocké en base ; ici ça illustre le rendu)
+  // zones de contenu d'un bloc, quel que soit son type
+  const zones='.idy, .rels, .tl, .rich-body, .gal, .gauges, .chips, .backlinks';
   if(wantsSpoiler){
-    bl.querySelectorAll('.idy, .rels, .tl, .rich-body, .gal').forEach(z=>z.classList.add('spoiler'));
+    bl.querySelectorAll(zones).forEach(z=>z.classList.add('spoiler'));
   }else{
-    bl.querySelectorAll('.idy, .rels, .tl, .rich-body, .gal').forEach(z=>z.classList.remove('spoiler','revealed'));
+    bl.querySelectorAll(zones).forEach(z=>z.classList.remove('spoiler','revealed'));
   }
   endEdit(bl);
 }
@@ -1277,7 +1334,15 @@ function endEdit(bl){
   bl.querySelectorAll('.editing-field').forEach(el=>{el.contentEditable='false';el.classList.remove('editing-field');});
 }
 
-fillPlaces();fillArchives();fillFeed();fillChron();
+// clic sur une image en mode édition → simulation d'upload (et on bloque le comportement normal)
+document.addEventListener('click',e=>{
+  if(document.body.dataset.mode!=='edit')return;
+  const por=e.target.closest('.portrait.img-edit');
+  const mini=e.target.closest('.gal .gi.img-edit-mini');
+  if(por||mini){e.stopPropagation();e.preventDefault();alert('Maquette : ouvrirait le sélecteur d\'image (upload / URL).');}
+},true);
+
+fillPlaces();fillArchives();fillFeed();fillChron();fillHomeEvents();
 </script>
 </body>
 </html>
